@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<body>
+
+  <div class="map-box">
+      <!-- TODO: add correct image -->
+    <!-- <img src="images/animated.gif" alt="Animated map of the tour"> -->
+    <div id="map"></div>
+    <ul>
+      <li>Tag 17</li>
+      <li>Ø Tagesdistanz Schiff: 67km</li>
+      <li>Total Schiff: 1267km</li>
+      <li>Ø Tagesdistanz Fahrrad: 67km</li>
+      <li>Total Fahrrad: <span id="totalDistance"></span>km</li>
+    </ul>
+  </div>
+
+  {%- for post in site.categories[page.post_category] -%}
+  <div class="post-preview">
+    <a href="{{post.url | relative_url}}" class="post-image">
+      <!-- TODO: add correct image -->
+      <img src="images/0_pragel.jpg" alt="{{post.preview_image_alt}}">
+    </a>
+
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <ul class="post-meta">
+      <li><a href="{{page.url | relative_url}}">{{page.title}}</a></li>
+      <li>{{ post.date | date: date_format }}</li>
+    </ul>
+
+    <a href="{{post.url | relative_url}}" class="post-title">
+      <h2>{{post.title | escape}}</h2>
+    </a>
+
+    <div class="text">
+      {{post.excerpt}}
+    </div>
+
+    <div class="footer">
+      <a href="{{post.url | relative_url}}">{{site.data.l10n.read_full_post}}</a>
+    </div>
+  </div>
+  {%- endfor -%}
+
+</body>
