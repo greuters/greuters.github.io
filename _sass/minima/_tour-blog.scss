@@ -1,0 +1,153 @@
+.map-box {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#map {
+    block-size: 30vh;
+    inline-size: 100%;
+    border: 2px solid var(--main-color-dark);
+}
+
+#map+div {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.map-box ul {
+    visibility: hidden;
+    block-size: 0px;
+    margin-block: 0px;
+}
+
+/* styling the post-preview mobile first */
+.post-preview {
+    margin-block: 2rem;
+}
+
+.post-preview img {
+    inline-size: 100%;
+}
+
+.post-meta {
+    display: flex;
+    list-style-type: disc;
+    padding-inline-start: 0;
+    margin-block: 0;
+}
+
+.post-meta li {
+    margin-inline-start: 1.5rem
+}
+
+.post-meta li:first-child {
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-inline-start: 0;
+}
+
+.post-title {
+    margin-block: 0.5rem;
+}
+
+.post-excerpt {
+    margin-block-start: 0;
+}
+
+.post-footer {
+    display: none;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block: 0;
+}
+
+/* common stuff for wider screen grid layouts */
+@media screen and (min-width: 800px) {
+    // body {
+    //     inline-size: min(90%, 1280px);
+    //     margin: 0 auto;
+    // }
+
+    .post-preview {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: min(50%, 35rem) 1fr;
+    }
+
+    .post-meta {
+        grid-area: metadata;
+        margin-block: 0;
+    }
+
+    .post-title {
+        grid-area: title;
+        margin-block: 0;
+    }
+
+    .post-image {
+        grid-area: image;
+    }
+
+    .post-excerpt {
+        grid-area: text;
+    }
+}
+
+/* intermediate, tablet optimized grid layout */
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    .post-preview {
+        grid-template-areas:
+            "metadata title"
+            "image text";
+    }
+
+    .post-meta {
+        display: flex;
+        justify-content: end;
+        list-style-type: disc;
+        align-self: center;
+    }
+
+    .post-meta li {
+        margin-inline-start: 1.5rem
+    }
+
+    .post-meta li:first-child {
+        text-transform: uppercase;
+        list-style-type: none;
+        margin-inline-start: 0rem;
+    }
+}
+
+/* wide screen grid layout */
+@media screen and (min-width: 1000px) {
+    .post-preview {
+        grid-template-areas:
+            "image metadata"
+            "image title"
+            "image text"
+            "image footer"
+            "image empty";
+        grid-template-rows: 2rem 2rem auto 2rem 1fr;
+    }
+
+    .post-footer {
+        display: flex;
+        justify-content: start;
+        list-style-type: disc;
+        align-self: center;
+    }
+
+    .post-footer li {
+        margin-inline-start: 1.5rem
+    }
+
+    .post-footer li:first-child {
+        list-style-type: none;
+        margin-inline-start: 0rem;
+    }
+}

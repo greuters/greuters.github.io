@@ -5,18 +5,19 @@ layout: default
 
   <header class="post-header">
     {%- if page.lang != site.active_lang -%}
-      {%- include no-translation.html -%}
+    {%- include no-translation.html -%}
     {%- endif -%}
 
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+{% comment %} 
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
+ {% endcomment %}
+        {{page.date}}
       </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -24,7 +25,7 @@ layout: default
   </div>
 
   {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+  {%- include disqus_comments.html -%}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

@@ -1,0 +1,123 @@
+{%- comment -%}
+  Load static image files and metadata defined in front matter into a unified data structure.
+
+  Limitations:
+  - directory structure and front matter structure are rigid and support only one subdirectory level
+  - the unified data structure is a simple array with index variables as Liquid seems to be lacking real dynamic objects;
+  - the loaded data structure and index variables are globals
+
+  =======
+   Setup
+  =======
+
+  1. Create an image directory with your pages basename somewhere under /assets/
+     Example: if your page is a post called 2023-08-09-my-post.html, this could be /assets/2023-08-09-my-post/ or /assets/images/2023-08-09-my-post/
+
+  2. add images directly inside your image directory or in direct subdirectories
+
+  3. add metadata as front matter to your page in the following format:
+
+      image_metadata:
+          - dirname:
+            images:
+              - {filename: some_file.jpg, caption: , alt: }
+          - dirname: subdir1
+            images:
+              - {filename: file1.jpg, caption: "Some caption", alt: }
+              - {filename: file2.png, caption: , alt: "This image shows .."}
+              - {filename: file3.jpg, caption: , alt: }
+
+      Note:
+      Your image directory gets an empty dirname.
+      Only files defined here, with a valid corresponding static file are loaded into the data structure.
+      Nesting more than one level deep is not supported.
+      The img_id of an image is 'filename' if it is directly in the image directory, or 'dirname/filename' if it lies in a subdirectory.
+
+  TODO: document make target to create template once it is ready
+
+  =======
+   Usage
+  =======
+
+  1. To access image data, use the following include in your page:
+
+  {% include load-page-images.liquid %}
+
+  2. This creates a global array page_images with all images in your front matter loaded as sub-arrays.
+     Each sub-array can be indexed with the following global variables
+     - img_id
+     - img_name
+     - img_path
+     - img_modified_time
+     - img_basename
+     - img_extname
+     - img_collection
+     - img_alt
+     - img_caption
+
+  3. As an example, create a list of all images of the page with an alternative text if available:
+      <ul>
+          {%- for image in page_images -%}
+              <li>
+                  <img src="{{image[img_path]}}" alt="{{image[img_alt]}}">
+              </li>
+          {%- endfor -%}
+      </ul>
+{%- endcomment -%}
+
+{% assign img_id = 0 %}
+{% assign img_name = 1 %}
+{% assign img_path = 2 %}
+{% assign img_modified_time = 3 %}
+{% assign img_basename = 4 %}
+{% assign img_extname = 5 %}
+{% assign img_collection = 6 %}
+{% assign img_alt = 7 %}
+{% assign img_caption = 8 %}
+
+{% assign pageToLoad = site.pages | where_exp: 'page', 'page.path == include.page_path' | first %}
+{%- if pageToLoad == null -%}
+  {% assign pageToLoad = site.posts | where_exp: 'page', 'page.path == include.page_path' | first %}
+{%- endif -%}
+{%- if pageToLoad == null -%}
+  <h1>{{ 'Failed to find page with page.path=`' | append: include.page_path | raise_error }}"</h1>
+{%- endif -%}
+
+{%- comment -%} page.name is empty on posts, thus parsing page.path manually to find basename {%- endcomment -%}
+{% assign basename = pageToLoad.path | split: '/' | last | split: '.' | first %}
+{% assign page_imagefiles = site.static_files | where_exp: 'image', 'image.path contains basename' %}
+
+{% comment %} <h1>Inside page static files: {{page_imagefiles}}</h1> {% endcomment %}
+{% assign page_images = site.emptyArray %}
+
+{%- for collection in pageToLoad.image_metadata -%}
+  {%- for metadata in collection.images -%}
+    {% assign id = collection.dirname %}
+    {%- unless collection.dirname == null -%}
+      {% assign id = id | append: '/' %}
+    {%- endunless -%}
+    {% assign id = id | append: metadata.filename %}
+
+    {% assign imagefile = page_imagefiles | where_exp: 'image', 'image.path contains id' | first %}
+    {%- if imagefile == null -%}
+      <h1>{{ 'Static image file `' | append: id | append: '` is missing!' | raise_error }}</h1>
+    {%- endif -%}
+
+    {% assign image = site.emptyArray %}
+    {% assign image = image | push: id %}
+    {% assign image = image | push: imagefile.name %}
+    {% assign image = image | push: imagefile.path %}
+    {% assign image = image | push: imagefile.modified_time %}
+    {% assign image = image | push: imagefile.basename %}
+    {% assign image = image | push: imagefile.extname %}
+    {% assign image = image | push: collection.dirname %}
+    {% assign image = image | push: metadata.alt %}
+    {% assign image = image | push: metadata.caption %}
+
+    {% assign page_images = page_images | push: image %}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- comment -%}
+  <h1>Inside Check page_images: {{page_images}}</h1>
+{%- endcomment -%}

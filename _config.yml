@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Einfach-Luxus
+author: Simon Greuter
 domain: greuters.github.io
 url: https://greuters.github.io
 baseurl: ""
@@ -31,11 +32,20 @@ header_pages:
   - gwunderwelt.md
   - about.md
 
+emptyArray: []
+
 # Settings for polyglot
 languages: ["de", "en", "es", "fr"]
 default_lang: "de"
-exclude_from_localization: ["assets/css", "assets/img"]
+# TODO: get images working without localizing them
+# exclude_from_localization: ["assets/css", "assets/images"]
+exclude_from_localization: ["assets/css"]
 parallel_localization: true
+
+liquid:
+  error_mode: strict
+  # strict_variables: true
+  strict_filters: true
 
 # Build settings
 theme: minima
@@ -43,6 +53,8 @@ plugins:
   - jekyll-feed
   - jekyll-polyglot
 
+minima:
+  date_format: "%b %-d, %Y"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

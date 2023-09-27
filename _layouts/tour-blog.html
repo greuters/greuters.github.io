@@ -1,47 +1,76 @@
 ---
 layout: default
 ---
+<!--
+Dedicated layout for tour blogs
 
-<body>
+- main content is a list of your posts
+- if daily GPS tracks are available, a map is shown with post-preview images matched along the track by date
+- the content of the overview page using this layout is shown at the bottom of the page
 
-  <div class="map-box">
-      <!-- TODO: add correct image -->
-    <!-- <img src="images/animated.gif" alt="Animated map of the tour"> -->
-    <div id="map"></div>
-    <ul>
-      <li>Tag 17</li>
-      <li>Ø Tagesdistanz Schiff: 67km</li>
-      <li>Total Schiff: 1267km</li>
-      <li>Ø Tagesdistanz Fahrrad: 67km</li>
-      <li>Total Fahrrad: <span id="totalDistance"></span>km</li>
-    </ul>
-  </div>
+Requirements for overview page:
+- layout: tour-blog
+- a custom variable 'post_category' with the category of posts that should be listed
+- TODO: a custom variable 'gpx_track_folder' 
+-->
 
+<aside id="map-box">
+  <!-- TODO: add correct image -->
+  <!-- <img src="images/animated.gif" alt="Animated map of the tour"> -->
+  <!-- TODO: implement correct stats in js -->
+  <div id="map"> </div>
+  <ul>
+    <li>Tag 17</li>
+    <li>Ø Tagesdistanz Schiff: 67km</li>
+    <li>Total Schiff: 1267km</li>
+    <li>Ø Tagesdistanz Fahrrad: 67km</li>
+    <li>Total Fahrrad:
+      <span id="totalDistance"></span>km
+    </li>
+  </ul>
+</aside>
+
+<ul id="post-list">
   {%- for post in site.categories[page.post_category] -%}
-  <div class="post-preview">
-    <a href="{{post.url | relative_url}}" class="post-image">
-      <!-- TODO: add correct image -->
-      <img src="images/0_pragel.jpg" alt="{{post.preview_image_alt}}">
-    </a>
+  <li>
+    <article class="post-preview">
+      {% include load-images.liquid page_path=post.path %}
+      {% assign preview_image = page_images | where_exp: "image", "image[img_id] == post.preview_image_id" | first %}
+      {%- if preview_image -%}
+        <a href="{{post.url | relative_url}}" class="preview-image">
+          <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
+        </a>
+      {%- endif -%}
 
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <ul class="post-meta">
-      <li><a href="{{page.url | relative_url}}">{{page.title}}</a></li>
-      <li>{{ post.date | date: date_format }}</li>
-    </ul>
+      <!-- TODO: remove minima dependency -->
+      {% comment %} {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} {% endcomment %}
+      {%- assign date_format = "%b %-d, %Y" -%}
+      <ul class="metadata">
+        <li>
+          <a href="{{page.url | relative_url}}">{{ page.title }}</a>
+        </li>
+        <li>
+          <!-- TODO: check if datetime working -->
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: date_format }}</time>
+        </li>
+      </ul>
 
-    <a href="{{post.url | relative_url}}" class="post-title">
-      <h2>{{post.title | escape}}</h2>
-    </a>
+      <h2 class="title">
+        <a href="{{post.url | relative_url}}">{{ post.title | escape }}</a>
+      </h2>
 
-    <div class="text">
-      {{post.excerpt}}
-    </div>
+      <p class="preview-text">
+        {{ post.preview_text | newline_to_br }}
+      </p>
 
-    <div class="footer">
-      <a href="{{post.url | relative_url}}">{{site.data.l10n.read_full_post}}</a>
-    </div>
-  </div>
+      <footer>
+        <a href="{{post.url | relative_url}}">{{ site.data.l10n.read_full_post }}</a>
+      </footer>
+    </article>
+  </li>
   {%- endfor -%}
+</ul>
 
-</body>
+<aside id="overview-content">
+  {{ content }}
+</aside>
