@@ -2,73 +2,90 @@
 layout: default
 ---
 <!--
-Dedicated layout for tour blogs
+  Dedicated layout for tour blogs
 
-- main content is a list of your posts
-- if daily GPS tracks are available, a map is shown with post-preview images matched along the track by date
-- the content of the overview page using this layout is shown at the bottom of the page
+  - main content is a list of your posts
+  - if daily GPS tracks are available, a map is shown with post-preview images matched along the track by date
+  - the content of the overview page using this layout is shown at the bottom of the page
 
-Requirements for overview page:
-- layout: tour-blog
-- a custom variable 'post_category' with the category of posts that should be listed
-- TODO: a custom variable 'gpx_track_folder' 
+  Requirements for overview page:
+  - layout: tour-blog
+  - a custom variable 'post_category' with the category of posts that should be listed
+  - TODO: a custom variable 'gpx_track_folder'
 -->
 
-<aside id="map-box">
-  <!-- TODO: add correct image -->
-  <!-- <img src="images/animated.gif" alt="Animated map of the tour"> -->
-  <!-- TODO: implement correct stats in js -->
-  <div id="map"> </div>
-  <ul>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+<aside class="map-box">
+  <!-- TODO: implement track loading and stats in js -->
+  <div id="map"></div>
+  <ul class="inline-list">
     <li>Tag 17</li>
-    <li>Ø Tagesdistanz Schiff: 67km</li>
+    <li>Ø Tag Schiff: 67km</li>
     <li>Total Schiff: 1267km</li>
-    <li>Ø Tagesdistanz Fahrrad: 67km</li>
-    <li>Total Fahrrad:
-      <span id="totalDistance"></span>km
-    </li>
+    <li>Ø Tag Rad: 67km</li>
+    <li>Total Rad: <span id="totalDistance"></span>km</li>
   </ul>
 </aside>
 
-<ul id="post-list">
+<ul class="post-list">
   {%- for post in site.categories[page.post_category] -%}
-  <li>
-    <article class="post-preview">
-      {% include load-images.liquid page_path=post.path %}
-      {% assign preview_image = page_images | where_exp: "image", "image[img_id] == post.preview_image_id" | first %}
-      {%- if preview_image -%}
-      <a href="{{post.url | relative_url}}" class="preview-image">
-        <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
-      </a>
-      {%- endif -%}
-
-      {%- assign date_format = site.data.l10n.date_format | default: "%-d/%b/%Y" -%}
-      <ul class="metadata">
-        <li>
-          <a href="{{page.url | relative_url}}">{{ page.title }}</a>
-        </li>
-        <li>
-          <!-- TODO: check if datetime working -->
-          <time datetime="{{ post.date | date: '%Y-%b-%d' }}">{{ post.date | date: date_format }}</time>
-        </li>
-      </ul>
-
-      <h2 class="title">
-        <a href="{{post.url | relative_url}}">{{ post.title | escape }}</a>
-      </h2>
-
-      <p class="preview-text">
-        {{ post.preview_text | newline_to_br }}
-      </p>
-
-      <footer>
-        <a href="{{post.url | relative_url}}">{{ site.data.l10n.read_full_post }}</a>
-      </footer>
-    </article>
-  </li>
+    <li>
+      {%- include post-preview.html post=post -%}
+    </li>
   {%- endfor -%}
 </ul>
 
 <aside id="overview-content">
   {{ content }}
 </aside>
+
+<script>
+    // initialize Leaflet
+    var map = L.map('map').setView({ lon: 0, lat: 0 }, 2);
+    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+      attribution:
+        'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      subdomains: 'abcd',
+      minZoom: 1,
+      maxZoom: 16,
+      ext: 'jpg',
+    }).addTo(map);
+
+    // show the scale bar on the lower left corner
+    L.control.scale({ imperial: true, metric: true }).addTo(map);
+
+    map.scrollWheelZoom.disable();
+
+  {% comment %}
+    // load gpx tracks async
+    const fs = require('fs');
+    const path = require('path');
+    const dir = 'tracks/';
+    fs.readdir(dir, function (err, filenames) {
+      if (err) {
+        throw err;
+      }
+      filenames.forEach((filename) => {
+        const filepath = path.resolve(dir, filename);
+        fs.stat(filepath, function (error, stat) {
+          if (error) throw error;
+          const isFile = stat.isFile();
+          // exclude folders
+          if (isFile) {
+            Console.log('Loading ' + filename);
+            new L.GPX(filepath, { async: true })
+              .on('loaded', function (e) {
+                // Console.log('Loaded ' + e.target.get_name());
+                map.fitBounds(e.target.getBounds());
+                document.getElementById('totalDistance').innerHTML = Math.round(e.target.get_distance() / 1000);
+                // e.target.disable();
+              })
+              .addTo(map);
+          }
+        });
+      });
+    });
+  {% endcomment %}
+</script>

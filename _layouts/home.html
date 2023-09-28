@@ -1,57 +1,44 @@
 ---
 layout: default
 ---
-
-<div class="home">
-  {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<article>
+  <h1>
+    {{- site.data[site.active_lang].l10n.title | escape -}}
+  </h1>
 
   {{ content }}
+</article>
 
-  {%- if site.posts.size > 0 -%}
-  <ul id="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      <article class="post-preview">
-        {% include load-images.liquid page_path=post.path %}
-        {% assign preview_image = page_images | where_exp: "image", "image[img_id] == post.preview_image_id" | first %}
-        {%- if preview_image -%}
-        <a href="{{post.url | relative_url}}" class="preview-image">
-          <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
-        </a>
-        {%- endif -%}
+{%- if site.posts.size > 0 -%}
+  <article>
+    <h2>{{ site.data.l10n.recent_posts }}</h2>
 
-        {%- assign date_format = site.data.l10n.date_format | default: "%-d/%b/%Y" -%}
-        <ul class="metadata">
+    {% comment %} List the most recent post of each category, as well as any uncategorized ones {% endcomment %}
+    <ul class="post-list">
+      {% assign listed_categories = site.emptyArray %}
+      {%- for post in site.posts -%}
+        {% if post.categories == empty %}
+          {% assign select_post = true %}
+        {% else %}
+          {% assign select_post = false %}
+        {% endif %}
+
+        {%- for category in post.categories -%}
+          {% unless listed_categories contains category %}
+            {% assign select_post = true %}
+            {% assign listed_categories = listed_categories | push: category %}
+          {% endunless %}
+        {%- endfor -%}
+
+        {% if select_post == true %}
           <li>
-            <a href="{{page.url | relative_url}}">{{ page.title }}</a>
+            {%- include post-preview.html post=post -%}
           </li>
-          <li>
-            <!-- TODO: check if datetime working -->
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: date_format }}</time>
-          </li>
-        </ul>
+        {% endif %}
+      {%- endfor -%}
+    </ul>
 
-        <h2 class="title">
-          <a href="{{post.url | relative_url}}">{{ post.title | escape }}</a>
-        </h2>
-
-        <p class="preview-text">
-          {{ post.preview_text | newline_to_br }}
-        </p>
-
-        <footer>
-          <a href="{{post.url | relative_url}}">{{ site.data.l10n.read_full_post }}</a>
-        </footer>
-      </article>
-    </li>
-    {%- endfor -%}
-  </ul>
-
-
-  {%- assign feed_url = "/feed.xml" | relative_url -%}
-  <p class="rss-subscribe">{{ site.data[site.active_lang].l10n.rss_subscribe | replace: "$url", feed_url }}</p>
-  {%- endif -%}
-
-</div>
+    {%- assign feed_url = '/feed.xml' | relative_url -%}
+    <footer>{{ site.data[site.active_lang].l10n.rss_subscribe | replace: '$url', feed_url }}</footer>
+  </article>
+{%- endif -%}

@@ -1,0 +1,27 @@
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: $grey-color;
+    flex-direction: column;
+
+    @include media-query($on-palm) {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+}
+
+.site-footer ul {
+    list-style: none;
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+.site-footer .svg-icon {
+    width: 1rem;
+    height: 1rem;
+    color: $grey-color;
+}

@@ -1,0 +1,53 @@
+// General snippets, not worth their one category (yet)
+body {
+    max-width: -webkit-calc(#{$content-width} - (#{$small-spacing-size} * 2));
+    max-width: calc(#{$content-width} - (#{$small-spacing-size} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $small-spacing-size;
+    padding-left: $small-spacing-size;
+    @extend %clearfix;
+
+    @include media-query($on-palm) {
+        max-width: -webkit-calc(#{$content-width} - (#{$base-spacing-size} * 2));
+        max-width: calc(#{$content-width} - (#{$base-spacing-size} * 2));
+        padding-right: $base-spacing-size;
+        padding-left: $base-spacing-size;
+    }
+}
+
+.message-box {
+    background-color: $grey-color-light;
+    border: 1px solid $brand-color;
+    border-radius: 3px;
+    margin-bottom: $base-spacing-size;
+    text-align: center;
+}
+
+.svg-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.inline-list {
+    list-style-type: disc;
+    margin-inline: 0;
+    margin-block: 0;
+
+    li {
+        display: inline list-item;
+        margin-inline: 0.2rem;
+    }
+
+    li:first-child {
+        text-transform: uppercase;
+        list-style-type: none;
+        margin-inline-start: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.post {
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+
+        .metadata {
+            display: none;
+        }
+
+        @include media-query($on-palm) {
+            .metadata {
+                display: initial;
+                align-self: center;
+                margin-block-end: $base-spacing-size;
+            }
+        }
+
+        .author {
+            display: none;
+        }
+    }
+
+    .post-preview {
+        display: none;
+    }
+}

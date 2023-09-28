@@ -1,12 +1,12 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: home
+title: Home
+lang: de
 ---
 
 Einfachheit. Komfort.
 
-Ich lebe in einer wunderbaren Welt - voller Luxus. Diese Welt basiert auf
+Wir leben in einer wunderbaren Welt - voller Luxus. Diese Welt basiert auf
 einem Ressourcenverbrauch, den wir uns schlicht nicht leisten können, und auf
 Ungerechtigkeit, die ich nicht vertreten kann.
 

@@ -1,29 +1,26 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
+<article class="post h-entry hentry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    {%- if page.lang != site.active_lang -%}
-    {%- include no-translation.html -%}
-    {%- endif -%}
+    <a class="u-url" rel="bookmark" href="{{ page.url | relative_url }}">
+      <h1 class="title p-name entry-title">{{ page.title | escape }}</h1>
+    </a>
 
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.data.l10n.date_format | default: "%-d/%b/%Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-    </p>
+    {% include post-metadata.html post=page %}
+
+    <address class="author p-author">{{ site.author }}</address>
   </header>
+
+  <div class="post-preview p-summary entry-summary">
+    <p>{{ page.preview_text | newline_to_br }}</p>
+  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
   {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
+    {%- include disqus_comments.html -%}
   {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

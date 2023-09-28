@@ -100,7 +100,18 @@
 
     {% assign imagefile = page_imagefiles | where_exp: 'image', 'image.path contains id' | first %}
     {%- if imagefile == null -%}
-      <h1>{{ 'Static image file `' | append: id | append: '` is missing!' | raise_error }}</h1>
+      <h1>
+        {{
+          'Static image file `'
+          | append: pageToLoad.path
+          | split: '.'
+          | first
+          | append: '/'
+          | append: id
+          | append: '` is missing!'
+          | raise_error
+        }}
+      </h1>
     {%- endif -%}
 
     {% assign image = site.emptyArray %}

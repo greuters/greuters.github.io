@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-{% if page contains "lang" %}
-{% assign lang = page.lang %}
+{% comment %} TODO: add a nice favicon.. recumbent? {% endcomment %}
+<!doctype html>
+{% if page contains 'lang' %}
+  {% assign lang = page.lang %}
 {% else %}
-{% assign lang = site.lang | default: 'en' %}
+  {% assign lang = site.lang | default: 'en' %}
 {% endif %}
 <html lang="{{ lang }}">
-
   {%- include head.html -%}
 
   <body>
-
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    {%- if page.lang != site.active_lang -%}
+      {%- include no-translation.html -%}
+    {%- endif -%}
+
+    <main>
+      {{ content }}
     </main>
 
     {%- include footer.html -%}
-
   </body>
-
 </html>

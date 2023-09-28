@@ -1,0 +1,32 @@
+.map-box {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#map {
+    block-size: 30vh;
+    inline-size: 100%;
+    border: 2px solid var(--main-color-dark);
+}
+
+#map + div {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.map-box ul {
+    display: none;
+    text-align: center;
+}
+
+@include media-query($on-palm) {
+    .map-box ul {
+        display: initial;
+    }
+}
+
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";

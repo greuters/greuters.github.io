@@ -1,0 +1,26 @@
+<article class="post-preview">
+  {% include load-images.liquid page_path=include.post.path %}
+  {% assign preview_image = page_images
+    | where_exp: 'image', 'image[img_id] == include.post.preview_image_id'
+    | first
+  %}
+  {%- if preview_image -%}
+    <a href="{{include.post.url | relative_url}}" class="preview-image">
+      <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
+    </a>
+  {%- endif -%}
+
+  {% include post-metadata.html post=post %}
+
+  <h2 class="title">
+    <a href="{{include.post.url | relative_url}}">{{ include.post.title | escape }}</a>
+  </h2>
+
+  <p class="preview-text">
+    {{ include.post.preview_text | newline_to_br }}
+  </p>
+
+  <footer>
+    <a href="{{include.post.url | relative_url}}">{{ site.data.l10n.read_full_post }}</a>
+  </footer>
+</article>

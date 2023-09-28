@@ -1,39 +1,27 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Einfach-Luxus
 author: Simon Greuter
 domain: greuters.github.io
 email:
 github_username: greuters
 
-url: https://greuters.github.io
 lang: de
 baseurl: ""
-description: "TODO: no description yet"
-# TODO: check if rss is working on pages
-rss: rss
+url: https://greuters.github.io
+rss: rss-feed
+disqus:
+  shortname:
 
-header_pages:
-  - gwunderwelt.md
-  - about.md
+# ordered list of top level pages that should be prominently shown in navigation
+prominent_top_level_urls:
+  - /gwunderwelt/
+  - /nordkapp-solar/
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+  # strict_variables can unfortunately not be enabled due to feed.xml generation
+  # strict_variables: true
 
 emptyArray: []
 
@@ -45,17 +33,7 @@ default_lang: "de"
 exclude_from_localization: ["assets/css"]
 parallel_localization: true
 
-liquid:
-  error_mode: strict
-  strict_filters: true
-  # strict_variables can unfortunately not be enabled due to feed.xml generation
-  # strict_variables: true
-
-disqus:
-  shortname:
-
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-polyglot
