@@ -21,10 +21,13 @@
 title: Einfach-Luxus
 author: Simon Greuter
 domain: greuters.github.io
+email:
+github_username: greuters
+
 url: https://greuters.github.io
+lang: de
 baseurl: ""
 description: "TODO: no description yet"
-github_username: greuters
 # TODO: check if rss is working on pages
 rss: rss
 
@@ -44,8 +47,12 @@ parallel_localization: true
 
 liquid:
   error_mode: strict
-  # strict_variables: true
   strict_filters: true
+  # strict_variables can unfortunately not be enabled due to feed.xml generation
+  # strict_variables: true
+
+disqus:
+  shortname:
 
 # Build settings
 theme: minima
