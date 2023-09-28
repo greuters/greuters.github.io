@@ -1,5 +1,8 @@
-title: "Einfach-Luxus"
-lang_name: "Deutsch"
-read_full_post: "Den ganzen Beitrag lesen.."
+title: Einfach-Luxus
+lang_name: Deutsch
+# TODO: l10n of month names and use following format
+# date_format: "%-d. %B %Y"
+date_format: "%-d.%-m.%Y"
+read_full_post: Den ganzen Beitrag lesen..
 rss_subscribe: '<a href="$url">per RSS abonnieren</a>'
-no_translation: "Tut mir leid, dieser Seite ist auf Deutsch nicht verfügbar."
+no_translation: Tut mir leid, dieser Seite ist auf Deutsch nicht verfügbar.

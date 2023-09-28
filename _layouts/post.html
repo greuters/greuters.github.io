@@ -11,11 +11,8 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% comment %}
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.data.l10n.date_format | default: "%-d/%b/%Y" -%}
         {{ page.date | date: date_format }}
-        {% endcomment %}
-        {{page.date}}
       </time>
     </p>
   </header>

@@ -10,17 +10,41 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">Posts</h2>
-  <ul class="post-list">
+  <ul id="post-list">
     {%- for post in site.posts -%}
     <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
+      <article class="post-preview">
+        {% include load-images.liquid page_path=post.path %}
+        {% assign preview_image = page_images | where_exp: "image", "image[img_id] == post.preview_image_id" | first %}
+        {%- if preview_image -%}
+        <a href="{{post.url | relative_url}}" class="preview-image">
+          <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
         </a>
-      </h3>
+        {%- endif -%}
+
+        {%- assign date_format = site.data.l10n.date_format | default: "%-d/%b/%Y" -%}
+        <ul class="metadata">
+          <li>
+            <a href="{{page.url | relative_url}}">{{ page.title }}</a>
+          </li>
+          <li>
+            <!-- TODO: check if datetime working -->
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: date_format }}</time>
+          </li>
+        </ul>
+
+        <h2 class="title">
+          <a href="{{post.url | relative_url}}">{{ post.title | escape }}</a>
+        </h2>
+
+        <p class="preview-text">
+          {{ post.preview_text | newline_to_br }}
+        </p>
+
+        <footer>
+          <a href="{{post.url | relative_url}}">{{ site.data.l10n.read_full_post }}</a>
+        </footer>
+      </article>
     </li>
     {%- endfor -%}
   </ul>

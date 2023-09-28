@@ -37,21 +37,19 @@ Requirements for overview page:
       {% include load-images.liquid page_path=post.path %}
       {% assign preview_image = page_images | where_exp: "image", "image[img_id] == post.preview_image_id" | first %}
       {%- if preview_image -%}
-        <a href="{{post.url | relative_url}}" class="preview-image">
-          <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
-        </a>
+      <a href="{{post.url | relative_url}}" class="preview-image">
+        <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
+      </a>
       {%- endif -%}
 
-      <!-- TODO: remove minima dependency -->
-      {% comment %} {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} {% endcomment %}
-      {%- assign date_format = "%b %-d, %Y" -%}
+      {%- assign date_format = site.data.l10n.date_format | default: "%-d/%b/%Y" -%}
       <ul class="metadata">
         <li>
           <a href="{{page.url | relative_url}}">{{ page.title }}</a>
         </li>
         <li>
           <!-- TODO: check if datetime working -->
-          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: date_format }}</time>
+          <time datetime="{{ post.date | date: '%Y-%b-%d' }}">{{ post.date | date: date_format }}</time>
         </li>
       </ul>
 
