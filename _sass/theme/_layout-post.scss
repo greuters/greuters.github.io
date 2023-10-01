@@ -7,7 +7,7 @@
             display: none;
         }
 
-        @include media-query($on-palm) {
+        @media screen and (min-width: $palm-width) {
             .metadata {
                 display: initial;
                 align-self: center;

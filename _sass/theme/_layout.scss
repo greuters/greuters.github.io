@@ -8,7 +8,7 @@ body {
     padding-left: $small-spacing-size;
     @extend %clearfix;
 
-    @include media-query($on-palm) {
+    @media screen and (min-width: $palm-width) {
         max-width: -webkit-calc(#{$content-width} - (#{$base-spacing-size} * 2));
         max-width: calc(#{$content-width} - (#{$base-spacing-size} * 2));
         padding-right: $base-spacing-size;

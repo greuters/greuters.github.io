@@ -6,6 +6,20 @@
     background-color: white;
 }
 
+// disable map in single-column layout if viewport height is too small
+@media screen and (max-width: $palm-width) and (max-height: 600px) {
+    .map-box {
+        display: none;
+    }
+}
+
+// disable map in multi-column layout if viewport height is too small
+@media screen and (min-width: $palm-width) and (max-height: 400px) {
+    .map-box {
+        display: none;
+    }
+}
+
 #map {
     block-size: 30vh;
     inline-size: 100%;
@@ -23,7 +37,7 @@
     text-align: center;
 }
 
-@include media-query($on-palm) {
+@media screen and (min-width: $palm-width) {
     .map-box ul {
         display: initial;
     }

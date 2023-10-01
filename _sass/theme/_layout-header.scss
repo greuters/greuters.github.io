@@ -48,7 +48,7 @@
     }
 
     // On wider screens, unfold toplevel-urls to a flat list
-    @include media-query($on-palm) {
+    @media screen and (min-width: $palm-width) {
         .toplevel-urls.dropdown {
             display: flex;
             flex-direction: row;

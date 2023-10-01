@@ -12,12 +12,12 @@
 }
 
 /* common stuff for wider screen grid layouts */
-@include media-query($on-palm) {
+@media screen and (min-width: $palm-width) {
     .post-preview {
         display: grid;
         column-gap: $small-spacing-size;
 
-        /* on-palm grid layout */
+        /* grid layout for tablets */
         grid-template-areas:
             "metadata title"
             "image text"
@@ -54,9 +54,9 @@
         }
     }
 
-    /* on-laptop grid layout */
-    @include media-query($on-laptop) {
+    @media screen and (min-width: $laptop-width) {
         .post-preview {
+            /* grid layout for laptops */
             grid-template-areas:
                 "image metadata"
                 "image title"

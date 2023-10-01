@@ -27,17 +27,8 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width: 1200px !default;
 
-/*
-design mobile first - for wider layouts, use @include media-query($device)
-*/
-$on-palm: 800px !default;
-$on-laptop: 1000px !default;
-
-@mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
-}
+$palm-width: 800px !default;
+$laptop-width: 1000px !default;
 
 @mixin relative-font-size($ratio) {
     font-size: $base-font-size * $ratio;
