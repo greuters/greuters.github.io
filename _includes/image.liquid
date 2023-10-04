@@ -1,23 +1,19 @@
 {%- comment -%}
+  Usage:
 
-Usage:
+  Add your image in front matter according to specification in load-images.liquid
 
-Add your image in front matter according to specification in load-images.liquid
+  Include it into your page / post with:
 
-Include it into your page / post with:
-
-{% include image.liquid id="dirname/filename" %}
-
-TODO: automatically minify images https://jimmyxiao.me/guides/technical/2019/07/28/folder-based-jekyll-lightgallery
-TODO: allow basic styling
-
+  {% include image.liquid id="dirname/filename" %}
+  TODO: allow basic styling
 {%- endcomment -%}
 
 {% include load-images.liquid page_path=page.path %}
 
-{% assign image = page_images | where_exp: "image", "image[img_id] == include.id" | first %}
+{% assign image = page_images | where_exp: 'image', 'image[img_id] == include.id' | first %}
 
-{% if image == nil %}
+{% if image == null %}
   <img src="" alt="{{'Imagefile with id=`' | append: include.id | append: '` is missing!' | raise_error }}">
 {% else %}
   <figure>

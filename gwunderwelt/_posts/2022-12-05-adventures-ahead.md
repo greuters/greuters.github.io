@@ -25,8 +25,6 @@ image_metadata:
       - {filename: 0_roof_construction.jpg, caption: , alt: }
       - {filename: 0_solar.jpg, caption: mit Sonnenkraft, alt: }
       - {filename: 0_pragel.jpg, caption: ins Abenteuer!, alt: Portrait mit Fahrrad auf verschneiten Bergen}
-support:
-  - gallery
 ---
 
 <h2>Einzelbilder</h2>

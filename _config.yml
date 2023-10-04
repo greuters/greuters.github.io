@@ -31,7 +31,7 @@ languages: ["de", "en", "es", "fr"]
 default_lang: "de"
 # TODO: get images working without localizing them
 # exclude_from_localization: ["assets/css", "assets/images"]
-exclude_from_localization: ["assets/css", "assets/js"]
+exclude_from_localization: ["assets/dist"]
 parallel_localization: true
 
 # Build settings
