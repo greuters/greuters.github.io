@@ -1,0 +1,52 @@
+{% include load-images.liquid page_path=page.path %}
+
+<div
+  id="inline-gallery-container"
+  class="inline-gallery-container"
+></div>
+
+<script type="text/javascript">
+  
+    // TODO:
+    // - scripts sollten sauberer geladen, evtl sogar bundled und minified werden
+  const lgContainer = document.getElementById('inline-gallery-container');
+  const inlineGallery = lightGallery(lgContainer, {
+      container: lgContainer,
+      dynamic: true,
+      hash: false,
+      closable: false,
+      showMaximizeIcon: true,
+      appendSubHtmlTo: '.lg-item',
+      slideDelay: 400,
+      speed: 500,
+      showBarsAfter: 5000,
+      hideBarsDelay: 1500,
+      plugins: [lgAutoplay],
+      slideShowAutoplay: true,
+      slideShowInterval: 6000,
+      defaultCaptionHeight: '1.5rem',
+      dynamicEl: [
+        {% for image in page_images %}
+            {% if image[img_collection] == include.collection %}
+                {
+                    src: '{{image[img_path]}}',
+                    thumb: '{{image[img_path]}}',
+                    subHtml: `<div class="lightGallery-captions">{{ image[img_caption] }}</div>`,
+                },
+            {% endif %}
+        {% endfor %}
+      ],
+      strings: {
+        closeGallery: 'Close gallery',
+        toggleMaximize: 'Toggle maximize',
+        previousSlide: 'Previous slide',
+        nextSlide: 'Next slide',
+        download: 'Download',
+        playVideo: 'Play video',
+        mediaLoadingFailed: 'Oops... Failed to load content...',
+      }
+  });
+
+  inlineGallery.openGallery();
+
+</script>

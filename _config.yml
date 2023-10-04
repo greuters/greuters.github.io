@@ -31,29 +31,25 @@ languages: ["de", "en", "es", "fr"]
 default_lang: "de"
 # TODO: get images working without localizing them
 # exclude_from_localization: ["assets/css", "assets/images"]
-exclude_from_localization: ["assets/css"]
+exclude_from_localization: ["assets/css", "assets/js"]
 parallel_localization: true
 
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-polyglot
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# TODO: enable - jekyll-paginate
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - Makefile
+  - original_icons
+  - package.json
+  - package-lock.json

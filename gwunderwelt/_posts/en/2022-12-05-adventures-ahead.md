@@ -21,8 +21,10 @@ image_metadata:
       - {filename: 0_roof_construction.jpg, caption: , alt: }
       - {filename: 0_solar.jpg, caption: with the power of the sun, alt: }
       - {filename: 0_pragel.jpg, caption: out for adventure!, alt: }
+support:
+  - gallery
 ---
 
 <h2>Gallery</h2>
 
-{% include gallery.liquid collection="gallery" %}
+{% include inline-gallery.html collection="gallery" %}

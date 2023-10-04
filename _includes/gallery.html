@@ -1,0 +1,51 @@
+{%- comment -%}
+  Usage:
+
+  Add your images in one collection in your front matter according to specification in load-images.liquid
+
+  Include a gallery with all images from the collection into your page / post with:
+
+  {% include gallery.html collection="dirname" %}
+
+  TODO: automatically minify images https://jimmyxiao.me/guides/technical/2019/07/28/folder-based-jekyll-lightgallery
+  TODO: allow basic styling
+{%- endcomment -%}
+{% include load-images.liquid page_path=page.path %}
+
+<div id="{{include.collection}}" style="width: 100%; height: 0; padding-bottom: 65%;">
+  {%- for image in page_images -%}
+    {%- if image[img_collection] == include.collection -%}
+      <a href="{{image[img_path]}}">
+        <img class="image" alt="{{image[img_alt]}}" src="{{image[img_path]}}">
+        <div class="lightGallery-captions">
+          <p>{{ image[img_caption] }}</p>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    const galleryContainer = document.getElementById('{{include.collection}}');
+    lightGallery(galleryContainer, {
+      plugins: [lgZoom, lgThumbnail],
+      licenseKey: '0000-0000-000-0000',
+      speed: 500,
+      selector: '.image',
+    });
+  });
+
+  // init isotope
+  //  var $grid{% if include.id_number %}{{ include.id_number }}{% endif %} = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
+  //    percentPosition: true,
+  //    columnWidth: '#gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}',
+  //    itemSelector: '.image-wrapper',
+  //    layoutMode: "masonry"
+  //  });
+  //
+  //  // layout Isotope after each image loads
+  //  $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.imagesLoaded().progress( function() {
+  //    $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.masonry();
+  //  });
+</script>
