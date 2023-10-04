@@ -10,7 +10,7 @@ module.exports = {
 
 module.exports = {
   mode: 'none',
-  devtool: "inline-source-map",
+  devtool: "source-map",
   entry: "./webpack/entry.js",
   output: {
     path: __dirname + "/assets/dist/",
@@ -25,12 +25,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.s?css$/,
         use: [
             MiniCssExtractPlugin.loader,
-            "style-loader",
-            "css-loader"
-        ]
+            "css-loader",
+            "sass-loader"
+        ],
       }
     ],
   },
@@ -44,7 +44,7 @@ module.exports = {
               mangle: true,
             },
           }),
-          new CssMinimizerPlugin(),
+         new CssMinimizerPlugin(),
       ],
   }
 };
