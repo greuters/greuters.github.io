@@ -29,8 +29,10 @@ emptyArray: []
 # Settings for polyglot
 languages: ["de", "en", "es", "fr"]
 default_lang: "de"
-# TODO: get images working without localizing them
-# exclude_from_localization: ["assets/css", "assets/images"]
+# Explicitly not excluding assets/images from localization to be able to statically verify they are available in load-images.liquid
+# See polyglot bug https://github.com/untra/polyglot/issues/131
+# -> static files are not available for sub-language pages when they are excluded from localization
+# to avoid having multiple copies of all images around, they are replaced with symbolic links after build, see package.json postbuild script
 exclude_from_localization: ["assets/dist"]
 parallel_localization: true
 
