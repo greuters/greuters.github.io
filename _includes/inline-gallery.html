@@ -1,7 +1,7 @@
 {%- comment -%}
   Usage:
 
-  Add your imageS in front matter according to specification in load-images.liquid
+  Add your images in front matter according to specification in load-images.liquid
 
   Include a gallery from one collection into your page / post with:
 
@@ -10,7 +10,7 @@
 
 {% include load-images.liquid page_path=page.path %}
 
-<div id="inline-gallery-container" class="inline-gallery-container">
+<div id="inline-gallery-{{include.collection}}" class="inline-gallery-container">
   {% for image in page_images %}
     {% if image[img_collection] == include.collection %}
       <a
@@ -26,34 +26,3 @@
     {% endif %}
   {% endfor %}
 </div>
-
-<script type="text/javascript">
-  const lgContainer = document.getElementById('inline-gallery-container');
-  const inlineGallery = window.lightGallery(lgContainer, {
-    container: lgContainer,
-    hash: false,
-    closable: false,
-    download: false, // disabled as it is not working atm with non-dynamic loading
-    showMaximizeIcon: true,
-    appendSubHtmlTo: '.lg-item',
-    slideDelay: 400,
-    speed: 500,
-    showBarsAfter: 5000,
-    hideBarsDelay: 1500,
-    plugins: [window.lgAutoplay],
-    slideShowAutoplay: true,
-    slideShowInterval: 6000,
-    defaultCaptionHeight: '1.5rem',
-    strings: {
-      closeGallery: '{{ site.data[site.active_lang].l10n.closeGallery }}',
-      toggleMaximize: '{{ site.data[site.active_lang].l10n.toggleMaximize }}',
-      previousSlide: '{{ site.data[site.active_lang].l10n.previousSlide }}',
-      nextSlide: '{{ site.data[site.active_lang].l10n.nextSlide }}',
-      download: '{{ site.data[site.active_lang].l10n.download }}',
-      playVideo: '{{ site.data[site.active_lang].l10n.playVideo }}',
-      mediaLoadingFailed: '{{ site.data[site.active_lang].l10n.mediaLoadingFailed }}',
-    },
-  });
-
-  inlineGallery.openGallery();
-</script>

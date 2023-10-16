@@ -1,0 +1,26 @@
+/* Lightgallery */
+.lg-inline .lg-backdrop {
+    background-color: $grey-color-light;
+}
+
+.inline-gallery-container {
+    width: 100%;
+    // make sure any landscape image will be fully visible
+    // portraits are automatically scaled-down by lightgallery
+    height: min(100vh, 100vw);
+    padding-block-end: $base-spacing-size;
+    margin-block: $base-spacing-size;
+    // TODO: center images vertically inside
+}
+
+.lightGallery-captions {
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(black, 0.8);
+    padding: $small-spacing-size;
+    border-radius: 3px;
+}
+
+.lightGallery-captions:empty {
+    display: none;
+}

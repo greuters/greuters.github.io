@@ -1,6 +1,5 @@
 ---
 layout: post
-date:   2022-12-05 16:56:13 -0600
 lang: de
 title:  Auf zu neuen Abenteuern!
 preview_image_id: avontuur.jpg
@@ -27,11 +26,6 @@ image_metadata:
       - {filename: 0_pragel.jpg, caption: ins Abenteuer!, alt: Portrait mit Fahrrad auf verschneiten Bergen}
 ---
 
-<h2>Einzelbilder</h2>
-
-{% include image.liquid id="avontuur.jpg" %}
-{% include image.liquid id="gallery/0_solar.jpg" %}
-
-<h2>Galerie</h2>
+<h2>Unser Reisegefährt entsteht</h2>
 
 {% include inline-gallery.html collection="gallery" %}

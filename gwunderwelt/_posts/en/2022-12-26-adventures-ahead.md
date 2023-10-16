@@ -1,6 +1,5 @@
 ---
 layout: post
-date:   2022-12-05 16:56:13 -0600
 lang: en
 title:  Out for adventure!
 preview_image_id: avontuur.jpg
@@ -23,6 +22,6 @@ image_metadata:
       - {filename: 0_pragel.jpg, caption: out for adventure!, alt: }
 ---
 
-<h2>Gallery</h2>
+<h2>Building our home and transport</h2>
 
 {% include inline-gallery.html collection="gallery" %}
