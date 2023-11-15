@@ -15,7 +15,8 @@
 @media screen and (min-width: $palm-width) {
     .post-preview {
         display: grid;
-        column-gap: $small-spacing-size;
+        row-gap: $small-spacing-size;
+        column-gap: $base-spacing-size;
 
         /* grid layout for tablets */
         grid-template-areas:

@@ -12,8 +12,9 @@
   - float-inline-end
   - centered
 
-  The actual styles can be seen in _sass/_image-layouts.scss and to float images correctly,
-  they should be wrapped in a html container together with acomppanying text.
+  Notes:
+  - The actual styles can be seen in _sass/_image-layouts.scss
+  - put floated images in a <div class="flow-root"></div> element or clear the float where appropriate with a <div class="float-clear"></div> element.
 {%- endcomment -%}
 
 {% include load-images.liquid page_path=page.path %}

@@ -13,6 +13,81 @@ image_metadata:
         caption: "And of course we stop by again at Perry and Marie's. Roads go ever ever on, ... but always past Hobbitshire (:", alt: ""}
       - {filename: campfire.jpg,
         caption: "We stay one day longer and help to set up a new fireplace and beautify the 'Rocket Stove'.", alt: ""}
+  - dirname: gallery1
+    images:
+      - {filename: 20230808_140007.jpg, caption: , alt: }
+      - {filename: 20230810_124313.jpg, caption: , alt: }
+      - {filename: 20230810_125727.jpg, caption: "Who finds the principal performer here?", alt: }
+      - {filename: 20230901_122349.jpg, caption: , alt: }
+      - {filename: 20230813_142125.jpg, caption: , alt: }
+      - {filename: 20230815_105537.jpg, caption: , alt: }
+      - {filename: 20230816_131147.jpg, caption: Hitchhikin, alt: }
+      - {filename: DSCF6979.jpg, caption: , alt: }
+      - {filename: DSCF6674.jpg, caption: , alt: }
+      - {filename: 20230825_121820.jpg, caption: , alt: }
+      - {filename: 20230901_101306.jpg, caption: , alt: }
+      - {filename: DSCF6573.jpg, caption: , alt: }
+      - {filename: DSCF6669.jpg, caption: , alt: }
+      - {filename: DSCF6817.jpg, caption: , alt: }
+  - dirname: gallery2
+    images:
+      - {filename: 20230811_131732.jpg, caption: , alt: }
+      - {filename: 20230811_140234.jpg, caption: , alt: }
+      - {filename: 20230811_141505.jpg, caption: , alt: }
+      - {filename: 20230811_143553.jpg, caption: , alt: }
+      - {filename: 20230811_124918.jpg, caption: , alt: }
+      - {filename: 20230811_150457.jpg, caption: , alt: }
+      - {filename: DSCF6636.jpg, caption: , alt: }
+      - {filename: DSCF6695.jpg, caption: , alt: }
+      - {filename: DSCF6675.jpg, caption: , alt: }
+      - {filename: DSCF6687.jpg, caption: , alt: }
+      - {filename: DSCF7254.jpg, caption: , alt: }
+      - {filename: DSCF6702.jpg, caption: , alt: }
+      - {filename: DSCF6902.jpg, caption: , alt: }
+      - {filename: 20230825_160201.jpg, caption: , alt: }
+  - dirname: gallery3
+    images:
+      - {filename: DSCF6606.jpg, caption: , alt: }
+      - {filename: DSCF6601.jpg, caption: , alt: }
+      - {filename: 20230824_133515.jpg, caption: "The first car driver giving hand signs on this journey (:", alt: }
+      - {filename: DSCF7154.jpg, caption: , alt: }
+      - {filename: 20230824_170205.jpg, caption: , alt: }
+      - {filename: DSCF7057.jpg, caption: , alt: }
+      - {filename: DSCF6877.jpg, caption: , alt: }
+      - {filename: DSCF7200.jpg, caption: , alt: }
+      - {filename: DSCF6973.jpg, caption: , alt: }
+      - {filename: 20230825_145252.jpg, caption: "Stopover at the bus station: good for rainy hours...", alt: }
+      - {filename: DSCF6568.jpg, caption: ...and sunshine alike!, alt: }
+      - {filename: DSCF6881.jpg, caption: Drying laundry and enjoying aircon, alt: }
+      - {filename: DSCF6883.jpg, caption: , alt: }
+      - {filename: 20230829_104305.jpg, caption: Old Northern Highway, alt: }
+      - {filename: 20230822_153244.jpg, caption: , alt: }
+  - dirname: gallery4
+    images:
+      - {filename: DSCF7222.jpg, caption: , alt: }
+      - {filename: DSCF7228.jpg, caption: Tapir, alt: }
+      - {filename: DSCF7290.jpg, caption: , alt: }
+      - {filename: DSCF7276.jpg, caption: , alt: }
+      - {filename: DSCF7288.jpg, caption: , alt: }
+      - {filename: DSCF7218.jpg, caption: , alt: }
+      - {filename: DSCF7295.jpg, caption: , alt: }
+      - {filename: DSCF7130.jpg, caption: , alt: }
+      - {filename: DSCF7122.jpg, caption: , alt: }
+      - {filename: DSCF7112.jpg, caption: Orchids, alt: }
+      - {filename: DSCF7110.jpg, caption: , alt: }
+      - {filename: vanille3.jpg, caption: Vanilla, alt: }
+      - {filename: vanille1.jpg, caption: Vanilla, alt: }
+      - {filename: shampoo.jpg, caption: Soapy-Fruit, alt: }
+      - {filename: pfeffer.jpg, caption: Pepper, alt: }
+      - {filename: DSCF7139.jpg, caption: Pepper, alt: }
+      - {filename: muskatblüte.jpg, caption: Nutmeg, alt: }
+      - {filename: muskat.jpg, caption: Nutmeg, alt: }
+      - {filename: muskat2.jpg, caption: Nutmeg, alt: }
+      - {filename: moringa.jpg, caption: Drumstick tree, alt: }
+      - {filename: moringa2.jpg, caption: Drumstick tree, alt: }
+      - {filename: kaffe.jpg, caption: Coffee, alt: }
+      - {filename: Lotus2.jpg, caption: Lotus, alt: }
+      - {filename: Lotus..jpg, caption: "Who ate these seeds?", alt: }
 ---
 
 The overall impression we got after one month in Belize is one of incredible diversity and friendliness. A melting pot of cultures and landscapes, deeply religious, Christian people. Most of the time we had great encounters with curious people full of amazement and joy. Every now and then there were strange pick-ups, unpleasant moments with drunks and places where we did not want to be on the road at night - but nothing that can overshadow the cordiality of most Belizeans!
@@ -38,9 +113,11 @@ In Hopkins at the sea by Toni and Marc from Texas - themselves just one week in 
 
 During the lunch break at the "Old Northern Highway" - a super alternative to the new construction for us, without traffic and with well manageable bumpy road - we are invited by Jeff and his family twice to spend the night with them - presentation of their Christian education project "Move", dinner with avocados in abundance and cozy family evening included. 
 
-{ include image.liquid id="hobbitshire2.jpg" %}
+<div class="flow-root">
+  {% include image.liquid id="hobbitshire2.jpg" class="float-inline-start"%}
 
-{ include image.liquid id="campfire.jpg" %}
+  {% include image.liquid id="campfire.jpg" class="float-inline-end"%}
+</div>
 
 {% include inline-gallery.html collection="gallery3" %}
 

@@ -1,13 +1,13 @@
 /* Lightgallery */
 .lg-inline .lg-backdrop {
-    background-color: $grey-color-light;
+    background-color: transparent;
 }
 
 .inline-gallery-container {
     width: 100%;
     // make sure any landscape image will be fully visible
     // portraits are automatically scaled-down by lightgallery
-    height: min(100vh, 100vw);
+    height: min(70vh, 70vw);
     padding-block-end: $base-spacing-size;
     margin-block: $base-spacing-size;
     // TODO: center images vertically inside
@@ -46,6 +46,14 @@ figure.float-inline-end {
     max-width: calc(50% - 1rem);
     margin-inline-start: 1rem;
     float: inline-end;
+}
+
+.flow-root {
+    display: flow-root;
+}
+
+.float-clear {
+    clear: both;
 }
 
 /* Image-Divider */
