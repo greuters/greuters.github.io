@@ -47,3 +47,20 @@ figure.float-inline-end {
     margin-inline-start: 1rem;
     float: inline-end;
 }
+
+/* Image-Divider */
+.image-divider {
+    display: flex;
+    flex-direction: column;
+    gap: $small-spacing-size;
+
+    img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    @media screen and (min-width: $palm-width) {
+        flex-direction: row;
+    }
+}

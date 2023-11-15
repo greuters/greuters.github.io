@@ -95,6 +95,8 @@ Der grosse Eindruck der uns nach einem knappen Monat Belize bleibt: es ist ungla
 
 Im Norden leben viele spanischsprachige Mestizos und einige Garifuna. Auf der Strasse fahren sonnenverbrannte Mennoniten mit Trägerhosen und Cowboyhüten auf ihren melonengefüllten Pferdekarren zum Markt. In den Hügeln im Süden sind vor allem Mopan- und Kekchi-Maya zu Hause, und an der Küste leben viele Garifuna - unsere Umgangssprache wechselt zu Englisch. Im ganzen Land werden die Läden fast ausschliesslich von Chinesen geführt, man hört Englisch, Kreol, Spanisch, hin und wieder Plautdietsch und - vermutlich - Mandarin auf der Strasse.
 
+{% include image-divider.html ids="jaguar.jpg, hobbitshire2.jpg, gallery1/20230816_131147.jpg" show_caption=true%}
+
 An unserem ersten Tag denken wir: "Wie Finnland in heiss und mit Palmen!" - Sümpfe wechseln mit Zuckerrohrfeldern und Wald, viel unberührte Natur begleitet uns entlang der Strasse. So sollte Umweltschutz vielleicht auch bei uns aussehen. Warum sieht man eigentlich von den ganzen "Klimaneutral"-Kompensationsprojekten nichts in der Schweiz? Wir könnten doch auch anständig grosse Gebiete aufforsten und der Natur überlassen, statt das Letzte aus kargen Alpweiden herauszuholen, wenn wir schon weiterhin fröhlich Treibhausgase in die Welt hinaus pusten.. Hier in Belize ist es auf jeden Fall schön zu sehen, dass den Wäldern viel Bedeutung beigemessen wird - fast die Hälfte der Landesfläche steht unter Naturschutz. Sicher hat dies auch mit der geringen Bevölkerungsdichte (500'000 Einwohner auf etwa der halben Fläche der Schweiz) und der wichtigen Rolle des Tourismus für die Wirtschaft zu tun, dennoch: hier können wir uns ein Beispiel nehmen. 
 
 {% include inline-gallery.html collection="gallery1" %}

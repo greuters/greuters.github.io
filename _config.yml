@@ -40,6 +40,7 @@ parallel_localization: true
 plugins:
   - jekyll-feed
   - jekyll-polyglot
+  - jekyll-image-size
 
 # TODO: enable - jekyll-paginate
 

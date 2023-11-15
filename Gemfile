@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-polyglot"
   gem "jekyll-raise_liquid_error"
+  gem "jekyll-image-size", "~> 1.2"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

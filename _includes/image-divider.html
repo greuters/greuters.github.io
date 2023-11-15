@@ -1,0 +1,36 @@
+{%- comment -%}
+  Usage:
+
+  Add your images in front matter according to specification in load-images.liquid
+
+  Include a divider made of images into your page / post with:
+
+  {% include image-divider.liquid ids="dirname1/filename1, dirname2/filename2, .." show_captions=true %}
+
+  If the screen is wide enough, all images will be scaled to the same height and spread on one line.
+  If not, they are stacked vertically at maximum possible width.
+
+  Optionally, add show_captions=true if you want to add captions below the images
+{%- endcomment -%}
+
+{% include load-images.liquid page_path=page.path %}
+
+{% assign ids = include.ids | split: ', ' %}
+
+<div class="image-divider">
+  {% for id in ids %}
+    {% assign image = page_images | where_exp: 'image', 'image[img_id] == id' | first %}
+    {% if image == null %}
+      <img src="" alt="{{'Imagefile with id=`' | append: id | append: '` is missing!' | raise_error }}">
+    {% else %}
+      <div style="flex: calc(100.0 / {% imagesize image[img_path]:height?width=100.0 %})">
+        <figure>
+          <img src="{{image[img_path]}}" alt="{{image[img_alt]}}">
+          {% if include.show_caption %}
+            <figcaption>{{ image[img_caption] }}</figcaption>
+          {% endif %}
+        </figure>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
