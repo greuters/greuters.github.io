@@ -110,15 +110,21 @@ Am Abend finden wir einen Geheimtipp zum Campieren bei den Brüllaffen: auf dem 
 
 Zum Besuch bei Maya Mountain Cacao mit Einblicken in die Kakaoproduktion gibt es einen eigenen Beitrag mit Bildergalerie. Unsere weitere Reise in diesem schönen kleinen Land folgt dem selben Muster: Baden im Wasserfall beim Billy Barquedier Nationalpark, danach ein super Zeltplatz direkt am North Stan Creek, bunte Häuschen, grünes Land mit vielen Flüsschen, farbenfrohe freundliche Menschen. Auf dem Rückweg in den Norden werden wir gleich mehrfach von der Strasse weg eingeladen:
 
-In Hopkins am Meer von Toni und Marc aus Texas - selbst erst gerade eine Woche in Belize, bieten sie uns an der Tankstelle ein Dach über dem Kopf an. Sie ist pensionierte Englischlehrerin, er organisiert Seminare für hiesige Pfarrer. Die Beiden sind in ihrem Leben für Gott weit herumgekommen - 15 Jahre haben sie in China gelebt, auch eine Zeit im Senegal, Europa und Nahost. Sehr interessante Leute, freundlich und bescheiden: "Life is too short to be grumpy and not open and friendly to everybody".
+<div>
+  {% include image.liquid id="hobbitshire2.jpg" class="float-inline-start"%}
+  <p>
+  In Hopkins am Meer von Toni und Marc aus Texas - selbst erst gerade eine Woche in Belize, bieten sie uns an der Tankstelle ein Dach über dem Kopf an. Sie ist pensionierte Englischlehrerin, er organisiert Seminare für hiesige Pfarrer. Die Beiden sind in ihrem Leben für Gott weit herumgekommen - 15 Jahre haben sie in China gelebt, auch eine Zeit im Senegal, Europa und Nahost. Sehr interessante Leute, freundlich und bescheiden: "Life is too short to be grumpy and not open and friendly to everybody".
+  </p>
+  <p>
+  Bei der Mittagspause am "Old Northern Highway" - eine super Alternative zum Neubau für uns, ohne Verkehr und mit gut zu bewältigender Holperpiste - werden wir von Jeff und seiner Familie gleich doppelt eingeladen, bei ihnen zu nächtigen - Vorstellung ihres christlichen Ausbildungsprojekts "Move", Abendessen mit Avocados im Überfluss und gemütlichem Familienabend inklusive. 
+  </p>
 
-Bei der Mittagspause am "Old Northern Highway" - eine super Alternative zum Neubau für uns, ohne Verkehr und mit gut zu bewältigender Holperpiste - werden wir von Jeff und seiner Familie gleich doppelt eingeladen, bei ihnen zu nächtigen - Vorstellung ihres christlichen Ausbildungsprojekts "Move", Abendessen mit Avocados im Überfluss und gemütlichem Familienabend inklusive. 
+  <p>
+  Und bei Perry und Marie schauen wir natürlich auch nochmal vorbei, die Strasse gleitet fort und fort.. aber stets an Hobbitshire vorbei (: Wir bleiben einen Tag länger und helfen beim Herrichten einer neuen Feuerstelle und des "Rocket Stove".
+  </p>
+</div>
 
-Und bei Perry und Marie schauen wir natürlich auch nochmal vorbei, die Strasse gleitet fort und fort.. aber stets an Hobbitshire vorbei (: Wir bleiben einen Tag länger und helfen beim Herrichten einer neuen Feuerstelle und des "Rocket Stove".
-
-{% include image.liquid id="hobbitshire2.jpg" %}
-
-{% include image.liquid id="campfire.jpg" %}
+{% include image.liquid id="campfire.jpg" class="centered"%}
 
 {% include inline-gallery.html collection="gallery3" %}
 

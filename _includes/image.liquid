@@ -3,20 +3,44 @@
 
   Add your image in front matter according to specification in load-images.liquid
 
-  Include it into your page / post with:
+  Include a single image into your page / post with:
 
-  {% include image.liquid id="dirname/filename" %}
-  TODO: allow basic styling
+  {% include image.liquid id="dirname/filename" class="" %}
+
+  where class can be one of the following:
+  - float-inline-start
+  - float-inline-end
+  - centered
+
+  The actual styles can be seen in _sass/_image-layouts.scss and to float images correctly,
+  they should be wrapped in a html container together with acomppanying text.
 {%- endcomment -%}
 
 {% include load-images.liquid page_path=page.path %}
 
 {% assign image = page_images | where_exp: 'image', 'image[img_id] == include.id' | first %}
+{% case include.class %}
+  {% when 'float-inline-start' %}
+
+  {% when 'float-inline-end' %}
+
+  {% when 'centered' %}
+
+  {% else %}
+    {{
+      'Image with id=`'
+      | append: include.id
+      | append: '` specifies unsupported class: `'
+      | append: include.class
+      | append: '`'
+      | raise_error
+    }}
+{% endcase %}
 
 {% if image == null %}
   <img src="" alt="{{'Imagefile with id=`' | append: include.id | append: '` is missing!' | raise_error }}">
 {% else %}
-  <figure>
+  <figure class="{{include.class}}">
     <img src="{{image[img_path]}}" alt="{{image[img_alt]}}">
     <figcaption>{{ image[img_caption] }}</figcaption>
   </figure>

@@ -38,9 +38,9 @@ In Hopkins at the sea by Toni and Marc from Texas - themselves just one week in 
 
 During the lunch break at the "Old Northern Highway" - a super alternative to the new construction for us, without traffic and with well manageable bumpy road - we are invited by Jeff and his family twice to spend the night with them - presentation of their Christian education project "Move", dinner with avocados in abundance and cozy family evening included. 
 
-{% include image.liquid id="hobbitshire2.jpg" %}
+{ include image.liquid id="hobbitshire2.jpg" %}
 
-{% include image.liquid id="campfire.jpg" %}
+{ include image.liquid id="campfire.jpg" %}
 
 {% include inline-gallery.html collection="gallery3" %}
 

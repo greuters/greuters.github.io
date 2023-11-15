@@ -24,3 +24,26 @@
 .lightGallery-captions:empty {
     display: none;
 }
+
+/* Single Images */
+figure figcaption {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+figure.centered {
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+figure.float-inline-start {
+    max-width: calc(50% - 1rem);
+    margin-inline-end: 1rem;
+    float: inline-start;
+}
+
+figure.float-inline-end {
+    max-width: calc(50% - 1rem);
+    margin-inline-start: 1rem;
+    float: inline-end;
+}
