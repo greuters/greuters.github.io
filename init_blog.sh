@@ -38,5 +38,15 @@ image_metadata:
 $toplevel_files
 $subdir_files
 ---
+
+{%- comment -%}
+<div class="flow-root">
+  {% include image.liquid id="image.jpg" class="float-inline-start"%}
+
+  Text
+</div>
+{% include image-divider.html ids="image.jpg" %}
+{% include inline-gallery.html collection="gallery" %}
+{%- endcomment -%}
 EOF
 
