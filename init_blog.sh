@@ -1,9 +1,14 @@
 #!/bin/bash
-blog='gwunderwelt'
-post='2023-09-03-better-in-belize'
+if [ $# -ne 2 ]; then
+    echo $0: usage: init_blog.sh blog post
+    exit 1
+fi
+
+blog=$1
+post=$2
 
 image_path="./assets/images/$blog/$post"
-blog_path="$blog/_posts/$post.md2"
+blog_path="$blog/_posts/$post.md"
 toplevel_files=$'  - dirname:\n    images:\n'
 subdir_files=''
 for entry in "$image_path"/*
@@ -13,11 +18,11 @@ do
     for subentry in "$entry"/*
     do
       if [ -f "$subentry" ];then
-          subdir_files+='      - {filename: '$(basename $subentry)$', caption: , alt: }\n'
+          subdir_files+='      - {filename: '$(basename $subentry)$', caption: "", alt: ""}\n'
       fi
     done
   elif [ -f "$entry" ];then
-    toplevel_files+='      - {filename: '$(basename $entry)$', caption: , alt: }\n'
+    toplevel_files+='      - {filename: '$(basename $entry)$', caption: "", alt: ""}\n'
   fi
 done
 

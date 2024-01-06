@@ -11,8 +11,6 @@ image_metadata:
   - dirname:
     images:
       - {filename: avontuur.jpg, caption: Unser Ticket über den Atlantik, alt: }
-      - {filename: 20230820_083530.jpg, caption: , alt: }
-      - {filename: bg_quetzal.jpg, caption: , alt: }
   - dirname: gallery
     images:
       - {filename: 0_plans.jpg, caption: Von der Idee.., alt: }

@@ -15,8 +15,8 @@ image_metadata:
       - {filename: 0_prototyping.jpg, caption: to reality, alt: }
       - {filename: 0_painted.jpg, caption: , alt: }
       - {filename: 0_building.jpg, caption: , alt: }
-      - {filename: 0_loaded.jpg, caption: Heavy loads, alt: }
-      - {filename: 0_weissenstein.jpg, caption: and good mood, alt: }
+      - {filename: 0_loaded.jpg, caption: Heavily loaded, alt: }
+      - {filename: 0_weissenstein.jpg, caption: but in good mood, alt: }
       - {filename: 0_roof_construction.jpg, caption: , alt: }
       - {filename: 0_solar.jpg, caption: with the power of the sun, alt: }
       - {filename: 0_pragel.jpg, caption: out for adventure!, alt: }
