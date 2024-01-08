@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Inicio
+permalink: /
 lang: es
 ---
 
