@@ -4,7 +4,7 @@ lang: en
 title: Experiences of an officer's assistant
 preview_image_id: kabine.jpg
 preview_text: |
-  Why do we sail cargo? A guest article by our passionate assistant officer.
+  Why do we sail cargo? A guest article by our passionate assistant officer Max.
 image_metadata:
   - dirname:
     images:

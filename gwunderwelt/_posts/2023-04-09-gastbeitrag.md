@@ -4,7 +4,7 @@ lang: de
 title: Erfahrungen eines Offiziersassistenten
 preview_image_id: kabine.jpg
 preview_text: |
-  Warum segeln wir Fracht? Ein Gastbeitrag von unserem passionierten Offiziersassistenten.
+  Warum segeln wir Fracht? Ein Gastbeitrag von unserem passionierten Offiziersassistenten Max.
 image_metadata:
   - dirname:
     images:
