@@ -23,7 +23,7 @@
     {% if image == null %}
       <img src="" alt="{{'Imagefile with id=`' | append: id | append: '` is missing!' | raise_error }}">
     {% else %}
-      <div style="flex: calc(100.0 / {% imagesize image[img_path]:height?width=100.0 %})">
+      <div style="flex: calc(100000.0 / {% imagesize image[img_path]:height?width=100000.0 %})">
         <figure>
           <img src="{{image[img_path]}}" alt="{{image[img_alt]}}">
           {% if include.show_caption %}
