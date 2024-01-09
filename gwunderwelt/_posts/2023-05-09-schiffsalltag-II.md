@@ -25,8 +25,6 @@ image_metadata:
       - {filename: fahrradbau.jpg, caption: "", alt: ""}
 ---
 
----- 
-
 <div class="flow-root">
   {% include image.liquid id="bibliothek.jpg" class="float-inline-end"%}
 

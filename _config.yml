@@ -24,6 +24,8 @@ liquid:
   # strict_variables can unfortunately not be enabled due to feed.xml generation
   # strict_variables: true
 
+excerpt_separator: ""
+
 emptyArray: []
 
 # Settings for polyglot

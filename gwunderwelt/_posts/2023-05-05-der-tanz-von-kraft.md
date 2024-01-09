@@ -16,8 +16,6 @@ image_metadata:
       - {filename: wetter.jpg, caption: "", alt: ""}
 ---
 
-----
-
 {% include image.liquid id="sonnenuntergang.jpg" class="float-inline-end"%}
 
 > Sein Blick ist vom Vorübergehn der Stäbe  
