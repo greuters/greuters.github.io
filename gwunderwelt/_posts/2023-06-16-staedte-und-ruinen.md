@@ -14,7 +14,7 @@ image_metadata:
       - {filename: kukulkan2.jpg, caption: "", alt: ""}
       - {filename: mango.jpg, caption: "", alt: ""}
       - {filename: rita-im-glueck.jpg, caption: "", alt: ""}
-      - {filename: saeulen.JPG, caption: "", alt: ""}
+      - {filename: saeulen.jpg, caption: "", alt: ""}
       - {filename: schmetterling.jpg, caption: "", alt: ""}
       - {filename: tulum1.jpg, caption: "", alt: ""}
 
@@ -42,7 +42,7 @@ In Izamal begegnen wir das erste Mal einem Monument aus Präkolumbianischer Zeit
 
 {% include image-divider.html ids="gruen-stadt.jpg" %}
 
-{% include image-divider.html ids="saeulen.JPG, kukulkan2.jpg" %}
+{% include image-divider.html ids="saeulen.jpg, kukulkan2.jpg" %}
 
 ----
 
