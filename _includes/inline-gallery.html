@@ -13,16 +13,12 @@
 <div id="inline-gallery-{{include.collection}}" class="inline-gallery-container">
   {% for image in page_images %}
     {% if image[img_collection] == include.collection %}
-      <a
-        href="{{image[img_path]}}"
-        data-sub-html="<div class='lightGallery-captions'>{{ image[img_caption] }}</div>"
-        hidden
-      >
-        <img
-          alt="{{ image[img_alt] | default: image[img_name] }}"
-          src="{{image[img_path]}}"
-        >
-      </a>
+      {% responsive_image_block %}
+        template: _includes/responsive-image-lg.html
+        path: {{ image[img_path] | replace_first: '/', '' }}
+        alt: {{ image[img_alt] | default: image[img_name] }}
+        caption: "{{ image[img_caption] }}"
+      {% endresponsive_image_block %}
     {% endif %}
   {% endfor %}
 </div>

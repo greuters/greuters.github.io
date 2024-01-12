@@ -42,7 +42,11 @@
   <img src="" alt="{{'Imagefile with id=`' | append: include.id | append: '` is missing!' | raise_error }}">
 {% else %}
   <figure class="{{include.class}}">
-    <img src="{{image[img_path]}}" alt="{{image[img_alt]}}">
+    {% responsive_image_block %}
+      path: {{ image[img_path] | replace_first: '/', '' }}
+      alt: {{ image[img_alt] | default: image[img_name] }}
+    {% endresponsive_image_block %}
+
     <figcaption>{{ image[img_caption] }}</figcaption>
   </figure>
 {% endif %}

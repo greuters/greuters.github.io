@@ -25,6 +25,15 @@
     display: none;
 }
 
+.lg-outer .lg-content {
+    bottom: 55px;
+}
+
+.lg-outer .lg-thumb-outer {
+    background-color: transparent;
+    height: 55px;
+}
+
 /* Single Images */
 figure figcaption {
     width: fit-content;
@@ -40,6 +49,10 @@ figure.float-inline-start {
     max-width: 100%;
     margin-inline: auto;
 
+    img {
+        width: 100%;
+    }
+
     @media screen and (min-width: $palm-width) {
         max-width: calc(50% - 1rem);
         margin-inline-end: 1rem;
@@ -50,6 +63,10 @@ figure.float-inline-start {
 figure.float-inline-end {
     max-width: 100%;
     margin-inline: auto;
+
+    img {
+        width: 100%;
+    }
 
     @media screen and (min-width: $palm-width) {
         max-width: calc(50% - 1rem);

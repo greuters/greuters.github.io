@@ -6,7 +6,10 @@
   %}
   {%- if preview_image -%}
     <a href="{{include.post.url | relative_url}}" class="preview-image">
-      <img src="{{preview_image[img_path]}}" alt="{{preview_image[img_alt]}}">
+      {% responsive_image_block %}
+        path: {{ preview_image[img_path] | replace_first: '/', '' }}
+        alt: {{ preview_image[img_alt] | default: preview_image[img_name] }}
+      {% endresponsive_image_block %}
     </a>
   {%- endif -%}
 

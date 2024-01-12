@@ -10,8 +10,8 @@ $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit: 30px !default;
-$small-spacing-size: $spacing-unit / 4;
-$base-spacing-size: $spacing-unit / 2;
+$small-spacing-size: calc($spacing-unit / 4);
+$base-spacing-size: calc($spacing-unit / 2);
 $large-spacing-size: $spacing-unit;
 
 $text-color: #111 !default;

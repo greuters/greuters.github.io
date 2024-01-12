@@ -16,12 +16,13 @@ window.onload = function () {
             speed: 500,
             showBarsAfter: 5000,
             hideBarsDelay: 1500,
-            plugins: [lgAutoplay],
+            plugins: [lgAutoplay, lgThumbnail],
             // only start the first gallery automatically, as starting multiple messes up lgAutoplay
             // -> https://github.com/sachinchoolur/lightGallery/issues/1320
             slideShowAutoplay: i == 0,
             slideShowInterval: 6000,
             defaultCaptionHeight: '1.5rem',
+            exThumbImage: 'data-external-thumb-image',
             strings: {
                 closeGallery: scriptName.getAttribute('data-closeGalleryL10n'),
                 toggleMaximize: scriptName.getAttribute('data-toggleMaximizeL10n'),
@@ -31,6 +32,9 @@ window.onload = function () {
                 playVideo: scriptName.getAttribute('data-playVideoL10n'),
                 mediaLoadingFailed: scriptName.getAttribute('data-mediaLoadingFailedL10n'),
             },
+            thumbWidth: 60,
+            thumbHeight: "40px",
+            thumbMargin: 4,
         });
 
         gallery.openGallery();

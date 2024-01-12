@@ -1,0 +1,19 @@
+{% capture srcset %}
+{% for i in resized %}
+    {{ i.path | relative_url }} {{ i.width }}w,
+{% endfor %}
+{% endcapture %}
+
+<div style="flex: calc( {{original.width}} / {{original.height}} )">
+  <figure>
+    <img
+        srcset="{{ srcset | strip_newlines }} {{ original.path | relative_url }} {{ original.width }}w"
+        sizes="(max-width: 800px) 800px, 1280px"
+        src="{{ original.path | relative_url }}"
+        alt="{{ alt }}"
+    >
+    {% if caption %}
+      <figcaption>{{ caption }}</figcaption>
+    {% endif %}
+  </figure>
+</div>
