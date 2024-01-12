@@ -18,18 +18,10 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
 
 <aside class="map-box">
-  <!-- TODO: implement track loading and stats in js -->
   <div id="map"></div>
-  <ul class="inline-list">
-    <li>Tag 17</li>
-    <li>Ø Tag Schiff: 67km</li>
-    <li>Total Schiff: 1267km</li>
-    <li>Ø Tag Rad: 67km</li>
-    <li>Total Rad: <span id="totalDistance"></span>km</li>
-  </ul>
 </aside>
 
-<ul class="post-list">
+<ul id="post-list" class="post-list">
   {%- for post in site.categories[page.post_category] -%}
     <li>
       {%- include post-preview.html post=post -%}
@@ -42,50 +34,42 @@ layout: default
 </aside>
 
 <script>
-    // initialize Leaflet
-    var map = L.map('map').setView({ lon: 0, lat: 0 }, 2);
-    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
-      attribution:
-        'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      subdomains: 'abcd',
-      minZoom: 1,
-      maxZoom: 16,
-      ext: 'jpg',
-    }).addTo(map);
+            // initialize Leaflet
+            var map = L.map('map');
+            L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg', {
+              attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+              minZoom: 1,
+              maxZoom: 16
+            }).addTo(map);
 
-    // show the scale bar on the lower left corner
-    L.control.scale({ imperial: true, metric: true }).addTo(map);
+            // show the scale bar on the lower left corner
+            L.control.scale({ imperial: false, metric: true }).addTo(map);
 
-    map.scrollWheelZoom.disable();
+            map.scrollWheelZoom.disable();
+            map.fitBounds([[51, -127], [12, 8]]);
 
-  {% comment %}
-    // load gpx tracks async
-    const fs = require('fs');
-    const path = require('path');
-    const dir = 'tracks/';
-    fs.readdir(dir, function (err, filenames) {
-      if (err) {
-        throw err;
-      }
-      filenames.forEach((filename) => {
-        const filepath = path.resolve(dir, filename);
-        fs.stat(filepath, function (error, stat) {
-          if (error) throw error;
-          const isFile = stat.isFile();
-          // exclude folders
-          if (isFile) {
-            Console.log('Loading ' + filename);
-            new L.GPX(filepath, { async: true })
-              .on('loaded', function (e) {
-                // Console.log('Loaded ' + e.target.get_name());
-                map.fitBounds(e.target.getBounds());
-                document.getElementById('totalDistance').innerHTML = Math.round(e.target.get_distance() / 1000);
-                // e.target.disable();
-              })
-              .addTo(map);
-          }
-        });
-      });
-    });
-  {% endcomment %}
+            {% assign tracks = site.static_files
+              | where_exp: 'file', 'file.path contains "assets/tracks"'
+              | where_exp: 'file', 'file.path contains page.post_category'
+            %}
+            {% for track in tracks %}
+              // assuming name format Day_0009_0_dd-mm-YYYY_Vehicle.gpx
+              // TODO: ugly way of parsing - should be able to do better
+              {% assign nameParts = track.name | replace: '.', '_' | split: '_' %}
+              {% assign dayString = nameParts[1] %}
+
+              new L.GPX('{{track.path}}', {
+                async: true,
+                marker_options: {
+                  startIconUrl: '',
+                  endIconUrl: '',
+                  shadowUrl: ''
+                }
+              }).on('loaded', function (e) {
+                const dayNumber = parseInt("{{dayString}}");
+                setTimeout(function () {
+                  e.target.addTo(map);
+                }, 1000 + dayNumber * 150);
+              });
+            {% endfor %}
 </script>

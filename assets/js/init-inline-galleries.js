@@ -4,7 +4,6 @@ window.onload = function () {
 
     const galleries = document.getElementsByClassName("inline-gallery-container");
     for (var i = 0; i < galleries.length; i++) {
-        console.log('gallery: ', galleries[i]);
         var gallery = lightGallery(galleries[i], {
             container: galleries[i],
             hash: false,

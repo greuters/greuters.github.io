@@ -1,0 +1,163 @@
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu" version="1.1" creator="Locus Map, Android" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<metadata>
+		<desc>File with points/tracks from Locus Map Classic/3.70.2</desc>
+		<time>2023-11-12T22:36:58.835Z</time>
+	</metadata>
+<trk length="1.979822">
+<name>bicycle</name>
+<desc>&lt;!-- desc_gen:start --&gt;
+&lt;font color="black"&gt;&lt;table width="100%"&gt;&lt;tr&gt;&lt;td&gt;&lt;table width="100%"&gt;&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Aktivit&#228;t&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;Radfahren&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Distanz&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;2,0 km&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Erstellt&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;2023-11-12 15:47:41&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Max. Tempo&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;0,0 km/h&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Pace (Min/Km)&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;05:23 min/km&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Punkte&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;41&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="1"&gt;&lt;hr&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;table width="100%"&gt;&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Min. H&#246;he&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;59 m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Max. H&#246;he&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;83 m&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="1"&gt;&lt;hr&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;table width="100%"&gt;&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;H&#246;henmeter&lt;/td&gt;&lt;td align="center" valign="center"&gt;Distanz&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Bergauf&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;31 m&lt;/td&gt;&lt;td align="center" valign="center"&gt;275 m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Bergab&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;-23 m&lt;/td&gt;&lt;td align="center" valign="center"&gt;371 m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left" valign="center"&gt;&lt;small&gt;&lt;b&gt;Ebene&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align="center" valign="center"&gt;0 m&lt;/td&gt;&lt;td align="center" valign="center"&gt;5161 m&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/font&gt;
+&lt;!-- desc_gen:end --&gt;</desc>
+	<extensions>
+		<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+			<color>0000FF</color>
+			<opacity>0.59</opacity>
+			<width>6.0</width>
+			<extensions>
+				<locus:lsColorBase>#960000FF</locus:lsColorBase>
+				<locus:lsWidth>6.0</locus:lsWidth>
+				<locus:lsUnits>PIXELS</locus:lsUnits>
+			</extensions>
+		</line>
+		<locus:activity>cycling</locus:activity>
+		<locus:rteComputeType>5</locus:rteComputeType>
+	<vehicle>bicycle</vehicle><totalLength>1.979822</totalLength></extensions>
+<trkseg>
+<trkpt lat="17.5027720" lon="-91.9821720">
+	<ele>59.00</ele>
+</trkpt>
+<trkpt lat="17.5038860" lon="-91.9821730">
+	<ele>61.25</ele>
+</trkpt>
+<trkpt lat="17.5047790" lon="-91.9821690">
+	<ele>62.50</ele>
+</trkpt>
+<trkpt lat="17.5047230" lon="-91.9815960">
+	<ele>61.50</ele>
+</trkpt>
+<trkpt lat="17.5046660" lon="-91.9810830">
+	<ele>63.00</ele>
+</trkpt>
+<trkpt lat="17.5053520" lon="-91.9810200">
+	<ele>63.75</ele>
+</trkpt>
+<trkpt lat="17.5057420" lon="-91.9809850">
+	<ele>64.50</ele>
+</trkpt>
+<trkpt lat="17.5064660" lon="-91.9809200">
+	<ele>64.25</ele>
+</trkpt>
+<trkpt lat="17.5070350" lon="-91.9808670">
+	<ele>67.00</ele>
+</trkpt>
+<trkpt lat="17.5073880" lon="-91.9808350">
+	<ele>70.00</ele>
+</trkpt>
+<trkpt lat="17.5077550" lon="-91.9808010">
+	<ele>74.00</ele>
+</trkpt>
+<trkpt lat="17.5083380" lon="-91.9807460">
+	<ele>80.50</ele>
+</trkpt>
+<trkpt lat="17.5087550" lon="-91.9807220">
+	<ele>82.75</ele>
+</trkpt>
+<trkpt lat="17.5088740" lon="-91.9807150">
+	<ele>82.75</ele>
+</trkpt>
+<trkpt lat="17.5094900" lon="-91.9806940">
+	<ele>82.25</ele>
+</trkpt>
+<trkpt lat="17.5098890" lon="-91.9806530">
+	<ele>80.25</ele>
+</trkpt>
+<trkpt lat="17.5098340" lon="-91.9798190">
+	<ele>82.50</ele>
+</trkpt>
+<trkpt lat="17.5101400" lon="-91.9797790">
+	<ele>80.50</ele>
+</trkpt>
+<trkpt lat="17.5104770" lon="-91.9797350">
+	<ele>76.50</ele>
+</trkpt>
+<trkpt lat="17.5112250" lon="-91.9796380">
+	<ele>69.75</ele>
+</trkpt>
+<trkpt lat="17.5120220" lon="-91.9795350">
+	<ele>68.50</ele>
+</trkpt>
+<trkpt lat="17.5120880" lon="-91.9795260">
+	<ele>68.50</ele>
+</trkpt>
+<trkpt lat="17.5126620" lon="-91.9794530">
+	<ele>68.25</ele>
+</trkpt>
+<trkpt lat="17.5127080" lon="-91.9804630">
+	<ele>70.50</ele>
+</trkpt>
+<trkpt lat="17.5127150" lon="-91.9805940">
+	<ele>70.00</ele>
+</trkpt>
+<trkpt lat="17.5127080" lon="-91.9804630">
+	<ele>70.50</ele>
+</trkpt>
+<trkpt lat="17.5131080" lon="-91.9804370">
+	<ele>68.25</ele>
+</trkpt>
+<trkpt lat="17.5136450" lon="-91.9803830">
+	<ele>66.50</ele>
+</trkpt>
+<trkpt lat="17.5137170" lon="-91.9803750">
+	<ele>66.25</ele>
+</trkpt>
+<trkpt lat="17.5137520" lon="-91.9807280">
+	<ele>67.00</ele>
+</trkpt>
+<trkpt lat="17.5136820" lon="-91.9807360">
+	<ele>67.25</ele>
+</trkpt>
+<trkpt lat="17.5136300" lon="-91.9807420">
+	<ele>70.00</ele>
+</trkpt>
+<trkpt lat="17.5136820" lon="-91.9807360">
+	<ele>67.25</ele>
+</trkpt>
+<trkpt lat="17.5137520" lon="-91.9807280">
+	<ele>67.00</ele>
+</trkpt>
+<trkpt lat="17.5138080" lon="-91.9814020">
+	<ele>65.50</ele>
+</trkpt>
+<trkpt lat="17.5138440" lon="-91.9822810">
+	<ele>63.75</ele>
+</trkpt>
+<trkpt lat="17.5138860" lon="-91.9833060">
+	<ele>61.25</ele>
+</trkpt>
+<trkpt lat="17.5138160" lon="-91.9833070">
+	<ele>62.00</ele>
+</trkpt>
+<trkpt lat="17.5138140" lon="-91.9832760">
+	<ele>64.25</ele>
+</trkpt>
+<trkpt lat="17.5138160" lon="-91.9833070">
+	<ele>62.00</ele>
+</trkpt>
+<trkpt lat="17.5133030" lon="-91.9833280">
+	<ele>67.00</ele>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

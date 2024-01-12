@@ -1,0 +1,63 @@
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="GPSBabel - https://www.gpsbabel.org">
+  <metadata>
+    <time>2024-01-09T05:35:03.863Z</time>
+    <bounds minlat="49.502238333" minlon="0.112596667" maxlat="49.521960000" maxlon="0.134756667"/>
+  </metadata>
+  <trk length="3.225718">
+    <trkseg>
+      <trkpt lat="49.521960000" lon="0.112986667">
+        <time>2023-01-24T18:38:53Z</time>
+      </trkpt>
+      <trkpt lat="49.517465000" lon="0.112596667">
+        <ele>87.600</ele>
+        <time>2023-01-24T18:46:56Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.140000</vdop>
+        <pdop>1.460000</pdop>
+      </trkpt>
+      <trkpt lat="49.513610000" lon="0.116180000">
+        <ele>97.100</ele>
+        <time>2023-01-24T18:49:41Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.130000</vdop>
+        <pdop>1.450000</pdop>
+      </trkpt>
+      <trkpt lat="49.508981667" lon="0.127851667">
+        <ele>80.100</ele>
+        <time>2023-01-24T18:53:58Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.100000</vdop>
+        <pdop>1.430000</pdop>
+      </trkpt>
+      <trkpt lat="49.508470000" lon="0.134756667">
+        <ele>44.800</ele>
+        <time>2023-01-24T18:56:11Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.090000</hdop>
+        <vdop>1.440000</vdop>
+        <pdop>1.810000</pdop>
+      </trkpt>
+      <trkpt lat="49.502238333" lon="0.131555000">
+        <ele>29.900</ele>
+        <time>2023-01-24T18:58:42Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.040000</hdop>
+        <vdop>0.810000</vdop>
+        <pdop>1.320000</pdop>
+      </trkpt>
+    </trkseg>
+  <name>bicycle</name></trk>
+</gpx>

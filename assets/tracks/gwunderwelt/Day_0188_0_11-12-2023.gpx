@@ -1,0 +1,30 @@
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="GPSBabel - https://www.gpsbabel.org">
+  <metadata>
+    <time>2024-01-09T05:49:23.346Z</time>
+    <bounds minlat="20.047005000" minlon="-98.792343333" maxlat="20.051456667" maxlon="-98.791490000"/>
+  </metadata>
+  <trk length="0.500842">
+    <trkseg>
+      <trkpt lat="20.051456667" lon="-98.792343333">
+        <ele>2370.900</ele>
+        <time>2023-12-11T18:10:33Z</time>
+        <geoidheight>-9.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.180000</vdop>
+        <pdop>1.540000</pdop>
+      </trkpt>
+      <trkpt lat="20.047005000" lon="-98.791490000">
+        <ele>2366.400</ele>
+        <time>2023-12-11T18:33:17Z</time>
+        <geoidheight>-9.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.930000</hdop>
+        <vdop>1.400000</vdop>
+        <pdop>1.680000</pdop>
+      </trkpt>
+    </trkseg>
+  <name>bicycle</name></trk>
+</gpx>
