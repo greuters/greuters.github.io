@@ -46,6 +46,7 @@ In Izamal begegnen wir das erste Mal einem Monument aus Präkolumbianischer Zeit
 
 ----
 
+<!-- TODO: check if hosting without cookies is possible -->
 <figure class="float-inline-start">
   <iframe width="378" height="213" src="https://www.youtube.com/embed/lHxjwHVPFJs" title="Resplendent quetzal singing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
 </figure>
