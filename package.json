@@ -7,6 +7,7 @@
     "clean": "bundle exec jekyll clean && rm -rf assets/resized",
     "dev": "webpack --mode=development && bundle exec jekyll build && npm run replace-images && bundle exec jekyll serve",
     "build": "webpack --mode=production && bundle exec jekyll build && npm run replace-images",
+    "postbuild": "rm -r _site/*/assets/tracks && find _site/*/assets -maxdepth 0 -type d -execdir ln -s ../../assets/tracks assets/tracks ';'",
     "replace-images": "rm -r _site/*/assets/images && rm -rf _site/assets/resized || true && cp -r assets/resized _site/assets/resized",
     "serve": "http-server -p 9090 _site/"
   },
