@@ -16,9 +16,7 @@ window.onload = function () {
             showBarsAfter: 5000,
             hideBarsDelay: 1500,
             plugins: [lgAutoplay, lgThumbnail],
-            // only start the first gallery automatically, as starting multiple messes up lgAutoplay
-            // -> https://github.com/sachinchoolur/lightGallery/issues/1320
-            slideShowAutoplay: i == 0,
+            slideShowAutoplay: false,
             slideShowInterval: 6000,
             defaultCaptionHeight: '1.5rem',
             exThumbImage: 'data-external-thumb-image',
@@ -35,6 +33,30 @@ window.onload = function () {
             thumbHeight: "40px",
             thumbMargin: 4,
         });
+
+        // start / stop gallery automatically when it is visible / invisible
+        // target lg-outer instead of the container itself, as the container has 0 height
+        let target = gallery.$container.find('.lg-outer').first().selector;
+
+        let options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: [0.0, 0.25, 0.5, 0.75, 1.0],
+        };
+
+        let callback = (entries, _) => {
+            entries.forEach((entry) => {
+                let lgOuter = entry.target;
+                let isFullyVisible = entry.intersectionRatio >= 0.99;
+                let isPlaying = lgOuter.classList.contains('lg-show-autoplay');
+                if (isFullyVisible !== isPlaying) {
+                    lgOuter.querySelector('.lg-autoplay-button').click();
+                }
+            });
+        };
+
+        let observer = new IntersectionObserver(callback, options);
+        observer.observe(target);
 
         gallery.openGallery();
     }
