@@ -13,9 +13,10 @@ layout: default
   - a custom variable 'post_category' with the category of posts that should be listed
   - TODO: a custom variable 'gpx_track_folder'
 -->
-
+{% comment %} TODO: load scripts correctly (like lightgallery) {% endcomment %}
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
 
 <aside class="map-box">
   <div id="map"></div>
@@ -33,43 +34,76 @@ layout: default
   {{ content }}
 </aside>
 
-<script>
-            // initialize Leaflet
-            var map = L.map('map');
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-              minZoom: 1,
-              maxZoom: 16
-            }).addTo(map);
+{%- assign highresTrackFiles = site.static_files
+  | where_exp: 'file', 'file.path contains "assets/tracks"'
+  | where_exp: 'file', 'file.path contains page.post_category'
+  | where_exp: 'file', 'file.path contains "highres.gpx"'
+-%}
+{%- assign tracks = site.emptyArray -%}
+{%- for highresTrackFile in highresTrackFiles -%}
+  {%- assign lowresTrackFilePath = highresTrackFile.path | replace: 'highres', 'lowres' -%}
+  {%- assign lowresTrackFile = site.static_files
+    | where_exp: 'file', 'file.path contains lowresTrackFilePath'
+    | first
+  -%}
+  {%- if lowresTrackFile == null -%}
+    {{ 'Track file `' | append: lowresTrackFilePath | append: '` is missing!' | raise_error }}
+  {%- endif -%}
 
-            // show the scale bar on the lower left corner
-            L.control.scale({ imperial: false, metric: true }).addTo(map);
+  {% comment %}
+    assuming name format trackNumber_dd - mm - YYYY_vehicle_resolution.gpx
+  {% endcomment %}
+  {%- assign nameParts = highresTrackFile.name | replace: '.', '_' | split: '_' -%}
+  {%- assign trackNumber = nameParts[0] | plus: 0 -%}
+  {%- assign dateString = nameParts[1] -%}
+  {%- assign vehicle = nameParts[2] -%}
+  {%- assign resolution = nameParts[3] -%}
+  {%- assign colorIndex = trackNumber | modulo: 2 -%}
+  {%- if vehicle == 'bicycle' -%}
+    {%- assign colors = 'limegreen green' | split: ' ' -%}
+  {%- elsif vehicle == 'sail' -%}
+    {%- assign colors = 'dodgerblue navy' | split: ' ' -%}
+  {%- elsif vehicle == 'ferry' -%}
+    {%- assign colors = 'gray black' | split: ' ' -%}
+  {%- else -%}
+    {{ 'Unknown vehicle type: ' | append: vehicle | raise_error }}
+  {%- endif -%}
 
-            map.scrollWheelZoom.disable();
-            map.fitBounds([[51, -127], [12, 8]]);
+  {%- assign trackData = site.emptyArray -%}
+  {%- assign trackData = trackData | push: trackNumber -%}
+  {%- assign trackData = trackData | push: colors[colorIndex] -%}
+  {%- assign trackData = trackData | push: vehicle -%}
+  {%- assign trackData = trackData | push: highresTrackFile.path -%}
+  {%- assign trackData = trackData | push: lowresTrackFilePath -%}
 
-            {% assign tracks = site.static_files
-              | where_exp: 'file', 'file.path contains "assets/tracks"'
-              | where_exp: 'file', 'file.path contains page.post_category'
-            %}
-            {% for track in tracks %}
-              // assuming name format Day_0009_0_dd-mm-YYYY_Vehicle.gpx
-              // TODO: ugly way of parsing - should be able to do better
-              {% assign nameParts = track.name | replace: '.', '_' | split: '_' %}
-              {% assign dayString = nameParts[1] %}
+  {%- assign tracks = tracks | push: trackData -%}
+{% endfor %}
 
-              new L.GPX('{{track.path}}', {
-                async: true,
-                marker_options: {
-                  startIconUrl: '',
-                  endIconUrl: '',
-                  shadowUrl: ''
-                }
-              }).on('loaded', function (e) {
-                const dayNumber = parseInt("{{dayString}}");
-                setTimeout(function () {
-                  e.target.addTo(map);
-                }, 1000 + dayNumber * 150);
-              });
-            {% endfor %}
+<script id="track-data" type="application/json">
+  [
+    {% for trackData in tracks %}
+      {
+        "trackNumber": {{trackData[0]}},
+        "color": "{{trackData[1]}}",
+        "vehicle": "{{trackData[2]}}",
+        "highresPath": "{{trackData[3]}}",
+        "lowresPath": "{{trackData[4]}}"
+      }
+      {%- unless trackData == tracks.last -%}
+        ,
+      {%- endunless -%}
+    {% endfor %}
+  ]
 </script>
+
+<script
+  id="init-map"
+  defer
+  src="/assets/js/init-map.js"
+  type="text/javascript"
+  {%- if jekyll.environment == 'development' -%}
+    data-dev-mode='true'
+  {%- else -%}
+    data-dev-mode='false'
+  {%- endif -%}
+></script>

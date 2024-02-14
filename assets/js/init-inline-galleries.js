@@ -1,10 +1,8 @@
 window.onload = function () {
-    const scripts = document.getElementsByTagName('script');
-    const scriptName = scripts[scripts.length - 1];
-
+    const script = document.getElementById('init-inline-gallery');
     const galleries = document.getElementsByClassName("inline-gallery-container");
-    for (var i = 0; i < galleries.length; i++) {
-        var gallery = lightGallery(galleries[i], {
+    for (let i = 0; i < galleries.length; i++) {
+        let gallery = lightGallery(galleries[i], {
             container: galleries[i],
             hash: false,
             closable: false,
@@ -21,13 +19,13 @@ window.onload = function () {
             defaultCaptionHeight: '1.5rem',
             exThumbImage: 'data-external-thumb-image',
             strings: {
-                closeGallery: scriptName.getAttribute('data-closeGalleryL10n'),
-                toggleMaximize: scriptName.getAttribute('data-toggleMaximizeL10n'),
-                previousSlide: scriptName.getAttribute('data-previousSlideL10n'),
-                nextSlide: scriptName.getAttribute('data-nextSlideL10n'),
-                download: scriptName.getAttribute('data-downloadL10n'),
-                playVideo: scriptName.getAttribute('data-playVideoL10n'),
-                mediaLoadingFailed: scriptName.getAttribute('data-mediaLoadingFailedL10n'),
+                closeGallery: script.dataset.closeGalleryL10n,
+                toggleMaximize: script.dataset.toggleMaximizeL10n,
+                previousSlide: script.dataset.previousSlideL10n,
+                nextSlide: script.dataset.nextSlideL10n,
+                download: script.dataset.downloadL10n,
+                playVideo: script.dataset.playVideoL10n,
+                mediaLoadingFailed: script.dataset.mediaLoadingFailedL10n,
             },
             thumbWidth: 60,
             thumbHeight: "40px",
