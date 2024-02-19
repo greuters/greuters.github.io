@@ -81,12 +81,24 @@ function GpxTrack(map, trackNumber, color, vehicle, highResPath, lowResPath, dev
     this.loadLowRes(false);
 };
 
-function TrackManager(map, tracks) {
+function TrackManager(map, trackData, devMode) {
     this.intervalId = null;
     this.animationDelay = 100; // [ms]
     this.currentTrackIdx = 0;
     this.map = map;
-    this.tracks = tracks;
+
+    this.tracks = [];
+    for (let data of trackData) {
+        this.tracks.push(new GpxTrack(
+            map,
+            data['trackNumber'],
+            data['color'],
+            data['vehicle'],
+            data['highresPath'],
+            data['lowresPath'],
+            devMode,
+        ));
+    }
 
     this.showAnimation = function () {
         if (!this.intervalId) {
@@ -133,23 +145,38 @@ function TrackManager(map, tracks) {
     };
 };
 
+function createMap(dataset) {
+    const map = L.map('map', {
+        minZoom: 1,
+        maxZoom: 16,
+        zoomControl: false,
+    });
+    map.scrollWheelZoom.disable();
+    map.addControl(new L.Control.Zoom({
+        zoomInTitle: dataset.zoomInL10n,
+        zoomOutTitle: dataset.zoomOutL10n,
+    }));
+    map.addControl(new L.Control.Fullscreen({
+        title: {
+            'false': dataset.viewFullscreenL10n,
+            'true': dataset.exitFullscreenL10n,
+        }
+    }));
+    L.control.scale({ imperial: false, metric: true }).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+    map.fitBounds(JSON.parse(dataset.initBounds));
+    return map;
+}
+
 window.onload = function () {
     const script = document.getElementById('init-map');
     const devMode = script.dataset.devMode === 'true';
 
-    // initialize Leaflet
-    const map = L.map('map', {
-        minZoom: 1,
-        maxZoom: 16,
-    });
-    map.scrollWheelZoom.disable();
-    map.addControl(new L.Control.Fullscreen({
-        title: {
-            // TODO: internationalization
-            'false': 'View Fullscreen',
-            'true': 'Exit Fullscreen'
-        }
-    }));
+    const map = createMap(script.dataset);
+    const trackManager = new TrackManager(map, JSON.parse(document.getElementById("track-data").text), devMode);
+
     map.on('fullscreenchange', function () {
         if (map.isFullscreen()) {
             map.scrollWheelZoom.enable();
@@ -157,30 +184,6 @@ window.onload = function () {
             map.scrollWheelZoom.disable();
         }
     });
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
-
-    // show the scale bar on the lower left corner
-    L.control.scale({ imperial: false, metric: true }).addTo(map);
-    map.fitBounds([[51, -127], [10, 8]]);
-
-    const tracks = [];
-    const trackData = JSON.parse(document.getElementById("track-data").text);
-    for (let data of trackData) {
-        tracks.push(new GpxTrack(
-            map,
-            data['trackNumber'],
-            data['color'],
-            data['vehicle'],
-            data['highresPath'],
-            data['lowresPath'],
-            devMode,
-        ));
-    }
-
-    const trackManager = new TrackManager(map, tracks);
 
     map.on('moveend', function (e) {
         if (map.getZoom() > 9) {
@@ -198,5 +201,6 @@ window.onload = function () {
         }
     });
 
+    // start animation with a small delay to give a headstart to lowres path loading
     setTimeout(() => trackManager.showAnimation(), 100);
 }

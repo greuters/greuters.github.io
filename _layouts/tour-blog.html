@@ -5,18 +5,27 @@ layout: default
   Dedicated layout for tour blogs
 
   - main content is a list of your posts
-  - if daily GPS tracks are available, a map is shown with post-preview images matched along the track by date
+  - if GPS tracks are available, a map is shown with post-preview images matched along the track by date
   - the content of the overview page using this layout is shown at the bottom of the page
 
   Requirements for overview page:
   - layout: tour-blog
   - a custom variable 'post_category' with the category of posts that should be listed
-  - TODO: a custom variable 'gpx_track_folder'
+  - a custom variable 'init_bounds' with NW and SE corners of the initial region to show;
+    format: [[Lat0, Lon0], [Lat1, Lon1]], e.g. [[51, -127], [10, 8]]
+  - GPS tracks should be located in assets/tracks/post_category/, each track having a low and a high
+    resolution file named according to the following schema: trackNumber_dd-mm-YYYY_vehicle_resolution.gpx
+    Example: 0001_17-12-2022_bicycle_highres.gpx, 0001_17-12-2022_bicycle_lowres.gpx
+    Vehicle can be one of [bicycle, sail, ferry]
 -->
-{% comment %} TODO: load scripts correctly (like lightgallery) {% endcomment %}
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
-<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+
+{%- if page.post_category == null -%}
+  {{ 'Variable post_category is missing!' | raise_error }}
+{%- endif -%}
+
+{%- if page.init_bounds == null -%}
+  {{ 'Variable init_bounds is missing!' | raise_error }}
+{%- endif -%}
 
 <aside class="map-box">
   <div id="map"></div>
@@ -51,7 +60,7 @@ layout: default
   {%- endif -%}
 
   {% comment %}
-    assuming name format trackNumber_dd - mm - YYYY_vehicle_resolution.gpx
+    assuming name format trackNumber_dd-mm-YYYY_vehicle_resolution.gpx
   {% endcomment %}
   {%- assign nameParts = highresTrackFile.name | replace: '.', '_' | split: '_' -%}
   {%- assign trackNumber = nameParts[0] | plus: 0 -%}
@@ -96,14 +105,20 @@ layout: default
   ]
 </script>
 
+{%- if jekyll.environment == 'development' -%}
+  {%- assign devMode = 'true' -%}
+{%- else -%}
+  {%- assign devMode = 'false' -%}
+{%- endif -%}
 <script
   id="init-map"
   defer
   src="/assets/js/init-map.js"
   type="text/javascript"
-  {%- if jekyll.environment == 'development' -%}
-    data-dev-mode='true'
-  {%- else -%}
-    data-dev-mode='false'
-  {%- endif -%}
+  data-dev-mode="{{ devMode }}"
+  data-init-bounds="{{ page.init_bounds }}"
+  data-view-fullscreen-l10n="{{ site.data[site.active_lang].l10n.viewFullscreen }}"
+  data-exit-fullscreen-l10n="{{ site.data[site.active_lang].l10n.exitFullscreen }}"
+  data-zoom-in-l10n="{{ site.data[site.active_lang].l10n.zoomIn }}"
+  data-zoom-out-l10n="{{ site.data[site.active_lang].l10n.zoomOut }}"
 ></script>

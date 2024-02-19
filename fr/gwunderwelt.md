@@ -3,6 +3,7 @@ layout: tour-blog
 title: Gwunderwelt
 permalink: /gwunderwelt/
 post_category: gwunderwelt
+init_bounds: "[[51, -127], [10, 8]]"
 lang: fr
 ---
 

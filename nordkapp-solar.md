@@ -3,6 +3,7 @@ layout: tour-blog
 title: Nordkapp-Solar
 permalink: /nordkapp-solar/
 post_category: nordkapp-solar
+init_bounds: "[[71, 4], [47, 31]]"
 lang: de
 ---
 

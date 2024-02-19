@@ -33,6 +33,9 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
+    "leaflet-fullscreen": "^1.0.2",
+    "leaflet-gpx": "^1.7.0",
     "lightgallery": "^2.7.2"
   }
 }
