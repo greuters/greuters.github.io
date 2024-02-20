@@ -3,6 +3,8 @@ layout: post
 lang: de
 title: Von Kanälen und Kultur
 preview_image_id: la-vie.jpg
+lat_lng: "[48.081805, 3.292395]"
+spread_direction: "NE"
 preview_text: |
   Wasserwege - das zweite grosse Verbindungsnetz aus alten Zeiten führt uns von Basel nach Paris. Gesäumt von Zeugen reicher Geschichte, begleitet von unerwarteten und herzlichen Begegnungen. Zu dritt dürfen wir die ersten Kilometer dieser grossen Reise erfahren.  
 image_metadata:

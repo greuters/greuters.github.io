@@ -42,3 +42,10 @@
         display: initial;
     }
 }
+
+.leaflet-marker-icon {
+    border: solid 1px black;
+    box-shadow:
+        0px 0px 1px white,
+        3px 3px 3px black;
+}

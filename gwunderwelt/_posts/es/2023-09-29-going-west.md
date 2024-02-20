@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Dirección Oeste
 preview_image_id: calakmul1.jpg
+lat_lng: "[18.117253333, -89.796513333]"
+track_number: 144
+spread_direction: "S"
 preview_text: |
   En el camino del Atlántico al Pacífico, nos despedimos lentamente de la selva de Yucatán - pero antes de volver a las montañas por primera vez, una desagradable sorpresa nos da un poco más de descanso..
 image_metadata:

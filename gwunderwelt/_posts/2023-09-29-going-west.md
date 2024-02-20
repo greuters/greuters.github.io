@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Richtung Westen
 preview_image_id: calakmul1.jpg
+lat_lng: "[18.117253333, -89.796513333]"
+track_number: 144
+spread_direction: "S"
 preview_text: |
   Unterwegs vom Atlantik zum Pazifik verabschieden wir uns langsam vom Dschungel Yucatans - doch bevor wir zum ersten Mal wieder richtig in die Berge kommen, beschert uns eine unangenehme Überraschung nochmal etwas Wartezeit..
 image_metadata:

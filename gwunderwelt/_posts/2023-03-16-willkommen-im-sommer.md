@@ -3,6 +3,8 @@ layout: post
 lang: de
 title: Willkommen im Sommer
 preview_image_id: repeat.jpg
+lat_lng: "[28.141666667, -16.306666667]"
+spread_direction: "NW"
 preview_text: |
   Was fehlt auf diesem Bild?  
 image_metadata:

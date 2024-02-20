@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Ciudades y ruinas
 preview_image_id: kukulkan1.jpg
+lat_lng: "[20.691118333, -88.219561667]"
+track_number: 103
+spread_direction: "N"
 preview_text: |
   Izamal, Tulum y Chichén Itzá - primer contacto con la historia de grandes pueblos, y la temporada de lluvias comienza.
 image_metadata:

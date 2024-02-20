@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Der Tanz von Kraft
 preview_image_id: fliegender-fisch.jpg
+lat_lng: "[17.496175, -70.514906667]"
+track_number: 71
+spread_direction: "NW"
 preview_text: |
   Blue Water Sailing. Getragen von Wind und Wellen, weit übers Meer in eine neue Welt. Blaue Eintönigkeit, unfassbare Weite, Zeit innezuhalten. In Belize haben wir zum ersten Mal wieder Internetzugang und - weil noch ein Containerschiff vor uns an der Mole liegt - auch gut Zeit, den Blog zu aktualisieren. Viel Vergnügen beim Lesen!
 image_metadata:

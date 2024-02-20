@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Montañas mexicanas
 preview_image_id: sumidero.jpg
+lat_lng: "[16.672903, -93.016535]"
+track_number: 161
+spread_direction: "S"
 preview_text: |
   Y por fin están aquí, las primeras montañas mexicanas de verdad (: Chiapas se nos presenta impresionante y hermoso, de alguna manera familiar, casi como en casa.
 image_metadata:

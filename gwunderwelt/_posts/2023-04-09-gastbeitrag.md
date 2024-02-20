@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Erfahrungen eines Offiziersassistenten
 preview_image_id: kabine.jpg
+lat_lng: "[18.498435, -51.442138333]"
+track_number: 62
+spread_direction: "S"
 preview_text: |
   Warum segeln wir Fracht? Ein Gastbeitrag von unserem passionierten Offiziersassistenten Max.
 image_metadata:

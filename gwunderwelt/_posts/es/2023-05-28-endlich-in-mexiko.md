@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Los primeros días en México
 preview_image_id: krokodil.jpg
+lat_lng: "[20.875833333, -87.07944]"
+track_number: 94
+spread_direction: "E"
 preview_text: |
   De momento, sólo hemos salido del puerto, por la peligrosa (¡cocodrilos!) carretera (¡con carril bici!) hasta nuestro primer alojamiento. Recibidos con entusiasmo por una vecina, Rita ya dijo en el primer paseo: puede que me guste aqui (:
 image_metadata:

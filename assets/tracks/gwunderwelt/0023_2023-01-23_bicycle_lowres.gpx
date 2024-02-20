@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-02-23T22:12:12.082Z</time>
+    <bounds minlat="49.693023333" minlon="0.193393333" maxlat="49.772500000" maxlon="0.416380000"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="49.772500000" lon="0.416380000">
+        <time>2023-01-23T09:14:11Z</time>
+      </trkpt>
+      <trkpt lat="49.766166667" lon="0.377163333">
+        <ele>107.700</ele>
+        <time>2023-01-23T09:54:56Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.890000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.530000</pdop>
+      </trkpt>
+      <trkpt lat="49.719883333" lon="0.356851667">
+        <ele>95.000</ele>
+        <time>2023-01-23T11:31:00Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.760000</hdop>
+        <vdop>1.300000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="49.701281667" lon="0.291106667">
+        <ele>97.700</ele>
+        <time>2023-01-23T11:56:55Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.790000</hdop>
+        <vdop>1.410000</vdop>
+        <pdop>1.620000</pdop>
+      </trkpt>
+      <trkpt lat="49.717105000" lon="0.256393333">
+        <ele>86.500</ele>
+        <time>2023-01-23T12:48:57Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.790000</hdop>
+        <vdop>1.050000</vdop>
+        <pdop>1.310000</pdop>
+      </trkpt>
+      <trkpt lat="49.693023333" lon="0.193393333">
+        <ele>84.000</ele>
+        <time>2023-01-23T14:59:48Z</time>
+        <geoidheight>47.0</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.760000</hdop>
+        <vdop>1.110000</vdop>
+        <pdop>1.350000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

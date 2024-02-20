@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Comercio justo y organico
 preview_image_id: maya-mountain.jpg
+lat_lng: "[16.117835, -88.797015]"
+track_number: 129
+spread_direction: "S"
 preview_text: |
   Mientras aún estábamos en el Avontuur, conocimos a dos empleados de Maya Mountain en Ciudad de Belice. Juntos cargamos sus bolsas de cacao, intercambiamos algunas palabras y números de teléfono. Un contacto incierto, quizá podamos pasarnos por allí alguna vez..
 image_metadata:

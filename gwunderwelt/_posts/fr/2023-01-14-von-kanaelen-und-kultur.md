@@ -3,6 +3,8 @@ layout: post
 lang: fr
 title: Des canaux et de la culture
 preview_image_id: la-vie.jpg
+lat_lng: "[48.081805, 3.292395]"
+spread_direction: "NE"
 preview_text: |
   Voies navigables - le deuxième grand réseau de liaison des temps anciens nous mène de Bâle à Paris. Bordée de témoins d'une riche histoire, accompagnés de rencontres inattendues et chaleureuses, nous sommes trois à parcourir les premiers kilomètres.
 image_metadata:

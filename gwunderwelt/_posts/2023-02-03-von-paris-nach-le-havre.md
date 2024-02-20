@@ -1,8 +1,11 @@
 ---
 layout: post
 lang: de
-title:  Von Paris nach Le Havre
+title: Von Paris nach Le Havre
 preview_image_id: am-meer.jpg
+lat_lng: "[49.76, 0.69]"
+track_number: 22
+spread_direction: "NW"
 preview_text: |
   Sonnenschein, Regenbogen, Nieselregen. Normandie! Kalte Winde, Kalkstein und Klippen. Gute Gespräche, Gastfreundschaft und Grosszügigkeit.
 image_metadata:

@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: De vuelta al mar
 preview_image_id: preview.jpg
+lat_lng: "[21.495893333, -105.190991667]"
+track_number: 204
+spread_direction: "NE"
 preview_text: |
   ¡Ya ha pasado un año! 
   Navidad en Ameca, Año Nuevo casi sin pirotecnia, pero con bonitas linternas de aire caliente desvaneciéndose en la noche. Una cálida bienvenida de Rubén, el dueño de un pequeño hotel en medio de la nada en Nayarit. Tras unos kilómetros de costa hacia el norte, tomamos el ferry a Baja California, los dos últimos estados mexicanos que se nos permite explorar.

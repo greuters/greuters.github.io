@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Mexikanische Berge
 preview_image_id: sumidero.jpg
+lat_lng: "[16.672903, -93.016535]"
+track_number: 161
+spread_direction: "S"
 preview_text: |
   Und jetzt kommen sie endlich, die ersten richtigen mexikanischen Berge (: Chiapas präsentiert sich uns eindrücklich und wunderschön, irgendwie auch vertraut wie fast zu Hause.
 image_metadata:

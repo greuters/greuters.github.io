@@ -3,6 +3,9 @@ layout: post
 lang: en
 title: Life on board II
 preview_image_id: schatten.jpg
+lat_lng: "[16.563333333, -83.386666667]"
+track_number: 86
+spread_direction: "NE"
 preview_text: |
   Leisure Time (:
 image_metadata:

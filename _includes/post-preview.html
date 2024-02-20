@@ -1,5 +1,14 @@
-<article class="post-preview">
-  {% include load-images.liquid page_path=include.post.path %}
+{% include load-images.liquid page_path=include.post.path %}
+
+<article
+  {% comment %} id="{{include.id}}" {% endcomment %}
+  data-url="{{include.post.url}}"
+  data-title="{{include.post.title}}"
+  data-track-number="{{include.track_number}}"
+  data-lat-lng="{{include.lat_lng}}"
+  data-spread-lat-lng="{{include.spread_lat_lng}}"
+  class="post-preview"
+>
   {% assign preview_image = page_images
     | where_exp: 'image', 'image[img_id] == include.post.preview_image_id'
     | first

@@ -3,6 +3,8 @@ layout: post
 lang: en
 title:  Out for adventure!
 preview_image_id: avontuur.jpg
+lat_lng: "[47.35, 8.6]"
+spread_direction: "E"
 preview_text: |
   Ice Age. Our coldest days cycling so far await us, the new solar mobile is finally ready and right after Christmas we're off. Off to France, to meet Avontuur in the port of Le Havre. Off to adventure and unknown shores!
 image_metadata:

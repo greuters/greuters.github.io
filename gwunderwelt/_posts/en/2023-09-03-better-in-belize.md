@@ -3,6 +3,9 @@ layout: post
 lang: en
 title:  Better in Belize!
 preview_image_id: jaguar.jpg
+lat_lng: "[17.404693333, -88.50129]"
+track_number: 121
+spread_direction: "E"
 preview_text: |
    Sugar cane, forest, swamp, jungle, open pasture. Much more water. Where Mexico welcomed us with reserved astonishment, Belize greets with loud exclamations. Have a safe journey! God bless you! Wow, what is THAT? This is SO beautiful!
 image_metadata:

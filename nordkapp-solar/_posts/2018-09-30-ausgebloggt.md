@@ -4,6 +4,8 @@ date:   2018-09-30 16:56:13 -0600
 lang: de
 title:  Ausgebloggt und Angekommen
 preview_image_id: preview.jpg 
+lat_lng: "[47.547846667, 7.389096667]"
+track_number: '0000'
 preview_text: |
   Wir sind wieder zu Hause, und um unbezahlbare Eindrücke reicher. Ein echter Seelenrucksack! Danke Marius, für das richtige Wort. Von Fotoabenden, persönlichen Erfahrungen und denen zum Weitergeben..
 image_metadata:

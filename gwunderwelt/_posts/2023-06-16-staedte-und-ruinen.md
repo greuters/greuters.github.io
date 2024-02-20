@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Staedte und Ruinen
 preview_image_id: kukulkan1.jpg
+lat_lng: "[20.691118333, -88.219561667]"
+track_number: 103
+spread_direction: "N"
 preview_text: |
   Izamal, Tulum und Chichen Itza - erste Berührungen mit der Geschichte grosser Völker, und die Regenzeit beginnt.
 image_metadata:

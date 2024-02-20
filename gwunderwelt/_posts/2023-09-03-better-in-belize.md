@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Better in Belize!
 preview_image_id: jaguar.jpg
+lat_lng: "[17.404693333, -88.50129]"
+track_number: 121
+spread_direction: "E"
 preview_text: |
   Zuckerrohr, Wald, Sumpf, Dschungel, offene Weidelandschaft. Viel mehr Wasser. Wo in Mexiko zurückhaltendes Erstaunen sichtbar war, werden wir in Belize mit lautstarken Ausrufen begrüsst. Have a safe journey! God bless you! Wow, what is THAT?? This is SO beautiful!
 image_metadata:

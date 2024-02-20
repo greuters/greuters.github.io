@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-02-23T22:27:30.013Z</time>
+    <bounds minlat="20.685646667" minlon="-88.494960000" maxlat="20.826615000" maxlon="-88.049186667"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="20.826615000" lon="-88.494960000">
+        <time>2023-05-29T11:18:25Z</time>
+      </trkpt>
+      <trkpt lat="20.719870000" lon="-88.322961667">
+        <ele>10.100</ele>
+        <time>2023-05-29T14:03:26Z</time>
+        <geoidheight>-11.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.840000</hdop>
+        <vdop>1.300000</vdop>
+        <pdop>1.550000</pdop>
+      </trkpt>
+      <trkpt lat="20.713658333" lon="-88.265356667">
+        <ele>-1.700</ele>
+        <time>2023-05-29T14:22:42Z</time>
+        <geoidheight>-11.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.840000</hdop>
+        <vdop>1.360000</vdop>
+        <pdop>1.600000</pdop>
+      </trkpt>
+      <trkpt lat="20.691118333" lon="-88.219561667">
+        <ele>11.000</ele>
+        <time>2023-05-29T14:37:09Z</time>
+        <geoidheight>-11.1</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.880000</hdop>
+        <vdop>1.600000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="20.701948333" lon="-88.109015000">
+        <ele>19.000</ele>
+        <time>2023-05-29T23:43:00Z</time>
+        <geoidheight>-11.2</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.840000</hdop>
+        <vdop>1.420000</vdop>
+        <pdop>1.650000</pdop>
+      </trkpt>
+      <trkpt lat="20.685646667" lon="-88.049186667">
+        <ele>19.200</ele>
+        <time>2023-05-30T00:08:21Z</time>
+        <geoidheight>-11.2</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.780000</hdop>
+        <vdop>1.220000</vdop>
+        <pdop>1.450000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

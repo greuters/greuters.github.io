@@ -4,6 +4,9 @@ lang: fr
 title: L'aventure avant l'Avontuur
 preview_image_id: ausguck.jpg
 preview_text: De ces derniers jours mouvementés en tant que terriens
+lat_lng: "[49.5, 0.10]"
+track_number: 24
+spread_direction: "S"
 image_metadata:
   - dirname:
     images:

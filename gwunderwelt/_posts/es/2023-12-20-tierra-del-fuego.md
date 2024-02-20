@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Pays de los volcanos
 preview_image_id: popo.jpg
+lat_lng: "[19.140181667, -98.380395]"
+track_number: 183
+spread_direction: "SW"
 preview_text: |
   Viajar por la tierra de los volcanes, en el corazón de México. Mucha gente y encuentros, una experiencia única (cuya planificación me da un poco de náuseas) y -efectivamente- unos días fríos, casi invernales.
 image_metadata:

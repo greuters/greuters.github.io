@@ -3,6 +3,9 @@ layout: post
 lang: en
 title: Organic and Fairtrade
 preview_image_id: maya-mountain.jpg
+lat_lng: "[16.117835, -88.797015]"
+track_number: 129
+spread_direction: "S"
 preview_text: |
   Still on the Avontuur we met two staff members from Maya Mountain in Belize City. Together we loaded their cocoa bags, exchanged a few words and phone numbers. An uncertain contact, maybe we can drop by sometime..
 image_metadata:

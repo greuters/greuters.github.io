@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Im Land der Vulkane
 preview_image_id: popo.jpg
+lat_lng: "[19.140181667, -98.380395]"
+track_number: 183
+spread_direction: "SW"
 preview_text: |
   Unterwegs im Land der Vulkane, im Herzen Mexikos. Viele Menschen und Begegnungen, ein einzigartiges Erlebnis (bei dessen Planung mir etwas mulmig wird) und - tatsächlich - einige kalte Tage, fast schon Winterstimmung.
 image_metadata:

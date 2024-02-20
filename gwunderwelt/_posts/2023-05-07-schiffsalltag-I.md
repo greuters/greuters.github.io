@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Schiffsalltag I
 preview_image_id: wolken.jpg
+lat_lng: "[12.470298333, -76.148166667]"
+track_number: 74
+spread_direction: "SE"
 preview_text: |
   Womit haben wir eigentlich die letzten zweieinhalb Monate verbracht, neben 12'000 Segelkilometern? In zwei Beiträgen möchten wir euch einen Einblick in das Leben an Bord gewähren: die alltäglichen Kleinigkeiten die uns auf Trab halten und Anlass zu Freude, Sorge und ab und zu auch etwas Stolz geben.
 image_metadata:

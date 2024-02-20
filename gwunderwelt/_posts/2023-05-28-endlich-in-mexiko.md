@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: In Mexiko angekommen!
 preview_image_id: krokodil.jpg
+lat_lng: "[20.875833333, -87.07944]"
+track_number: 94
+spread_direction: "E"
 preview_text: |
   Bis anhin ging es nur aus dem Hafen heraus, die gefährliche (Krokodile!) Strasse (mit Fahrradweg!) zu unserer ersten Unterkunft. Enthusiastisch wurden wir von einer Nachbarin begrüsst, und Rita meinte bereits bei der ersten Fahrt: hier könnte es mir gefallen (:
 image_metadata:

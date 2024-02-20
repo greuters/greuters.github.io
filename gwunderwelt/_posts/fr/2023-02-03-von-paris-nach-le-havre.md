@@ -3,6 +3,9 @@ layout: post
 lang: fr
 title:  De Paris au Havre
 preview_image_id: am-meer.jpg
+lat_lng: "[49.76, 0.69]"
+track_number: 22
+spread_direction: "NW"
 preview_text: |
   Soleil, arc-en-ciel, bruine. La Normandie ! Vents froids, pierre à chaux et falaises. De bonnes discussions, de l'hospitalité et de la générosité.
 image_metadata:

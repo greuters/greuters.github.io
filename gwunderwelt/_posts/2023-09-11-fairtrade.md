@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Zu Besuch bei der Kakao-Kooperative
 preview_image_id: maya-mountain.jpg
+lat_lng: "[16.117835, -88.797015]"
+track_number: 129
+spread_direction: "S"
 preview_text: |
   Noch auf der Avontuur haben wir in Belize City zwei Mitarbeiter von Maya Mountain kennengelernt. Gemeinsam haben wir ihre Kakaosäcke verladen, ein paar Worte und die Telefonnummern getauscht. Ein ungewisser Kontakt, vielleicht können wir mal vorbeikommen..
 image_metadata:

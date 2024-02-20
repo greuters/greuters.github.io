@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Das Abenteuer vor der Avontuur
 preview_image_id: ausguck.jpg
+lat_lng: "[49.5, 0.10]"
+track_number: 24
+spread_direction: "S"
 preview_text: Von den ereignisreichen letzten Tagen als Landratten
 image_metadata:
   - dirname:

@@ -3,6 +3,9 @@ layout: post
 lang: en
 title: Life on board I
 preview_image_id: wolken.jpg
+lat_lng: "[12.470298333, -76.148166667]"
+track_number: 74
+spread_direction: "SE"
 preview_text: |
   What have we actually spent the last two and a half months doing, apart from sailing 12,000 kilometres? In two articles we would like to give you an insight into life on board.
 image_metadata:

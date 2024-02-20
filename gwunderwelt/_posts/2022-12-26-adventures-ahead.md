@@ -3,6 +3,8 @@ layout: post
 lang: de
 title:  Auf zu neuen Abenteuern!
 preview_image_id: avontuur.jpg
+lat_lng: "[47.35, 8.6]"
+spread_direction: "E"
 preview_text: |
   Eiszeit.
   

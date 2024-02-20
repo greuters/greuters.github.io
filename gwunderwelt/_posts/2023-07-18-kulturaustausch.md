@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Lernzeit und lokale Kultur
 preview_image_id: bacalar.jpg
+lat_lng: "[18.67981, -88.39084]"
+track_number: 115
+spread_direction: "NW"
 preview_text: |
   Seit bald einem Monat sind wir in einem Eco-Resort in der Nähe von Bacalar, wo wir gegen Kost und Logis mithelfen. Nach einigen Wochen Yucatan erradeln zu zweit ist jetzt die Gelegenheit für einen Kulturaustausch. Aber von vorne..
 image_metadata:

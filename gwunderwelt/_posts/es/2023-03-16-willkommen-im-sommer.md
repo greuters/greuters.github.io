@@ -3,6 +3,8 @@ layout: post
 lang: es
 title: Bienvenidos al verano
 preview_image_id: repeat.jpg
+lat_lng: "[28.141666667, -16.306666667]"
+spread_direction: "NW"
 preview_text: |
   ¿Qué falta en esta foto?
 image_metadata:

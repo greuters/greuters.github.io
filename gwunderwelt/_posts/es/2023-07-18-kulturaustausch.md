@@ -3,6 +3,9 @@ layout: post
 lang: es
 title: Tiempo de aprendizaje y cultura local
 preview_image_id: bacalar.jpg
+lat_lng: "[18.67981, -88.39084]"
+track_number: 115
+spread_direction: "NW"
 preview_text: |
   Desde hace casi un mes estamos en un eco-resort cerca de Bacalar, donde ayudamos a cambio de alojamiento y comida. Tras unas semanas recorriendo Yucatán en pareja, ahora tenemos la oportunidad de realizar un intercambio cultural. Pero desde el principio.
 image_metadata:

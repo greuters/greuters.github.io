@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Zurück ans Meer
 preview_image_id: preview.jpg
+lat_lng: "[21.495893333, -105.190991667]"
+track_number: 204
+spread_direction: "NE"
 preview_text: |
   Nun ist bereits ein Jahr vorbei! 
   Weihnachten in Ameca, Neujahr fast ohne Feuerwerk, aber mit hübschen Heissluftlaternen, die in die Nacht entschwinden. Herzlichst eingeladen von Ruben, dem Besitzer eines kleinen Hotels im Nirgendwo Nayarits. Nach einigen Kilometern die Küste hinauf nehmen wir die Fähre nach Baja California, zu den letzten beiden Bundesstaaten Mexikos die wir entdecken dürfen..

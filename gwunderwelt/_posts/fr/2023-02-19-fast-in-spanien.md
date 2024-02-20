@@ -3,6 +3,8 @@ layout: post
 lang: fr
 title: Presque en Espagne
 preview_image_id: schmetterling.jpg
+lat_lng: "[45.177191667, -8.445686667]"
+spread_direction: "NW"
 preview_text: |
   The standing watch wishes the relieving watch a good watch. And the relieving watch wishes the standing watch a good rest!
 image_metadata:

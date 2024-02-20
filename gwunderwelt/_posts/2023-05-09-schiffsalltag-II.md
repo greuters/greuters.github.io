@@ -3,6 +3,9 @@ layout: post
 lang: de
 title: Schiffsalltag II
 preview_image_id: schatten.jpg
+lat_lng: "[16.563333333, -83.386666667]"
+track_number: 86
+spread_direction: "NE"
 preview_text: |
   Freizeit an Bord (:
 image_metadata:
