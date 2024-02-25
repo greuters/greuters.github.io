@@ -1,7 +1,6 @@
 {% include load-images.liquid page_path=include.post.path %}
 
 <article
-  {% comment %} id="{{include.id}}" {% endcomment %}
   data-url="{{include.post.url}}"
   data-title="{{include.post.title}}"
   data-track-number="{{include.track_number}}"
@@ -16,6 +15,7 @@
   {%- if preview_image -%}
     <a href="{{include.post.url | relative_url}}" class="preview-image">
       {% responsive_image_block %}
+        template: _includes/responsive-image-half-width.html
         path: {{ preview_image[img_path] | replace_first: '/', '' }}
         alt: {{ preview_image[img_alt] | default: preview_image[img_name] }}
       {% endresponsive_image_block %}
