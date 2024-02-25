@@ -196,14 +196,19 @@ class GpxTrack {
         this.highResPath = highResPath;
         this.lowResPath = lowResPath;
         this.devMode = devMode;
+        this.currentDisplayState = null;
     }
 
     displayLowRes(map) {
+        if (this.currentDisplayState === 'lowres') {
+            return;
+        }
         if (this.lowResGpx) {
             if (this.highResGpx) {
                 this.highResGpx.remove();
             }
             this.lowResGpx.addTo(map);
+            this.currentDisplayState = 'lowres';
         } else {
             this.loadLowRes((track) => {
                 track.displayLowRes(map);
@@ -240,11 +245,16 @@ class GpxTrack {
     };
 
     displayHighRes(map) {
+        if (this.currentDisplayState === 'highres') {
+            return;
+        }
+
         if (this.highResGpx) {
             if (this.lowResGpx) {
                 this.lowResGpx.remove();
             }
             this.highResGpx.addTo(map);
+            this.currentDisplayState = 'highres';
         } else {
             new L.GPX(this.highResPath, {
                 async: true,
@@ -258,22 +268,27 @@ class GpxTrack {
                 // discard all but the first successful attempt if load was triggered multiple times
                 if (this.highResGpx === undefined) {
                     this.highResGpx = event.target;
-                    this.displayHighRes();
                     if (this.devMode) {
                         this.highResGpx.bindTooltip(`${this.highResPath}, ${this.midpoint}`);
                     }
+                    this.displayHighRes(map);
                 }
             });
         }
     };
 
     undisplay() {
+        if (this.currentDisplayState === null) {
+            return;
+        }
+
         if (this.lowResGpx) {
             this.lowResGpx.remove();
         }
         if (this.highResGpx) {
             this.highResGpx.remove();
         }
+        this.currentDisplayState = null;
     };
 };
 
@@ -320,21 +335,31 @@ class Post {
 
         this.marker = L.marker(this.spreadPositionMap.get(MapManager.minZoom),
             {
-                icon: this.iconMap.get(MapManager.minZoom),
                 title: html.dataset.title,
                 riseOnHover: true,
             }).on('click', () => {
                 window.location = html.dataset.url;
             });
+
+        this.currentDisplayState = { zoom: null };
     };
 
     display(map) {
+        if (this.currentDisplayState.zoom === map.getZoom()) {
+            return;
+        }
+
+        this.currentDisplayState.zoom = map.getZoom();
         this.marker.setLatLng(this.spreadPositionMap.get(map.getZoom()));
         this.marker.setIcon(this.iconMap.get(map.getZoom()));
         this.marker.addTo(map);
     };
 
     undisplay() {
+        if (this.currentDisplayState.zoom === null) {
+            return;
+        }
+        this.currentDisplayState.zoom = null;
         this.marker.remove();
     };
 };
