@@ -77,9 +77,10 @@ class MapManager {
             }
         }
 
+        const mapHeight = getComputedStyle(document.querySelector('#map')).height;
         this.postObserver = new IntersectionObserver((entries, _) => this.focusMaxVisiblePost(entries), {
             root: document,
-            rootMargin: "-30% 0px 0px 0px", // magic link to #map css rule, giving the map 30vv if it is visible
+            rootMargin: `-${mapHeight} 0px 0px 0px`,
             threshold: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         });
         this.focusedPostHtml = postHtmls.toSorted((a, b) => Number(b.dataset.trackNumber) - Number(a.dataset.trackNumber))[0];
@@ -186,6 +187,11 @@ class MapManager {
             }
         }
     };
+
+    remove() {
+        this.map.remove();
+        this.postObserver.disconnect();
+    }
 };
 
 class GpxTrack {
@@ -364,7 +370,18 @@ class Post {
     };
 };
 
-function createMap(dataset) {
+function initMap() {
+    if (getComputedStyle(document.querySelector('#map-box')).display === 'none') {
+        if (Object.hasOwn(window, 'mapManager')) {
+            window.mapManager.remove();
+            delete window.mapManager;
+        }
+        return;
+    }
+
+    const script = document.getElementById('init-map');
+    const devMode = script.dataset.devMode === 'true';
+
     const map = L.map('map', {
         minZoom: MapManager.minZoom,
         maxZoom: MapManager.maxZoom,
@@ -372,33 +389,29 @@ function createMap(dataset) {
     });
     map.scrollWheelZoom.disable();
     map.addControl(new L.Control.Zoom({
-        zoomInTitle: dataset.zoomInL10n,
-        zoomOutTitle: dataset.zoomOutL10n,
+        zoomInTitle: script.dataset.zoomInL10n,
+        zoomOutTitle: script.dataset.zoomOutL10n,
     }));
     map.addControl(new L.Control.Fullscreen({
         title: {
-            'false': dataset.viewFullscreenL10n,
-            'true': dataset.exitFullscreenL10n,
+            'false': script.dataset.viewFullscreenL10n,
+            'true': script.dataset.exitFullscreenL10n,
         }
     }));
     L.control.scale({ imperial: false, metric: true }).addTo(map);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
-    map.fitBounds(JSON.parse(dataset.initBounds));
-    return map;
-}
+    map.fitBounds(JSON.parse(script.dataset.initBounds));
 
-window.onload = function () {
-    const script = document.getElementById('init-map');
-    const devMode = script.dataset.devMode === 'true';
-
-    const map = createMap(script.dataset);
-    const trackManager = new MapManager(map,
+    window.mapManager = new MapManager(map,
         JSON.parse(document.getElementById("track-data").text),
         Array.from(document.querySelectorAll('#post-list .post-preview')),
         devMode);
 
     // start animation with a small delay to give a headstart for GPX track loading
-    setTimeout(() => trackManager.showAnimation(), 100);
+    setTimeout(() => window.mapManager.showAnimation(), 100);
 }
+
+window.onresize = initMap;
+window.onload = initMap;
