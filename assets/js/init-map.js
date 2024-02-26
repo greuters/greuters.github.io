@@ -77,13 +77,24 @@ class MapManager {
             }
         }
 
+        this.focusedPostHtml = postHtmls.toSorted((a, b) => Number(b.dataset.trackNumber) - Number(a.dataset.trackNumber))[0];
+        this.initPostObserver();
+    };
+
+    onResize() {
+        this.initPostObserver();
+    };
+
+    initPostObserver() {
+        if (this.postObserver) {
+            this.postObserver.disconnect();
+        }
         const mapHeight = getComputedStyle(document.querySelector('#map')).height;
         this.postObserver = new IntersectionObserver((entries, _) => this.focusMaxVisiblePost(entries), {
             root: document,
             rootMargin: `-${mapHeight} 0px 0px 0px`,
             threshold: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         });
-        this.focusedPostHtml = postHtmls.toSorted((a, b) => Number(b.dataset.trackNumber) - Number(a.dataset.trackNumber))[0];
         this.observePosts();
     };
 
@@ -373,14 +384,6 @@ class Post {
 };
 
 function initMap() {
-    if (getComputedStyle(document.querySelector('#map-box')).display === 'none') {
-        if (Object.hasOwn(window, 'mapManager')) {
-            window.mapManager.remove();
-            delete window.mapManager;
-        }
-        return;
-    }
-
     const script = document.getElementById('init-map');
     const devMode = script.dataset.devMode === 'true';
 
@@ -415,5 +418,19 @@ function initMap() {
     setTimeout(() => window.mapManager.showAnimation(), 100);
 }
 
-window.onresize = initMap;
 window.onload = initMap;
+
+window.onresize = function () {
+    if (getComputedStyle(document.querySelector('#map-box')).display === 'none') {
+        if (Object.hasOwn(window, 'mapManager')) {
+            window.mapManager.remove();
+            delete window.mapManager;
+        }
+    } else {
+        if (window.mapManager) {
+            window.mapManager.onResize();
+        } else {
+            initMap();
+        }
+    }
+};
