@@ -1,14 +1,14 @@
-{% capture srcset %}
-{% for i in resized %}
+{%- capture srcset -%}
+{%- for i in resized -%}
     {{ i.path | relative_url }} {{ i.width }}w,
 {% endfor %}
-{% endcapture %}
+{%- endcapture -%}
 {%- assign thumbnail = resized | last -%}
 
 <a
     href="{{ original.path | relative_url }}"
-    data-srcset="{{ srcset | strip_newlines }} {{ original.path | relative_url }} {{ original.width }}w"
-    data-sizes="(max-width: 800px) 800px, 1280px"
+    data-srcset="{{ srcset }}"
+    data-sizes="(max-width: 800px) 800px, 1024px"
     data-sub-html="<div class='lightGallery-captions'>{{ caption }}</div>"
     data-external-thumb-image="{{ thumbnail.path | relative_url }}"
     hidden

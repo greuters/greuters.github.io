@@ -67,8 +67,10 @@ parallel_localization: true
 responsive_image:
   template: _includes/responsive-image.html
   sizes:
+    - width: 1024
     - width: 800
     - width: 100
   output_path_format: assets/resized/%{width}/%{dirname}/%{filename}.%{extension}
   save_to_source: true
+  strip: true
 # TODO: enable - jekyll-paginate
