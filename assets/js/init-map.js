@@ -321,12 +321,14 @@ class Post {
         const thumbnailHeight = tH * normalizationFactor;
 
         this.iconMap = new Map();
-        for (const [zoom, scaleFactor] of Post.scaleFactorMap) {
-            this.iconMap.set(zoom,
-                L.icon({
-                    iconUrl: previewImageHtml.dataset.thumbnailPath,
-                    iconSize: [thumbnailWidth * scaleFactor, thumbnailHeight * scaleFactor],
-                }));
+        for (const scaleFactor of Post.scaleFactorMap.values()) {
+            if (!this.iconMap.has(scaleFactor)) {
+                this.iconMap.set(scaleFactor,
+                    L.icon({
+                        iconUrl: previewImageHtml.dataset.thumbnailPath,
+                        iconSize: [thumbnailWidth * scaleFactor, thumbnailHeight * scaleFactor],
+                    }));
+            }
         }
 
         const spreadLatLng = L.latLng(JSON.parse(html.dataset.spreadLatLng));
@@ -357,7 +359,7 @@ class Post {
 
         this.currentDisplayState.zoom = map.getZoom();
         this.marker.setLatLng(this.spreadPositionMap.get(map.getZoom()));
-        this.marker.setIcon(this.iconMap.get(map.getZoom()));
+        this.marker.setIcon(this.iconMap.get(Post.scaleFactorMap.get(map.getZoom())));
         this.marker.addTo(map);
     };
 
