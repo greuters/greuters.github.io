@@ -12,26 +12,26 @@ preview_text: |
 image_metadata:
   - dirname:
     images:
-      - {filename: 1.jpg, caption: "", alt: ""}
-      - {filename: 3.jpg, caption: "", alt: ""}
+      - {filename: weihnachtsbaum.jpg, caption: "", alt: ""}
+      - {filename: outlook.jpg, caption: "", alt: ""}
       - {filename: preview.jpg, caption: "", alt: ""}
 
   - dirname: Galerie1
     images:
-      - {filename: 1.jpg, caption: "", alt: ""}
-      - {filename: 2.jpg, caption: "", alt: ""}
-      - {filename: 3.jpg, caption: "", alt: ""}
-      - {filename: 4.jpg, caption: "", alt: ""}
-      - {filename: 5.jpg, caption: "", alt: ""}
-      - {filename: 6.jpg, caption: "", alt: ""}
-      - {filename: 7.jpg, caption: "", alt: ""}
-      - {filename: 8.jpg, caption: "", alt: ""}
-      - {filename: 9.jpg, caption: "", alt: ""}
+      - {filename: galerie1_1.jpg, caption: "", alt: ""}
+      - {filename: galerie1_2.jpg, caption: "", alt: ""}
+      - {filename: galerie1_3.jpg, caption: "", alt: ""}
+      - {filename: galerie1_4.jpg, caption: "", alt: ""}
+      - {filename: galerie1_5.jpg, caption: "", alt: ""}
+      - {filename: galerie1_6.jpg, caption: "", alt: ""}
+      - {filename: galerie1_7.jpg, caption: "", alt: ""}
+      - {filename: galerie1_8.jpg, caption: "", alt: ""}
+      - {filename: galerie1_9.jpg, caption: "", alt: ""}
   - dirname: Galerie2
     images:
-      - {filename: 1.jpg, caption: "", alt: ""}
-      - {filename: 2.jpg, caption: "", alt: ""}
-      - {filename: 3.jpg, caption: "Auf gehts nach Baja!", alt: ""}
+      - {filename: galerie2_1.jpg, caption: "", alt: ""}
+      - {filename: galerie2_2.jpg, caption: "", alt: ""}
+      - {filename: galerie2_3.jpg, caption: "Auf gehts nach Baja!", alt: ""}
 
 ---
 
@@ -41,11 +41,11 @@ Blaue Felder bis zum Horizont: in Guanajuato sind wir im intensivsten Agavenanba
 
 An Weihnachten versuchen wir den Tipp unserer letzten Fahrrad-Bekannten zu befolgen und ein Restaurant zu besuchen. Anscheinend geht man schon seit Tagen in jeweils wechselnder Besetzung auswärts essen - mit Freunden, Familie, Arbeitskollegen oder Nachbarn - Weihnachten wird mehrfach gefeiert. Am 23. ist tatsächlich viel los in dem Provinzstädtchen, wo wir zwei Tage bleiben wollen. Buntes Markttreiben, letzte Geschenkekäufe, tatsächlich leckere Churros und viele Menschen auf der Strasse. Am 24. scheint dann jedoch alles ausgestorben. Nicht einmal das sonst so alltägliche Feuerwerk zerreist die Stille. Ein offenes Restaurant finden wir nicht, und gönnen uns stattdessen einen Drink im Hotelzimmer, sowie einige lange Telefonate mit den Lieben zu Hause. Familienzeit.
 
-{% include image.liquid id="1.jpg" class="centered" %}
+{% include image.liquid id="weihnachtsbaum.jpg" class="centered" %}
 
 Sirren, Pfeifen, Flügelschlagen. Grosse Vogelschwärme ziehen ein paar Tage später morgens über unser Zelt hinweg. Die Mangofelder und wasserreichen Flutgebiete Nayarits bieten nicht nur uns, sondern auch zahlreichen Zugvögeln eine willkommene Ruhestation auf ihrer Reise. Am morgen folgt eine der herzlichsten Begrüssungen, die wir bisher auf freiem Feld erlebten durften. Der Bauer, an dessen Feldrand wir unser Nachtlager recht gut versteckt aufgeschlagen haben, hat uns dennoch entdeckt und freut sich, dass wir so gut ausgeruht aussehen. Dass Reisende von so weit her die Schönheit seiner Region erkennen, freut ihn sichtlich und ist wohl ein kleines Tor in eine unerreichbar grosse Welt. Ein schönes Gespräch, und ein Fokusmoment der Freundlichkeit, der wir hier immer wieder begegnen dürfen. Danke.
 
-{% include image-divider.html ids="3.jpg" %}
+{% include image-divider.html ids="outlook.jpg" %}
 
 Und nun sitzen wir in der Fähre von Mazatlan nach La Paz, eine Nachtfahrt in nochmals eine eigene Welt. Sie führt uns auf die Halbinsel Baja California und in die letzten zwei Bundesstaaten auf unserem Weg durch Mexiko, von denen uns oft erzählt und vorgeschwärmt wurde. Wüste und Trockenheit erwarten uns, jedoch auch das unendliche Meer. Auf der Karte sind die Orte weiter auseinander gelegen, wir werden wohl statt fünf wieder standardmässig zehn Liter Wasser mitführen und schauen, wie es wirklich ist.. vielleicht werden wir Wale sehen?
 
