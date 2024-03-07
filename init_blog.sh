@@ -14,15 +14,15 @@ subdir_files=''
 for entry in "$image_path"/*
 do
   if [ -d "$entry" ];then
-    subdir_files+='  - dirname: '$(basename $entry)$'\n'$'    images:\n'
+    subdir_files+='  - dirname: '$(basename "$entry")$'\n'$'    images:\n'
     for subentry in "$entry"/*
     do
       if [ -f "$subentry" ];then
-          subdir_files+='      - {filename: '$(basename $subentry)$', caption: "", alt: ""}\n'
+          subdir_files+='      - {filename: "'$(basename "$subentry")$'", caption: "", alt: ""}\n'
       fi
     done
   elif [ -f "$entry" ];then
-    toplevel_files+='      - {filename: '$(basename $entry)$', caption: "", alt: ""}\n'
+    toplevel_files+='      - {filename: "'$(basename "$entry")$'", caption: "", alt: ""}\n'
   fi
 done
 
@@ -34,6 +34,8 @@ title:
 preview_image_id: 
 preview_text: |
   
+track_number: 
+spread_direction: ""
 image_metadata:
 $toplevel_files
 $subdir_files
