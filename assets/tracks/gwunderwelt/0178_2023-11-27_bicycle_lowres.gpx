@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.3</desc>
+    <time>2024-02-23T22:27:31.560Z</time>
+    <bounds minlat="17.488346000" minlon="-97.021799000" maxlat="17.927184000" maxlon="-96.916270000"/>
+  </metadata>
+  <trk>
+    <name>bicycle</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="17.488346000" lon="-96.938731000">
+        <ele>2215.000</ele>
+        <time>2023-10-12T19:53:18.937Z</time>
+      </trkpt>
+      <trkpt lat="17.506279000" lon="-96.932763000">
+        <ele>2086.750</ele>
+        <time>2023-10-12T20:40:47.326Z</time>
+      </trkpt>
+      <trkpt lat="17.536940000" lon="-96.955185000">
+        <ele>2004.250</ele>
+        <time>2023-10-12T22:29:02.344Z</time>
+      </trkpt>
+      <trkpt lat="17.553601000" lon="-96.944600000">
+        <ele>1912.000</ele>
+        <time>2023-10-12T23:10:51.194Z</time>
+      </trkpt>
+      <trkpt lat="17.601560000" lon="-96.947459000">
+        <ele>1474.000</ele>
+        <time>2023-10-13T01:59:37.832Z</time>
+      </trkpt>
+      <trkpt lat="17.612333000" lon="-96.921929000">
+        <ele>1139.500</ele>
+        <time>2023-10-13T03:29:26.559Z</time>
+      </trkpt>
+      <trkpt lat="17.650803000" lon="-96.916270000">
+        <ele>746.000</ele>
+        <time>2023-10-13T05:36:12.009Z</time>
+      </trkpt>
+      <trkpt lat="17.798216000" lon="-96.960312000">
+        <ele>622.500</ele>
+        <time>2023-10-13T10:52:04.271Z</time>
+      </trkpt>
+      <trkpt lat="17.794721000" lon="-96.969526000">
+        <ele>625.000</ele>
+        <time>2023-10-13T11:13:52.752Z</time>
+      </trkpt>
+      <trkpt lat="17.853637000" lon="-97.021799000">
+        <ele>574.250</ele>
+        <time>2023-10-13T13:50:55.409Z</time>
+      </trkpt>
+      <trkpt lat="17.882971000" lon="-97.004889000">
+        <ele>631.000</ele>
+        <time>2023-10-13T15:49:35.554Z</time>
+      </trkpt>
+      <trkpt lat="17.927184000" lon="-97.006116000">
+        <ele>563.250</ele>
+        <time>2023-10-13T17:56:41.349Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

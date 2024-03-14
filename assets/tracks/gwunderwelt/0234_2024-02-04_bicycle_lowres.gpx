@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-02-23T22:30:08.844Z</time>
+    <bounds minlat="27.967418333" minlon="-114.053098333" maxlat="28.680078333" maxlon="-113.988195000"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="27.968468333" lon="-114.038980000">
+        <time>2024-02-04T16:45:25Z</time>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.930000</hdop>
+        <vdop>1.400000</vdop>
+        <pdop>1.680000</pdop>
+      </trkpt>
+      <trkpt lat="27.967418333" lon="-114.018463333">
+        <ele>-13.300</ele>
+        <time>2024-02-04T17:15:52Z</time>
+        <geoidheight>-34.1</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.060000</hdop>
+        <vdop>1.710000</vdop>
+        <pdop>2.010000</pdop>
+      </trkpt>
+      <trkpt lat="28.421735000" lon="-113.988195000">
+        <ele>29.800</ele>
+        <time>2024-02-04T19:43:35Z</time>
+        <geoidheight>-33.9</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.890000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.530000</pdop>
+      </trkpt>
+      <trkpt lat="28.557153333" lon="-114.053098333">
+        <ele>44.000</ele>
+        <time>2024-02-04T21:09:22Z</time>
+        <geoidheight>-34.0</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.070000</vdop>
+        <pdop>1.340000</pdop>
+      </trkpt>
+      <trkpt lat="28.635060000" lon="-114.020075000">
+        <ele>120.200</ele>
+        <time>2024-02-04T21:42:58Z</time>
+        <geoidheight>-33.9</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.890000</hdop>
+        <vdop>1.420000</vdop>
+        <pdop>1.670000</pdop>
+      </trkpt>
+      <trkpt lat="28.680078333" lon="-114.050335000">
+        <ele>172.300</ele>
+        <time>2024-02-04T22:06:37Z</time>
+        <geoidheight>-33.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.980000</hdop>
+        <vdop>2.170000</vdop>
+        <pdop>2.380000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

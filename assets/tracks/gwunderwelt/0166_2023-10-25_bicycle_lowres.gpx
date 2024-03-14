@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.2</desc>
+    <time>2024-02-23T22:27:31.298Z</time>
+    <bounds minlat="16.093629000" minlon="-95.403251000" maxlat="16.471559000" maxlon="-94.827360000"/>
+  </metadata>
+  <trk>
+    <name>bicycle</name>
+    <desc>&lt;!-- desc_gen:start --&gt;
+&lt;font color=&quot;black&quot;&gt;&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Aktivität&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;Radfahren&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Distanz&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;100 km&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Erstellt&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;2023-11-12 16:25:10&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Max. Tempo&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;0,0 km/h&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Pace (Min/Km)&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;05:23 min/km&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Punkte&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;795&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;1&quot;&gt;&lt;hr&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Min. Höhe&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;1 m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Max. Höhe&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;239 m&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;1&quot;&gt;&lt;hr&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;Höhenmeter&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;Distanz&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Bergauf&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;528 m&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;5159 m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Bergab&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;-496 m&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;8072 m&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;center&quot;&gt;&lt;small&gt;&lt;b&gt;Ebene&lt;/b&gt;&lt;/small&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;0 m&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;center&quot;&gt;1041669 m&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/font&gt;
+&lt;!-- desc_gen:end --&gt;</desc>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>4</locus:rteComputeType>
+      <vehicle>bicycle</vehicle>
+      <totalLength>100.35305899999989</totalLength>
+    </extensions>
+    <trkseg>
+      <trkpt lat="16.429520600" lon="-94.842811600">
+        <ele>1.010</ele>
+      </trkpt>
+      <trkpt lat="16.443152000" lon="-94.828424000">
+        <ele>6.250</ele>
+      </trkpt>
+      <trkpt lat="16.471559000" lon="-94.827360000">
+        <ele>14.500</ele>
+      </trkpt>
+      <trkpt lat="16.435564000" lon="-95.006634000">
+        <ele>17.500</ele>
+      </trkpt>
+      <trkpt lat="16.442487000" lon="-95.026772000">
+        <ele>25.000</ele>
+      </trkpt>
+      <trkpt lat="16.335401000" lon="-95.233267000">
+        <ele>41.500</ele>
+      </trkpt>
+      <trkpt lat="16.228437000" lon="-95.318464000">
+        <ele>124.250</ele>
+      </trkpt>
+      <trkpt lat="16.194368800" lon="-95.313510600">
+        <ele>124.050</ele>
+      </trkpt>
+      <trkpt lat="16.151425600" lon="-95.285599800">
+        <ele>13.750</ele>
+      </trkpt>
+      <trkpt lat="16.104188000" lon="-95.326679000">
+        <ele>178.750</ele>
+      </trkpt>
+      <trkpt lat="16.093629000" lon="-95.403251000">
+        <ele>38.500</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
