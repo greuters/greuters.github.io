@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.5</desc>
+    <time>2024-03-14T00:10:22.600Z</time>
+    <bounds minlat="35.173592000" minlon="-111.508592000" maxlat="35.218193000" maxlon="-111.465097000"/>
+  </metadata>
+  <trk>
+    <name>walnut canyon</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000D7</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000D7</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="35.218193000" lon="-111.465097000">
+        <ele>1962.410</ele>
+        <time>2024-03-13T17:24:48.384Z</time>
+      </trkpt>
+      <trkpt lat="35.181297000" lon="-111.484155000">
+        <ele>2000.410</ele>
+        <time>2024-03-13T17:46:08.877Z</time>
+      </trkpt>
+      <trkpt lat="35.173592000" lon="-111.508592000">
+        <ele>2048.020</ele>
+        <time>2024-03-13T17:57:17.375Z</time>
+      </trkpt>
+      <trkpt lat="35.180569000" lon="-111.485340000">
+        <ele>2001.490</ele>
+        <time>2024-03-13T18:09:49.987Z</time>
+      </trkpt>
+      <trkpt lat="35.218088000" lon="-111.471094000">
+        <ele>1967.480</ele>
+        <time>2024-03-13T18:29:17.897Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
