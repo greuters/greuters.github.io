@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-04-13T20:11:20.511Z</time>
+    <bounds minlat="37.066980000" minlon="-112.705176667" maxlat="37.145003333" maxlon="-112.536228333"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="37.079031667" lon="-112.536228333">
+        <time>2024-04-01T16:13:06Z</time>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="37.145003333" lon="-112.568123333">
+        <ele>1685.900</ele>
+        <time>2024-04-01T21:00:40Z</time>
+        <geoidheight>-19.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.860000</hdop>
+        <vdop>1.240000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="37.139130000" lon="-112.595811667">
+        <ele>1713.300</ele>
+        <time>2024-04-01T21:14:27Z</time>
+        <geoidheight>-19.7</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.900000</hdop>
+        <vdop>1.340000</vdop>
+        <pdop>1.610000</pdop>
+      </trkpt>
+      <trkpt lat="37.105706667" lon="-112.624490000">
+        <ele>1779.000</ele>
+        <time>2024-04-01T21:31:31Z</time>
+        <geoidheight>-19.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.080000</vdop>
+        <pdop>1.350000</pdop>
+      </trkpt>
+      <trkpt lat="37.066980000" lon="-112.705176667">
+        <ele>1867.700</ele>
+        <time>2024-04-01T23:39:08Z</time>
+        <geoidheight>-19.9</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.750000</hdop>
+        <vdop>1.100000</vdop>
+        <pdop>1.330000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

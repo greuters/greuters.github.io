@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-13T20:13:30.932Z</time>
+    <bounds minlat="35.194378000" minlon="-112.137504000" maxlat="35.803652000" maxlon="-111.618824000"/>
+  </metadata>
+  <trk>
+    <name>25 Mar</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="35.218022000" lon="-111.618824000">
+        <ele>2111.190</ele>
+      </trkpt>
+      <trkpt lat="35.216830000" lon="-111.630095000">
+        <ele>2144.220</ele>
+      </trkpt>
+      <trkpt lat="35.218024000" lon="-111.619144000">
+        <ele>2111.500</ele>
+      </trkpt>
+      <trkpt lat="35.194448000" lon="-111.630119000">
+        <ele>2092.880</ele>
+      </trkpt>
+      <trkpt lat="35.194378000" lon="-111.655613000">
+        <ele>2103.030</ele>
+      </trkpt>
+      <trkpt lat="35.206456000" lon="-111.647528000">
+        <ele>2118.450</ele>
+      </trkpt>
+      <trkpt lat="35.265493000" lon="-111.705175000">
+        <ele>2250.230</ele>
+      </trkpt>
+      <trkpt lat="35.267894000" lon="-111.739158000">
+        <ele>2230.820</ele>
+      </trkpt>
+      <trkpt lat="35.341121000" lon="-111.787611000">
+        <ele>2422.210</ele>
+      </trkpt>
+      <trkpt lat="35.376126000" lon="-111.789701000">
+        <ele>2439.420</ele>
+      </trkpt>
+      <trkpt lat="35.397933000" lon="-111.757915000">
+        <ele>2412.130</ele>
+      </trkpt>
+      <trkpt lat="35.441865000" lon="-111.761453000">
+        <ele>2326.600</ele>
+      </trkpt>
+      <trkpt lat="35.563498000" lon="-111.885070000">
+        <ele>2012.840</ele>
+      </trkpt>
+      <trkpt lat="35.621617000" lon="-112.105476000">
+        <ele>1848.960</ele>
+      </trkpt>
+      <trkpt lat="35.651656000" lon="-112.137504000">
+        <ele>1827.010</ele>
+      </trkpt>
+      <trkpt lat="35.803652000" lon="-112.130979000">
+        <ele>1875.160</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

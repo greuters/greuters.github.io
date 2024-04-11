@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-13T20:11:20.642Z</time>
+    <bounds minlat="36.379239000" minlon="-114.560174000" maxlat="36.667616000" maxlon="-114.338762000"/>
+  </metadata>
+  <trk>
+    <name>07 Apr</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>hiking</locus:activity>
+      <locus:rteComputeType>10</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="36.667616000" lon="-114.338762000">
+        <ele>551.390</ele>
+      </trkpt>
+      <trkpt lat="36.607764000" lon="-114.462536000">
+        <ele>459.370</ele>
+      </trkpt>
+      <trkpt lat="36.550821000" lon="-114.456413000">
+        <ele>389.960</ele>
+      </trkpt>
+      <trkpt lat="36.514568000" lon="-114.423117000">
+        <ele>375.780</ele>
+      </trkpt>
+      <trkpt lat="36.481611000" lon="-114.454595000">
+        <ele>503.350</ele>
+      </trkpt>
+      <trkpt lat="36.435417000" lon="-114.435003000">
+        <ele>473.260</ele>
+      </trkpt>
+      <trkpt lat="36.426566000" lon="-114.512153000">
+        <ele>598.260</ele>
+      </trkpt>
+      <trkpt lat="36.448371000" lon="-114.515814000">
+        <ele>636.910</ele>
+      </trkpt>
+      <trkpt lat="36.428452000" lon="-114.513614000">
+        <ele>601.510</ele>
+      </trkpt>
+      <trkpt lat="36.417769000" lon="-114.560174000">
+        <ele>735.530</ele>
+      </trkpt>
+      <trkpt lat="36.410699000" lon="-114.552105000">
+        <ele>736.310</ele>
+      </trkpt>
+      <trkpt lat="36.421445000" lon="-114.544109000">
+        <ele>686.100</ele>
+      </trkpt>
+      <trkpt lat="36.438144000" lon="-114.417984000">
+        <ele>439.280</ele>
+      </trkpt>
+      <trkpt lat="36.409418000" lon="-114.416481000">
+        <ele>428.890</ele>
+      </trkpt>
+      <trkpt lat="36.379239000" lon="-114.439666000">
+        <ele>486.560</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

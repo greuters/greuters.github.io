@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-13T20:11:20.624Z</time>
+    <bounds minlat="36.669867000" minlon="-114.334204000" maxlat="36.834487000" maxlon="-113.990118000"/>
+  </metadata>
+  <trk>
+    <name>06 Apr</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>4</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="36.834487000" lon="-113.990118000">
+        <ele>535.570</ele>
+        <time>2024-03-14T19:29:54.367Z</time>
+      </trkpt>
+      <trkpt lat="36.730824000" lon="-114.213233000">
+        <ele>470.380</ele>
+        <time>2024-03-15T02:26:11.238Z</time>
+      </trkpt>
+      <trkpt lat="36.736650000" lon="-114.233360000">
+        <ele>487.040</ele>
+        <time>2024-03-15T03:18:24.414Z</time>
+      </trkpt>
+      <trkpt lat="36.669867000" lon="-114.334204000">
+        <ele>462.410</ele>
+        <time>2024-03-15T06:58:08.502Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
