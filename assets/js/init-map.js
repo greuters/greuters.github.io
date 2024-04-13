@@ -253,6 +253,8 @@ class GpxTrack {
                 this.lowResGpx = event.target;
                 if (this.devMode) {
                     this.lowResGpx.bindTooltip(`${this.lowResPath}, ${this.midpoint}`);
+                } else {
+                    this.lowResGpx.bindTooltip(`${(this.lowResGpx.get_distance() / 1000).toFixed(0)}km`);
                 }
                 if (onLoadedCallback) {
                     onLoadedCallback(this);
@@ -287,6 +289,8 @@ class GpxTrack {
                     this.highResGpx = event.target;
                     if (this.devMode) {
                         this.highResGpx.bindTooltip(`${this.highResPath}, ${this.midpoint}`);
+                    } else {
+                        this.highResGpx.bindTooltip(`${(this.highResGpx.get_distance() / 1000).toFixed(0)}km`);
                     }
                     this.displayHighRes(map);
                 }
