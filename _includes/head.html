@@ -13,9 +13,22 @@
   <link rel="stylesheet" href="{{'/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
 
-  {%- feed_meta -%}
+  {% feed_meta %}
 
-  {% I18n_Headers %}
+  {% for lang in site.languages %}
+    {%- if lang == site.default_lang -%}
+      {%- assign href_url = page.url | absolute_url -%}
+    {%- else -%}
+      {%- assign href_url = lang | append: page.url | absolute_url -%}
+    {%- endif -%}
+    <link
+      rel="alternate"
+      hreflang="{{lang}}"
+      {% static_href %}
+      href="{{ href_url }}"
+      {% endstatic_href %}
+    >
+  {% endfor %}
 
   <script src="/assets/dist/bundle.js"></script>
   <script
