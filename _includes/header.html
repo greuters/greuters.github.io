@@ -1,5 +1,5 @@
-<header class="site-header" role="banner">
-  <nav role="navigation">
+<header class="site-header">
+  <nav>
     <ul>
       {% assign top_level_url = page.url | split: '/' | slice: '1' | first | prepend: '/' | append: '/' %}
       {%- assign default_prominent_urls = site.emptyArray | push: top_level_url -%}
