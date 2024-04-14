@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <p>{{- site.data[site.active_lang].l10n.site_description | newline_to_br -}}</p>
+  <p>{{- site.data[site.active_lang].l10n.site_description | newline_to_br | replace: 'br /', 'br' -}}</p>
   <ul>
     {%- if site.github_username -%}
       <li>

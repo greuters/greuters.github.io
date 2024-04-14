@@ -30,7 +30,7 @@
   </h2>
 
   <p class="preview-text">
-    {{ include.post.preview_text | newline_to_br }}
+    {{ include.post.preview_text | newline_to_br | replace: 'br /', 'br'}}
   </p>
 
   <footer>

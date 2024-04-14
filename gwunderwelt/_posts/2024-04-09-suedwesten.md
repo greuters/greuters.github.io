@@ -4,7 +4,8 @@ lang: de
 title: Unterwegs nach Flagstaff
 preview_image_id: Titelbild.jpg
 preview_text: |
-  Durch die Wüste in den Winter? Bei 30ºC in den Sanddünen kaum vorstellbar, rechnen wir dennoch schon bald mit Schnee und Temperaturen um den Gefrierpunkt. Zumindest war das die Prognose für Sedona, als wir in Tecate zum letzten Mal einen Wetterbericht anschauen konnten. Unser Weg führt uns ab der Grenze von der Küste weg in den Osten - ein Abstecher zu einigen von Ritas Lieblingslandschaften, die den Anstoss für diese Reise gaben. Und beim Grand Canyon dürfen wir endlich die Gastfreundschaft ihrer alten Freunden geniessen - ein Besuch der schon lange angekündigt, und viel zu oft verschoben wurde.  
+  Durch die Wüste in den Winter? Bei 30ºC in den Sanddünen kaum vorstellbar, rechnen wir dennoch schon bald mit Schnee und Temperaturen um den Gefrierpunkt. Zumindest war das die Prognose für Sedona, als wir in Tecate zum letzten Mal einen Wetterbericht anschauen konnten.
+  Unser Weg führt uns ab der Grenze von der Küste weg in den Osten - ein Abstecher zu einigen von Ritas Lieblingslandschaften, die den Anstoss für diese Reise gaben. Und beim Grand Canyon dürfen wir endlich die Gastfreundschaft ihrer alten Freunden geniessen - ein Besuch der schon lange angekündigt, und viel zu oft verschoben wurde.
 lat_lng: "[35.215998, -111.55]"
 track_number: 258
 spread_direction: "SE"
