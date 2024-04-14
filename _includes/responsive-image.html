@@ -4,7 +4,10 @@
 
 {%- capture srcset -%}
 {%- for i in resized -%}
-    {{ i.path | relative_url }} {{ i.width }}w,
+    {{ i.path | relative_url }} {{ i.width }}w
+    {%- unless forloop.last -%}
+      ,
+    {%- endunless -%}
 {% endfor %}
 {%- endcapture -%}
 {%- assign thumbnail = resized | last -%}
