@@ -10,16 +10,16 @@
         {% assign marker_classes = marker_classes | push: 'current-toplevel' %}
       {% endunless %}
       <li class="{{marker_classes | join: ' '}} home">
-        <a href="{{ '/' | relative_url }}">
-          <svg class="svg-icon">
+        <a aria-label="Home" href="{{ '/' | relative_url }}">
+          <svg class="svg-icon" aria-hidden="true">
             <use href="{{ '/assets/icons.svg#home' | relative_url }}"></use>
           </svg>
         </a>
       </li>
 
       <li class="dropdown toplevel-urls">
-        <button>
-          <svg class="svg-icon">
+        <button aria-label="Blogs">
+          <svg class="svg-icon" aria-hidden="true">
             <use href="{{ '/assets/icons.svg#hamburger' | relative_url }}"></use>
           </svg>
         </button>
