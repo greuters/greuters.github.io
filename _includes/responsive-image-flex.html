@@ -4,9 +4,8 @@
     {%- unless forloop.last -%}
       ,
     {%- endunless -%}
-{% endfor %}
-{%- endcapture -%}
-
+{%- endfor -%}
+{% endcapture %}
 <div style="flex: calc( {{original.width}} / {{original.height}} )">
   <figure>
     <img
@@ -15,7 +14,7 @@
       src="{{ original.path | relative_url }}"
       alt="{{ alt }}"
     >
-    {% if caption %}
+    {%- if caption != "" -%}
       <figcaption>{{ caption }}</figcaption>
     {% endif %}
   </figure>

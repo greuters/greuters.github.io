@@ -5,10 +5,10 @@
       {%- assign default_prominent_urls = site.emptyArray | push: top_level_url -%}
       {%- assign prominent_urls = site.prominent_top_level_urls | default: default_prominent_urls -%}
 
-      {% assign marker_classes = site.emptyArray %}
-      {% unless prominent_urls contains top_level_url %}
-        {% assign marker_classes = marker_classes | push: 'current-toplevel' %}
-      {% endunless %}
+      {%- assign marker_classes = site.emptyArray -%}
+      {%- unless prominent_urls contains top_level_url -%}
+        {%- assign marker_classes = marker_classes | push: 'current-toplevel' -%}
+      {%- endunless -%}
       <li class="{{marker_classes | join: ' '}} home">
         <a aria-label="Home" href="{{ '/' | relative_url }}">
           <svg class="svg-icon" aria-hidden="true">
@@ -26,10 +26,10 @@
 
         <ul aria-label="submenu">
           {% for prominent_url in prominent_urls %}
-            {% assign marker_classes = site.emptyArray %}
-            {% if top_level_url == prominent_url %}
-              {% assign marker_classes = marker_classes | push: 'current-toplevel' %}
-            {% endif %}
+            {%- assign marker_classes = site.emptyArray -%}
+            {%- if top_level_url == prominent_url -%}
+              {%- assign marker_classes = marker_classes | push: 'current-toplevel' -%}
+            {%- endif -%}
             {%- assign prominent_page = site.pages | where: 'url', prominent_url | first -%}
             <li class="{{marker_classes | join: ' '}}">
               <a href="{{prominent_page.url | relative_url}}">
@@ -45,13 +45,13 @@
 
         <ul aria-label="submenu">
           {% for lang in site.languages %}
-            {% assign lang_name = site.data[lang].l10n.lang_name %}
+            {%- assign lang_name = site.data[lang].l10n.lang_name -%}
             <li>
-              {% if lang == site.default_lang %}
+              {%- if lang == site.default_lang -%}
                 <a href=" {{ page.url }}">{{ lang_name }}</a>
-              {% else %}
+              {%- else -%}
                 <a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a>
-              {% endif %}
+              {%- endif -%}
             </li>
           {% endfor %}
         </ul>

@@ -18,17 +18,17 @@
 {% assign ids = include.ids | split: ', ' %}
 
 <div class="image-divider">
-  {% for id in ids %}
-    {% assign image = page_images | where_exp: 'image', 'image[img_id] == id' | first %}
-    {% if image == null %}
+  {%- for id in ids -%}
+    {%- assign image = page_images | where_exp: 'image', 'image[img_id] == id' | first -%}
+    {%- if image == null -%}
       <img src="" alt="{{'Imagefile with id=`' | append: id | append: '` is missing!' | raise_error }}">
-    {% else %}
+    {%- else -%}
       {% responsive_image_block %}
         template: _includes/responsive-image-flex.html
         path: {{ image[img_path] | replace_first: '/', '' }}
         alt: {{ image[img_alt] | default: image[img_name] }}
         caption: "{{ image[img_caption] }}"
       {% endresponsive_image_block %}
-    {% endif %}
-  {% endfor %}
+    {%- endif -%}
+  {%- endfor -%}
 </div>

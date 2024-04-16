@@ -46,7 +46,8 @@
       path: {{ image[img_path] | replace_first: '/', '' }}
       alt: {{ image[img_alt] | default: image[img_name] }}
     {% endresponsive_image_block %}
-
-    <figcaption>{{ image[img_caption] }}</figcaption>
+    {%- if image[img_caption] != "" -%}
+      <figcaption>{{ image[img_caption] }}</figcaption>
+    {% endif %}
   </figure>
 {% endif %}

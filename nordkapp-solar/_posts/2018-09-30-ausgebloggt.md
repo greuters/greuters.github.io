@@ -22,7 +22,7 @@ Am wichtigsten für die fleissige Leserin vielleicht: am 30. Oktober werden wir 
 
 In unserem stillen Rückzugsort in Spanien haben wir unzählige Bilder durchforstet, die Auswahl immer weiter reduziert und zu einer Geschichte destilliert. Zu dieser Erzählung möchten wir euch gern einladen:
  
-{% include image-divider.html ids="map.png" %}
+{% include image.liquid id="map.png" class="centered" %}
 
 Am 30. Oktober um 20.00 im Treffpunkt, Genossenschaftsstr. 13, 8050 Zürich. 
 
