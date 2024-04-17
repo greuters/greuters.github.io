@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map/3.31.3File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-17T03:24:30.705Z</time>
+    <bounds minlat="70.981558000" minlon="25.697304000" maxlat="71.162228000" maxlon="25.969733000"/>
+  </metadata>
+  <trk>
+    <name>Tag 63_1</name>
+    <desc>+16</desc>
+    <extensions>
+      <gpx_style:line>
+        <gpx_style:color>0000FF</gpx_style:color>
+        <gpx_style:opacity>0.59</gpx_style:opacity>
+        <gpx_style:width>4.0</gpx_style:width>
+      </gpx_style:line>
+      <locus:activity>cycling</locus:activity>
+    </extensions>
+    <trkseg>
+      <trkpt lat="71.028229000" lon="25.889374000">
+        <ele>29.220</ele>
+        <time>2018-07-01T12:13:58Z</time>
+        <pdop>10.000000</pdop>
+      </trkpt>
+      <trkpt lat="71.046902000" lon="25.761072000">
+        <ele>292.700</ele>
+        <time>2018-07-01T12:54:43Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>321.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="71.085653000" lon="25.779734000">
+        <ele>92.350</ele>
+        <time>2018-07-01T13:11:02Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>11.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="71.114283000" lon="25.701056000">
+        <ele>289.720</ele>
+        <time>2018-07-01T13:38:27Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>353.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="71.162228000" lon="25.778589000">
+        <ele>303.650</ele>
+        <time>2018-07-01T14:04:58Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>349.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="71.111266000" lon="25.697304000">
+        <ele>258.620</ele>
+        <time>2018-07-01T17:03:15Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>201.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="71.093957000" lon="25.768718000">
+        <ele>105.590</ele>
+        <time>2018-07-01T17:13:11Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>147.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="71.106775000" lon="25.811871000">
+        <ele>36.620</ele>
+        <time>2018-07-01T17:18:26Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>36.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="71.044110000" lon="25.770010000"/>
+      <trkpt lat="71.030930000" lon="25.872820000"/>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="71.012821000" lon="25.892575000">
+        <ele>28.950</ele>
+        <time>2018-07-02T02:57:31Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>163.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="71.008734000" lon="25.954483000">
+        <ele>38.460</ele>
+        <time>2018-07-02T03:04:46Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>118.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="70.981558000" lon="25.969733000">
+        <ele>25.430</ele>
+        <time>2018-07-02T03:14:26Z</time>
+        <pdop>10.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>205.0</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

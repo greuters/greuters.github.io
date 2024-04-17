@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map/3.30.4</desc>
+    <time>2024-04-17T03:24:21.564Z</time>
+    <bounds minlat="52.085280000" minlon="20.168312000" maxlat="52.351047000" maxlon="20.606438000"/>
+  </metadata>
+  <trk>
+    <name>Tag 23</name>
+    <extensions>
+      <gpx_style:line>
+        <gpx_style:color>0000FF</gpx_style:color>
+        <gpx_style:opacity>0.59</gpx_style:opacity>
+        <gpx_style:width>4.0</gpx_style:width>
+      </gpx_style:line>
+      <locus:activity>cycling</locus:activity>
+    </extensions>
+    <trkseg>
+      <trkpt lat="52.099107000" lon="20.168312000">
+        <ele>88.770</ele>
+        <time>2018-04-24T10:00:03Z</time>
+        <pdop>3.000000</pdop>
+      </trkpt>
+      <trkpt lat="52.085280000" lon="20.171444000">
+        <ele>90.750</ele>
+        <time>2018-04-24T10:09:15Z</time>
+        <pdop>3.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>111.5</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.161438000" lon="20.380319000">
+        <ele>87.750</ele>
+        <time>2018-04-24T11:19:56Z</time>
+        <pdop>3.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>68.1</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.291557000" lon="20.487811000">
+        <ele>79.070</ele>
+        <time>2018-04-24T12:56:07Z</time>
+        <pdop>4.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>59.9</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.298778000" lon="20.516336000">
+        <ele>83.340</ele>
+        <time>2018-04-24T14:05:29Z</time>
+        <pdop>8.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>49.5</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.335562000" lon="20.523026000">
+        <ele>70.460</ele>
+        <time>2018-04-24T14:58:42Z</time>
+        <pdop>3.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>14.9</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.351047000" lon="20.606438000">
+        <ele>78.540</ele>
+        <time>2018-04-24T15:24:21Z</time>
+        <pdop>5.000000</pdop>
+        <extensions>
+          <gpxtpx:TrackPointExtension>
+            <gpxtpx:course>80.5</gpxtpx:course>
+          </gpxtpx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

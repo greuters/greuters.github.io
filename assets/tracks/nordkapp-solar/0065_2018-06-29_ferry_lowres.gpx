@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-17T03:24:30.115Z</time>
+    <bounds minlat="69.728514800" minlon="25.946062200" maxlat="71.150984900" maxlon="31.291033300"/>
+  </metadata>
+  <trk>
+    <name>29 Jun 2018</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+    </extensions>
+    <trkseg>
+      <trkpt lat="69.728514800" lon="30.068833000"/>
+      <trkpt lat="69.794332300" lon="30.065982300"/>
+      <trkpt lat="69.821568800" lon="30.127135900"/>
+      <trkpt lat="69.887672100" lon="30.125851100"/>
+      <trkpt lat="70.274019000" lon="31.146525300"/>
+      <trkpt lat="70.413584900" lon="31.291033300"/>
+      <trkpt lat="70.696824300" lon="30.315337400"/>
+      <trkpt lat="70.726456600" lon="29.968285000"/>
+      <trkpt lat="70.630684000" lon="29.731294900"/>
+      <trkpt lat="70.645707600" lon="29.804410600"/>
+      <trkpt lat="70.708253200" lon="29.845809200"/>
+      <trkpt lat="70.738174000" lon="29.824600000"/>
+      <trkpt lat="70.865844600" lon="29.212428800"/>
+      <trkpt lat="70.863343700" lon="29.121920900"/>
+      <trkpt lat="70.881258100" lon="29.085037900"/>
+      <trkpt lat="70.899349600" lon="28.951725200"/>
+      <trkpt lat="71.018629900" lon="28.538098700"/>
+      <trkpt lat="71.132660100" lon="28.226306500"/>
+      <trkpt lat="71.104919800" lon="27.950061700"/>
+      <trkpt lat="71.045816200" lon="27.829563700"/>
+      <trkpt lat="71.132151200" lon="27.766292000"/>
+      <trkpt lat="71.150984900" lon="27.589611100"/>
+      <trkpt lat="71.058160100" lon="27.201476900"/>
+      <trkpt lat="71.018867200" lon="27.164976100"/>
+      <trkpt lat="70.953337300" lon="27.309326400"/>
+      <trkpt lat="70.993089900" lon="27.177396300"/>
+      <trkpt lat="71.006701000" lon="26.631083600"/>
+      <trkpt lat="70.969790100" lon="26.129397700"/>
+      <trkpt lat="70.975909400" lon="25.946062200"/>
+    </trkseg>
+  </trk>
+</gpx>

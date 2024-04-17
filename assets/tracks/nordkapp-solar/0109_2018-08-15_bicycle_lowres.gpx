@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-17T03:24:40.371Z</time>
+    <bounds minlat="51.520911000" minlon="9.381264000" maxlat="52.036661000" maxlon="9.625007000"/>
+  </metadata>
+  <trk>
+    <name>Tag 99 15 Aug</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="52.036661000" lon="9.421449000">
+        <ele>67.750</ele>
+      </trkpt>
+      <trkpt lat="51.987726000" lon="9.446555000">
+        <ele>69.750</ele>
+      </trkpt>
+      <trkpt lat="51.994633000" lon="9.510625000">
+        <ele>100.250</ele>
+      </trkpt>
+      <trkpt lat="51.925180000" lon="9.503268000">
+        <ele>91.500</ele>
+      </trkpt>
+      <trkpt lat="51.926538000" lon="9.458372000">
+        <ele>78.000</ele>
+      </trkpt>
+      <trkpt lat="51.899512000" lon="9.462917000">
+        <ele>84.250</ele>
+      </trkpt>
+      <trkpt lat="51.896484000" lon="9.432600000">
+        <ele>90.000</ele>
+      </trkpt>
+      <trkpt lat="51.878791000" lon="9.471236000">
+        <ele>84.500</ele>
+      </trkpt>
+      <trkpt lat="51.781711000" lon="9.413387000">
+        <ele>89.750</ele>
+      </trkpt>
+      <trkpt lat="51.774076000" lon="9.384608000">
+        <ele>94.000</ele>
+      </trkpt>
+      <trkpt lat="51.674312000" lon="9.396002000">
+        <ele>95.000</ele>
+      </trkpt>
+      <trkpt lat="51.668625000" lon="9.381264000">
+        <ele>95.750</ele>
+      </trkpt>
+      <trkpt lat="51.650279000" lon="9.390001000">
+        <ele>95.000</ele>
+      </trkpt>
+      <trkpt lat="51.653322000" lon="9.493305000">
+        <ele>104.000</ele>
+      </trkpt>
+      <trkpt lat="51.633011000" lon="9.492407000">
+        <ele>126.000</ele>
+      </trkpt>
+      <trkpt lat="51.626693000" lon="9.550210000">
+        <ele>105.000</ele>
+      </trkpt>
+      <trkpt lat="51.604638000" lon="9.541739000">
+        <ele>106.000</ele>
+      </trkpt>
+      <trkpt lat="51.595889000" lon="9.586014000">
+        <ele>107.000</ele>
+      </trkpt>
+      <trkpt lat="51.537645000" lon="9.625007000">
+        <ele>118.250</ele>
+      </trkpt>
+      <trkpt lat="51.520911000" lon="9.609471000">
+        <ele>155.250</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

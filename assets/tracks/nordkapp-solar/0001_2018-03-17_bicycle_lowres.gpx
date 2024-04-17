@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map/3.30.4</desc>
+    <time>2024-04-17T03:24:20.752Z</time>
+    <bounds minlat="47.504780000" minlon="7.557790000" maxlat="47.614075000" maxlon="7.841340000"/>
+  </metadata>
+  <trk>
+    <name>Tag 2</name>
+    <desc>nachberechnet</desc>
+    <extensions>
+      <gpx_style:line>
+        <gpx_style:color>0000FF</gpx_style:color>
+        <gpx_style:opacity>0.59</gpx_style:opacity>
+        <gpx_style:width>4.0</gpx_style:width>
+      </gpx_style:line>
+      <locus:rteComputeType>5</locus:rteComputeType>
+      <locus:rteSimpleRoundabouts>1</locus:rteSimpleRoundabouts>
+    </extensions>
+    <trkseg>
+      <trkpt lat="47.572233000" lon="7.841340000">
+        <ele>296.500</ele>
+      </trkpt>
+      <trkpt lat="47.554753000" lon="7.790887000">
+        <ele>266.500</ele>
+      </trkpt>
+      <trkpt lat="47.556635000" lon="7.731437000">
+        <ele>280.000</ele>
+      </trkpt>
+      <trkpt lat="47.543658000" lon="7.692475000">
+        <ele>268.250</ele>
+      </trkpt>
+      <trkpt lat="47.555678000" lon="7.648034000">
+        <ele>261.500</ele>
+      </trkpt>
+      <trkpt lat="47.583149000" lon="7.651512000">
+        <ele>284.500</ele>
+      </trkpt>
+      <trkpt lat="47.614075000" lon="7.619746000">
+        <ele>275.250</ele>
+      </trkpt>
+      <trkpt lat="47.504780000" lon="7.557790000">
+        <ele>299.750</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

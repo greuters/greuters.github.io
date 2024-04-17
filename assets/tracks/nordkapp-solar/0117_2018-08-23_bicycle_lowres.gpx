@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-17T03:24:40.622Z</time>
+    <bounds minlat="47.505307000" minlon="7.504220000" maxlat="47.969567000" maxlon="7.622577000"/>
+  </metadata>
+  <trk>
+    <name>tag 107 23 aug</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="47.969567000" lon="7.622577000">
+        <ele>195.750</ele>
+      </trkpt>
+      <trkpt lat="47.908672000" lon="7.583814000">
+        <ele>200.000</ele>
+      </trkpt>
+      <trkpt lat="47.914939000" lon="7.542689000">
+        <ele>201.500</ele>
+      </trkpt>
+      <trkpt lat="47.820995000" lon="7.507374000">
+        <ele>219.000</ele>
+      </trkpt>
+      <trkpt lat="47.734607000" lon="7.519967000">
+        <ele>225.250</ele>
+      </trkpt>
+      <trkpt lat="47.669304000" lon="7.504220000">
+        <ele>235.000</ele>
+      </trkpt>
+      <trkpt lat="47.598074000" lon="7.599390000">
+        <ele>246.500</ele>
+      </trkpt>
+      <trkpt lat="47.505307000" lon="7.552397000">
+        <ele>298.750</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

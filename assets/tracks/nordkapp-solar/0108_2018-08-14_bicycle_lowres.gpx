@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-17T03:24:40.342Z</time>
+    <bounds minlat="52.038920000" minlon="8.919326000" maxlat="52.375850000" maxlon="9.417288000"/>
+  </metadata>
+  <trk>
+    <name>98 14 Aug 2018</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="52.375850000" lon="8.994709000">
+        <ele>41.000</ele>
+        <time>2024-04-16T06:37:46.619Z</time>
+      </trkpt>
+      <trkpt lat="52.308945000" lon="8.919326000">
+        <ele>45.500</ele>
+        <time>2024-04-16T09:26:09.174Z</time>
+      </trkpt>
+      <trkpt lat="52.231959000" lon="8.925044000">
+        <ele>107.250</ele>
+        <time>2024-04-16T12:23:23.832Z</time>
+      </trkpt>
+      <trkpt lat="52.221226000" lon="8.994150000">
+        <ele>75.750</ele>
+        <time>2024-04-16T13:46:18.497Z</time>
+      </trkpt>
+      <trkpt lat="52.183509000" lon="9.026860000">
+        <ele>52.750</ele>
+        <time>2024-04-16T15:13:59.876Z</time>
+      </trkpt>
+      <trkpt lat="52.193402000" lon="9.120074000">
+        <ele>56.750</ele>
+        <time>2024-04-16T17:21:33.309Z</time>
+      </trkpt>
+      <trkpt lat="52.164198000" lon="9.211769000">
+        <ele>59.750</ele>
+        <time>2024-04-16T19:45:25.927Z</time>
+      </trkpt>
+      <trkpt lat="52.161926000" lon="9.267777000">
+        <ele>62.000</ele>
+        <time>2024-04-16T20:58:48.060Z</time>
+      </trkpt>
+      <trkpt lat="52.126937000" lon="9.304100000">
+        <ele>64.500</ele>
+        <time>2024-04-16T22:36:47.134Z</time>
+      </trkpt>
+      <trkpt lat="52.120699000" lon="9.334610000">
+        <ele>65.750</ele>
+        <time>2024-04-16T23:16:23.150Z</time>
+      </trkpt>
+      <trkpt lat="52.087828000" lon="9.366188000">
+        <ele>65.000</ele>
+        <time>2024-04-17T00:35:53.660Z</time>
+      </trkpt>
+      <trkpt lat="52.065152000" lon="9.358374000">
+        <ele>65.750</ele>
+        <time>2024-04-17T01:28:45.176Z</time>
+      </trkpt>
+      <trkpt lat="52.038920000" lon="9.417288000">
+        <ele>68.000</ele>
+        <time>2024-04-17T02:57:36.196Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
