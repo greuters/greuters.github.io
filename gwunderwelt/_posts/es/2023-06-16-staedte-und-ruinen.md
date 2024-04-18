@@ -49,9 +49,8 @@ image_metadata:
 
 ----
 
-<!-- TODO: check if hosting without cookies is possible -->
 <figure class="float-inline-start">
-  <iframe width="378" height="213" src="https://www.youtube.com/embed/lHxjwHVPFJs" title="Resplendent quetzal singing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+  <iframe class="youtube-halfwidth" src="https://www.youtube-nocookie.com/embed/lHxjwHVPFJs?si=NNgvfquaxiAGkRcx" title="Quetzal cantando" frameborder="0" allow="web-share" allowfullscreen ></iframe>
 </figure>
 
 Después de que nos dejaran disfrutar de la madrugada sin demasiado ajetreo, los autobuses turísticos de los cruceros de la costa empiezan a llegar a partir de las 10. Innumerables puestos intentan vender recuerdos y pequeñas artesanías a las multitudes de turistas, incluidas flautas y silbatos, que con el tiempo dan vida a toda una selva. Los sonidos imitados de diversas aves, jaguares que silban y ranas que croan llenan el aire. Esto le confiere un encanto peculiar que le sienta muy bien al antiguo recinto; al fin y al cabo, los constructores mayas también eran excelentes arquitectos del sonido. En el estadio de pelota hay un fuerte eco que recuerda al rugido de un jaguar. Si se aplaude con fuerza delante de las escaleras de la pirámide de Kukulkán, se produce un eco parecido a la llamada del quetzal - el homónimo de nuestro tándem. Y por fin, si alguien camina alrededor del templo por la parte superior, se dice que salpica como la lluvia en la base de la pirámide....

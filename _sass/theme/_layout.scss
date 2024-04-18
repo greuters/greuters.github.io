@@ -1,8 +1,7 @@
-// General snippets, not worth their one category (yet)
+// General snippets, not worth their own category (yet)
 body {
     background-image: linear-gradient(white 60%, $grey-color-light 100%);
 
-    max-width: -webkit-calc(#{$content-width} - (#{$small-spacing-size} * 2));
     max-width: calc(#{$content-width} - (#{$small-spacing-size} * 2));
     margin-right: auto;
     margin-left: auto;
@@ -11,7 +10,6 @@ body {
     @extend %clearfix;
 
     @media screen and (min-width: $palm-width) {
-        max-width: -webkit-calc(#{$content-width} - (#{$base-spacing-size} * 2));
         max-width: calc(#{$content-width} - (#{$base-spacing-size} * 2));
         padding-right: $base-spacing-size;
         padding-left: $base-spacing-size;
@@ -29,6 +27,26 @@ body {
 .svg-icon {
     display: inline-block;
     vertical-align: middle;
+}
+
+.youtube-fullwidth {
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    width: calc(#{$content-width} - (#{$small-spacing-size} * 2));
+
+    @media screen and (min-width: $palm-width) {
+        width: calc(#{$content-width} - (#{$base-spacing-size} * 2));
+    }
+}
+
+.youtube-halfwidth {
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    width: calc(#{$content-width} - (#{$small-spacing-size} * 2));
+
+    @media screen and (min-width: $palm-width) {
+        width: calc(#{$content-width} / 2 - #{$base-spacing-size} * 2);
+    }
 }
 
 .post-list {

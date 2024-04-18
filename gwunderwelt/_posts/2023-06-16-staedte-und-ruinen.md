@@ -49,9 +49,8 @@ In Izamal begegnen wir das erste Mal einem Monument aus Präkolumbianischer Zeit
 
 ----
 
-<!-- TODO: check if hosting without cookies is possible -->
 <figure class="float-inline-start">
-  <iframe width="378" height="213" src="https://www.youtube.com/embed/lHxjwHVPFJs" title="Resplendent quetzal singing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+  <iframe class="youtube-halfwidth" src="https://www.youtube-nocookie.com/embed/lHxjwHVPFJs?si=NNgvfquaxiAGkRcx" title="Gesang des Quetzal" frameborder="0" allow="web-share" allowfullscreen ></iframe>
 </figure>
 
 Nachdem wir die frühen Stunden ohne allzu viel Rummel geniessen durften, trudeln ab 10 die Touristenbusse der Kreuzfahrtsschiffe von der Küste ein. Unzählige Stände versuchen an Massen von Touristen Souvenirs und kleine Handwerkskunst zu verkaufen - unter anderem auch Flöten und Pfeifen, die mit der Zeit einen ganzen Dschungel zum Leben erwecken. Die nachgemachten Geräusche vielfältiger Vögel, fauchende Jaguare und quakende Frösche erfüllen die Luft. Damit gewinnt der Kommerz sogar einen eigenartigen Reiz, der gut zu dem alterwürdigen Ort passt - waren die Maya-Baumeister doch auch ausgezeichnete Soundarchitekten. In der Ballarena gibt es ein starkes Echo, welches an das Brüllen eines Jaguars erinnert. Klatscht man vor den Treppen der Kukulkan-Pyramide laut in die Hände, wird ein Echo wie der Ruf des Quetzals - der Namenspate unseres Tandems - zurückgeworfen. Und zuguterletzt soll es, wenn jemand oben um den Tempel geht, unten an der Pyramide wie Regen plätschern.. 
