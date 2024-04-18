@@ -3,6 +3,7 @@
 {% endcomment %}
 
 {%- capture srcset -%}
+{{ original.path | relative_url }} {{ original.width }}w,
 {%- for i in resized -%}
     {{ i.path | relative_url }} {{ i.width }}w
     {%- unless forloop.last -%}
