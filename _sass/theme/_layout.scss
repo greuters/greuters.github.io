@@ -75,3 +75,16 @@ body {
 hr {
     margin-block: $small-spacing-size;
 }
+
+table.hidden-borders {
+    border: 0;
+
+    tr {
+        background-color: unset;
+    }
+
+    th,
+    td {
+        border: 0;
+    }
+}
