@@ -40,15 +40,14 @@ class MapManager {
         this.posts = [];
         const deferredPostMap = new Map(); // trackNumber:postHtml
         for (let postHtml of postHtmls) {
-            const latLng = JSON.parse(postHtml.dataset.latLng);
             const trackNumber = Number(postHtml.dataset.trackNumber);
-            if (latLng === null) {
+            if (postHtml.dataset.latLng === "") {
                 if (!deferredPostMap.has(trackNumber)) {
                     deferredPostMap.set(trackNumber, []);
                 }
                 deferredPostMap.get(trackNumber).push(postHtml);
             } else {
-                this.posts.push(new Post(postHtml, L.latLng(latLng)));
+                this.posts.push(new Post(postHtml, L.latLng(JSON.parse(postHtml.dataset.latLng))));
             }
         }
 
