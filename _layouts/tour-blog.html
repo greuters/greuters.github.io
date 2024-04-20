@@ -236,6 +236,7 @@ layout: default
   defer
   src="/assets/js/init-map.js"
   data-dev-mode="{{ devMode }}"
+  data-lowres-track-archive="{{ "/assets/tracks/" | append: page.post_category | append: "/lowres.tar.gz"}}"
   data-init-bounds="{{ page.init_bounds }}"
   data-view-fullscreen-l10n="{{ site.data[site.active_lang].l10n.viewFullscreen }}"
   data-exit-fullscreen-l10n="{{ site.data[site.active_lang].l10n.exitFullscreen }}"

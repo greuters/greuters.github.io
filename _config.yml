@@ -60,7 +60,8 @@ default_lang: "de"
 #
 # For the same reason, assets/tracks is not excluded from localization at the moment, instead the files are removed
 # and replaced with links to the original asset after build in package.json
-exclude_from_localization: ["assets/dist", "assets/resized"]
+exclude_from_localization:
+  ["assets/dist", "assets/resized", "assets/download", "assets/js"]
 parallel_localization: true
 
 # Settings for jekyll-responsive-image

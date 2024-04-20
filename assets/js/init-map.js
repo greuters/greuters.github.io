@@ -5,7 +5,7 @@ class MapManager {
     static highResMinZoom = 10;
     static animationMaxZoom = 4;
 
-    constructor(map, trackData, postHtmls, devMode) {
+    constructor(map, lowresTrackArchive, trackData, postHtmls, devMode) {
         this.intervalId = null;
         this.animationDelay = 100; // [ms]
         this.currentTrackIdx = 0;
@@ -51,34 +51,73 @@ class MapManager {
             }
         }
 
-        this.tracks = [];
-        for (let data of trackData) {
-            const track = new GpxTrack(
-                Number(data['trackNumber']),
-                data['color'],
-                data['vehicle'],
-                data['highresPath'],
-                data['lowresPath'],
-                devMode
-            );
-            this.tracks.push(track);
-            if (deferredPostMap.has(track.trackNumber)) {
-                track.loadLowRes((track) => {
-                    for (let postHtml of deferredPostMap.get(track.trackNumber)) {
-                        this.posts.push(new Post(postHtml, track.midpoint));
-                    }
-                    if (!this.map.isFullscreen()) {
-                        this.observePosts();
-                    }
-                });
-            } else {
-                track.loadLowRes();
-            }
-        }
+        this.initTracks(lowresTrackArchive, trackData, deferredPostMap, devMode);
 
         this.focusedPostHtml = postHtmls.toSorted((a, b) => Number(b.dataset.trackNumber) - Number(a.dataset.trackNumber))[0];
         this.initPostObserver();
     };
+
+    async initTracks(lowresTrackArchive, trackData, deferredPostMap, devMode) {
+        this.fetchController = new AbortController();
+        const signal = this.fetchController.signal;
+        try {
+            let response = await fetch(lowresTrackArchive, { signal: signal });
+
+            let blob = await response.blob();
+            if (signal.aborted) {
+                return;
+            }
+
+            let arrayBuffer = await blob.arrayBuffer();
+            if (signal.aborted) {
+                return;
+            }
+
+            let lowresTracks = untar(ungzip(new Uint8Array(arrayBuffer)))
+                .sort(function (a, b) { return a.name > b.name ? 1 : -1 });
+
+            const utf8decoder = new TextDecoder();
+
+            this.tracks = [];
+            for (let data of trackData) {
+                const track = new GpxTrack(
+                    Number(data['trackNumber']),
+                    data['color'],
+                    data['vehicle'],
+                    data['highresPath'],
+                    data['lowresPath'],
+                    devMode
+                );
+                const lowresTrack = lowresTracks[track.trackNumber];
+                invariant(data['lowresPath'].endsWith(lowresTrack.name), 'corrupt lowres track archive');
+                if (deferredPostMap.has(track.trackNumber)) {
+                    track.loadLowRes(utf8decoder.decode(lowresTrack.data), (track) => {
+                        for (let postHtml of deferredPostMap.get(track.trackNumber)) {
+                            this.posts.push(new Post(postHtml, track.midpoint));
+                        }
+                        if (!this.map.isFullscreen()) {
+                            this.observePosts();
+                        }
+                    });
+                } else {
+                    track.loadLowRes(utf8decoder.decode(lowresTrack.data));
+                }
+                this.tracks.push(track);
+            }
+        } catch (err) {
+            if (err.name == 'AbortError') {
+                return;
+            } else {
+                throw err;
+            }
+        } finally {
+            if (this.fetchController) {
+                delete this.fetchController;
+            }
+        }
+
+        this.showAnimation();
+    }
 
     onResize() {
         this.initPostObserver();
@@ -199,8 +238,16 @@ class MapManager {
     };
 
     remove() {
-        this.map.remove();
+        if (this.fetchController) {
+            this.fetchController.abort();
+            delete this.fetchController;
+        }
+        if (this.intervalId) {
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+        }
         this.postObserver.disconnect();
+        this.map.remove();
     }
 };
 
@@ -225,15 +272,11 @@ class GpxTrack {
             }
             this.lowResGpx.addTo(map);
             this.currentDisplayState = 'lowres';
-        } else {
-            this.loadLowRes((track) => {
-                track.displayLowRes(map);
-            });
         }
     };
 
-    loadLowRes(onLoadedCallback) {
-        new L.GPX(this.lowResPath, {
+    loadLowRes(gpxData, onLoadedCallback) {
+        new L.GPX(gpxData, {
             async: true,
             marker_options: {
                 startIconUrl: '',
@@ -247,17 +290,14 @@ class GpxTrack {
                 this.midpoint = latLngs[Math.floor(latLngs.length / 2)];
             }
         }).on('loaded', (event) => {
-            // discard all but the first successful attempt if load was triggered multiple times
-            if (this.lowResGpx === undefined) {
-                this.lowResGpx = event.target;
-                if (this.devMode) {
-                    this.lowResGpx.bindTooltip(`${this.lowResPath}, ${this.midpoint}`);
-                } else {
-                    this.lowResGpx.bindTooltip(`${(this.lowResGpx.get_distance() / 1000).toFixed(0)}km`);
-                }
-                if (onLoadedCallback) {
-                    onLoadedCallback(this);
-                }
+            this.lowResGpx = event.target;
+            if (this.devMode) {
+                this.lowResGpx.bindTooltip(`${this.lowResPath}, ${this.midpoint}`);
+            } else {
+                this.lowResGpx.bindTooltip(`${(this.lowResGpx.get_distance() / 1000).toFixed(0)}km`);
+            }
+            if (onLoadedCallback) {
+                onLoadedCallback(this);
             }
         });
     };
@@ -412,20 +452,19 @@ function initMap() {
     }).addTo(map);
     map.fitBounds(JSON.parse(script.dataset.initBounds));
 
-    window.mapManager = new MapManager(map,
+    window.mapManager = new MapManager(
+        map,
+        script.dataset.lowresTrackArchive,
         JSON.parse(document.getElementById("track-data").text),
         Array.from(document.querySelectorAll('#post-list .post-preview')),
         devMode);
-
-    // start animation with a small delay to give a headstart for GPX track loading
-    setTimeout(() => window.mapManager.showAnimation(), 100);
 }
 
 window.onload = initMap;
 
 window.onresize = function () {
     if (getComputedStyle(document.querySelector('#map-box')).display === 'none') {
-        if (Object.hasOwn(window, 'mapManager')) {
+        if (window.mapManager) {
             window.mapManager.remove();
             delete window.mapManager;
         }

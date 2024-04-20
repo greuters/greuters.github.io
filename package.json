@@ -6,9 +6,11 @@
   "scripts": {
     "clean": "bundle exec jekyll clean && rm -rf assets/resized",
     "dev": "webpack --mode=development && bundle exec jekyll build && npm run replace-images && bundle exec jekyll serve",
-    "build": "webpack --mode=production && JEKYLL_ENV=production bundle exec jekyll build && npm run replace-images",
-    "postbuild": "rm -r _site/*/assets/tracks && find _site/*/assets -maxdepth 0 -type d -execdir ln -s ../../assets/tracks assets/tracks ';'",
+    "build": "webpack --mode=production && JEKYLL_ENV=production bundle exec jekyll build",
+    "postbuild": "npm run replace-images && npm run create-track-archives && npm run link-tracks",
     "replace-images": "rm -r _site/*/assets/images && cp assets/images/favicon.png _site/assets/images/ && rm -rf _site/assets/resized || true && cp -r assets/resized _site/assets/resized",
+    "create-track-archives": "for dir in assets/tracks/*; do `find $dir/ -name '*lowres.gpx' -printf '%f\\0' | tar -czf _site/$dir/lowres.tar.gz -C $dir/ --null --files-from -`; done && rm _site/assets/tracks/*/*lowres.gpx",
+    "link-tracks": "rm -r _site/*/assets/tracks && find _site/*/assets -maxdepth 0 -type d -execdir ln -s ../../assets/tracks assets/tracks ';'",
     "serve": "http-server -p 9090 _site/"
   },
   "repository": {
@@ -36,6 +38,9 @@
     "leaflet": "^1.9.4",
     "leaflet-fullscreen": "^1.0.2",
     "leaflet-gpx": "^1.7.0",
-    "lightgallery": "^2.7.2"
+    "lightgallery": "^2.7.2",
+    "pako": "^2.1.0",
+    "tiny-invariant": "^1.3.3",
+    "tinytar-fix": "^0.1.1"
   }
 }
