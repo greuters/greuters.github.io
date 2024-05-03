@@ -178,7 +178,13 @@ class MapManager {
     };
 
     showAnimation() {
-        if (!this.intervalId) {
+        if (this.intervalId) {
+            for (let post of this.posts) {
+                if (post.trackNumber <= this.currentTrackIdx) {
+                    post.display(this.map);
+                }
+            }
+        } else {
             this.currentTrackIdx = 0;
             for (let track of this.tracks) {
                 track.undisplay();
