@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-05-29T20:52:45.813Z</time>
+    <bounds minlat="40.609603333" minlon="-124.304015000" maxlat="40.642930000" maxlon="-124.205683333"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="40.641850000" lon="-124.304015000">
+        <time>2024-05-27T17:35:02Z</time>
+      </trkpt>
+      <trkpt lat="40.642930000" lon="-124.226836667">
+        <ele>-0.400</ele>
+        <time>2024-05-27T18:33:51Z</time>
+        <geoidheight>-25.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.210000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="40.609603333" lon="-124.205683333">
+        <ele>10.600</ele>
+        <time>2024-05-27T20:29:38Z</time>
+        <geoidheight>-25.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.510000</vdop>
+        <pdop>1.760000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
