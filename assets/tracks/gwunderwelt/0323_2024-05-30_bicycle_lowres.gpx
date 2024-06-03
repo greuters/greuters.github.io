@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-06-03T22:59:42.536Z</time>
+    <bounds minlat="41.320941667" minlon="-124.073961667" maxlat="41.392283333" maxlon="-124.025666667"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="41.357458333" lon="-124.030176667">
+        <time>2024-05-30T14:25:23Z</time>
+      </trkpt>
+      <trkpt lat="41.343415000" lon="-124.056106667">
+        <ele>35.600</ele>
+        <time>2024-05-30T18:20:09Z</time>
+        <geoidheight>-25.3</geoidheight>
+        <fix>3d</fix>
+        <sat>6</sat>
+        <hdop>1.460000</hdop>
+        <vdop>0.970000</vdop>
+        <pdop>1.760000</pdop>
+      </trkpt>
+      <trkpt lat="41.356630000" lon="-124.073961667">
+        <ele>13.600</ele>
+        <time>2024-05-30T18:38:15Z</time>
+        <geoidheight>-25.3</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.070000</hdop>
+        <vdop>1.830000</vdop>
+        <pdop>2.120000</pdop>
+      </trkpt>
+      <trkpt lat="41.392283333" lon="-124.066808333">
+        <ele>3.600</ele>
+        <time>2024-05-30T18:49:45Z</time>
+        <geoidheight>-25.2</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.290000</hdop>
+        <vdop>2.090000</vdop>
+        <pdop>2.450000</pdop>
+      </trkpt>
+      <trkpt lat="41.352853333" lon="-124.072470000">
+        <ele>24.000</ele>
+        <time>2024-05-30T21:14:41Z</time>
+        <geoidheight>-25.3</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.890000</hdop>
+        <vdop>0.840000</vdop>
+        <pdop>1.220000</pdop>
+      </trkpt>
+      <trkpt lat="41.320941667" lon="-124.041963333">
+        <ele>-111.100</ele>
+        <time>2024-05-30T21:32:40Z</time>
+        <geoidheight>-25.2</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.210000</hdop>
+        <vdop>2.130000</vdop>
+        <pdop>2.450000</pdop>
+      </trkpt>
+      <trkpt lat="41.356943333" lon="-124.025666667">
+        <ele>77.300</ele>
+        <time>2024-05-30T21:44:59Z</time>
+        <geoidheight>-25.2</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.090000</hdop>
+        <vdop>1.950000</vdop>
+        <pdop>2.230000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
