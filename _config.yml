@@ -13,6 +13,9 @@ rss: rss-feed
 disqus:
   shortname:
 
+keep_files:
+  - "assets/tracks"
+
 # ordered list of top level pages that should be prominently shown in navigation
 prominent_top_level_urls:
   - /gwunderwelt/
