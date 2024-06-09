@@ -1,0 +1,21 @@
+<form
+  class="contact-form"
+  action="https://formspree.io/f/xeqyyjkr"
+  method="POST"
+>
+  <label id="name" aria-label="{{ site.data[site.active_lang].l10n.contactName }}">
+    <input required aria-required="true" type="text" name="name" placeholder="">
+  </label>
+
+  <label id="email" aria-label="{{ site.data[site.active_lang].l10n.contactEmail }}">
+    <input required aria-required="true" type="email" name="email" placeholder="">
+  </label>
+
+  <label id="message" aria-label="{{ site.data[site.active_lang].l10n.contactMessage }}">
+    <textarea required aria-required="true" name="message" placeholder=""></textarea>
+  </label>
+
+  <button id="submit" type="submit">
+    {{ site.data[site.active_lang].l10n.contactSubmit }}
+  </button>
+</form>

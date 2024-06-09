@@ -1,0 +1,126 @@
+.contact-form {
+    display: grid;
+    grid-template-areas:
+        "name email"
+        "message message"
+        "submit empty";
+    grid-template-rows: max-content 50vh max-content;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: $base-spacing-size;
+    text-align: left;
+    padding: $base-spacing-size 0;
+    margin: 0;
+
+    #name {
+        grid-area: name;
+    }
+
+    #email {
+        grid-area: email;
+    }
+
+    #message {
+        grid-area: message;
+    }
+
+    #submit {
+        grid-area: submit;
+    }
+
+    label {
+        display: inline-block;
+        position: relative;
+        --input-height: #{3 * $base-font-size};
+    }
+
+    label::before,
+    label::after {
+        position: absolute;
+        top: calc(var(--input-height) / 2 - 0.5rem);
+        left: $small-spacing-size;
+        max-width: calc(100% - 2 * $small-spacing-size);
+        transition: transform 0.4s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 0;
+        padding-inline: $small-spacing-size;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        pointer-events: none;
+        transform-origin: left;
+        background-color: $background-color;
+    }
+
+    label::after {
+        content: attr(aria-label);
+    }
+
+    label:has(input:required)::before,
+    label:has(textarea:required)::before {
+        content: "*";
+        color: red;
+    }
+
+    label:has(input:required)::after,
+    label:has(textarea:required)::after {
+        left: calc($small-spacing-size + 0.9rem);
+        padding-left: 0;
+    }
+
+    label:has(input:focus)::before,
+    label:has(input:autofill)::before,
+    label:has(input:not(:placeholder-shown))::before,
+    label:has(input:focus)::after,
+    label:has(input:autofill)::after,
+    label:has(input:not(:placeholder-shown))::after,
+    label:has(textarea:focus)::before,
+    label:has(textarea:autofill)::before,
+    label:has(textarea:not(:placeholder-shown))::before,
+    label:has(textarea:focus)::after,
+    label:has(textarea:autofill)::after,
+    label:has(textarea:not(:placeholder-shown))::after {
+        transform: translateY(-2 * $base-font-size) scale(0.8);
+    }
+
+    input {
+        display: block;
+        width: calc(100% - 2 * $base-spacing-size);
+        height: var(--input-height);
+        padding: 0 $base-spacing-size;
+        background: $background-color;
+        font-size: $base-font-size;
+    }
+
+    textarea {
+        resize: vertical;
+        width: calc(100% - 2 * $base-spacing-size);
+        height: calc(100% - 2 * $base-spacing-size);
+        padding: $base-spacing-size;
+        font-size: $base-font-size;
+    }
+
+    button {
+        justify-self: start;
+    }
+
+    input:autofill {
+        box-shadow: inset 0 0 0 666vw $background-color;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: transparent;
+    }
+
+    input:invalid:not(:placeholder-shown),
+    textarea:invalid:not(:placeholder-shown) {
+        box-shadow: 0 0 5px 1px red;
+    }
+
+    input:focus:invalid,
+    textarea:focus:invalid {
+        box-shadow: none;
+    }
+}
