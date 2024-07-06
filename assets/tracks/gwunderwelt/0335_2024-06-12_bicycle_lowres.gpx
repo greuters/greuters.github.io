@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-07-06T17:05:37.213Z</time>
+    <bounds minlat="45.716947000" minlon="-121.971219000" maxlat="45.990561000" maxlon="-121.756232000"/>
+  </metadata>
+  <trk>
+    <name>12 jun</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>4</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="45.716947000" lon="-121.756232000">
+        <ele>233.830</ele>
+        <time>2024-06-09T15:26:50.484Z</time>
+      </trkpt>
+      <trkpt lat="45.725930000" lon="-121.820380000">
+        <ele>142.790</ele>
+        <time>2024-06-09T17:37:28.850Z</time>
+      </trkpt>
+      <trkpt lat="45.740931000" lon="-121.820554000">
+        <ele>161.870</ele>
+        <time>2024-06-09T18:05:24.845Z</time>
+      </trkpt>
+      <trkpt lat="45.867191000" lon="-121.971219000">
+        <ele>336.510</ele>
+        <time>2024-06-09T23:24:15.445Z</time>
+      </trkpt>
+      <trkpt lat="45.990561000" lon="-121.915343000">
+        <ele>928.260</ele>
+        <time>2024-06-10T04:25:20.167Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

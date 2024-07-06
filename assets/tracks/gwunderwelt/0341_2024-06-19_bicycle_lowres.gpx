@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-07-06T17:05:37.357Z</time>
+    <bounds minlat="48.113415000" minlon="-122.765715000" maxlat="48.262379000" maxlon="-122.583176000"/>
+  </metadata>
+  <trk>
+    <name>19 Jun</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="48.113415000" lon="-122.583176000">
+        <ele>22.260</ele>
+        <time>2024-06-17T00:28:43.448Z</time>
+      </trkpt>
+      <trkpt lat="48.155757000" lon="-122.597434000">
+        <ele>67.210</ele>
+        <time>2024-06-17T01:50:13.430Z</time>
+      </trkpt>
+      <trkpt lat="48.170881000" lon="-122.631298000">
+        <ele>8.440</ele>
+        <time>2024-06-17T02:47:50.694Z</time>
+      </trkpt>
+      <trkpt lat="48.162982000" lon="-122.675824000">
+        <ele>3.230</ele>
+        <time>2024-06-17T03:58:51.388Z</time>
+      </trkpt>
+      <trkpt lat="48.194159000" lon="-122.667965000">
+        <ele>30.430</ele>
+        <time>2024-06-17T05:06:23.996Z</time>
+      </trkpt>
+      <trkpt lat="48.220040000" lon="-122.686121000">
+        <ele>22.640</ele>
+        <time>2024-06-17T06:09:47.420Z</time>
+      </trkpt>
+      <trkpt lat="48.213827000" lon="-122.712762000">
+        <ele>10.200</ele>
+        <time>2024-06-17T06:47:55.235Z</time>
+      </trkpt>
+      <trkpt lat="48.231994000" lon="-122.765715000">
+        <ele>13.070</ele>
+        <time>2024-06-17T08:20:04.337Z</time>
+      </trkpt>
+      <trkpt lat="48.243775000" lon="-122.690505000">
+        <ele>33.680</ele>
+        <time>2024-06-17T10:05:11.662Z</time>
+      </trkpt>
+      <trkpt lat="48.262379000" lon="-122.680520000">
+        <ele>42.200</ele>
+        <time>2024-06-17T10:48:14.618Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

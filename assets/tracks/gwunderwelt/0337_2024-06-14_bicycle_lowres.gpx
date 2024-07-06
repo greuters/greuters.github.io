@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-07-06T17:05:37.262Z</time>
+    <bounds minlat="46.407388000" minlon="-121.956868000" maxlat="46.659941000" maxlon="-121.602133000"/>
+  </metadata>
+  <trk>
+    <name>14 jun</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="46.407388000" lon="-121.739860000">
+        <ele>554.990</ele>
+        <time>2024-06-12T03:28:43.351Z</time>
+      </trkpt>
+      <trkpt lat="46.448369000" lon="-121.785746000">
+        <ele>426.340</ele>
+        <time>2024-06-12T03:54:25.635Z</time>
+      </trkpt>
+      <trkpt lat="46.451166000" lon="-121.850635000">
+        <ele>414.010</ele>
+        <time>2024-06-12T04:16:55.264Z</time>
+      </trkpt>
+      <trkpt lat="46.481623000" lon="-121.907765000">
+        <ele>381.450</ele>
+        <time>2024-06-12T04:42:16.438Z</time>
+      </trkpt>
+      <trkpt lat="46.531442000" lon="-121.956868000">
+        <ele>268.960</ele>
+        <time>2024-06-12T05:13:31.262Z</time>
+      </trkpt>
+      <trkpt lat="46.537399000" lon="-121.762262000">
+        <ele>302.520</ele>
+        <time>2024-06-12T06:19:42.807Z</time>
+      </trkpt>
+      <trkpt lat="46.574960000" lon="-121.692802000">
+        <ele>313.960</ele>
+        <time>2024-06-12T06:47:58.599Z</time>
+      </trkpt>
+      <trkpt lat="46.617824000" lon="-121.664076000">
+        <ele>346.170</ele>
+        <time>2024-06-12T07:10:16.634Z</time>
+      </trkpt>
+      <trkpt lat="46.659941000" lon="-121.602133000">
+        <ele>395.300</ele>
+        <time>2024-06-12T07:39:03.271Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
