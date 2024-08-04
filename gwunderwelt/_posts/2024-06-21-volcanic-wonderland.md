@@ -5,8 +5,9 @@ title: Volcanic Wonderland
 preview_image_id: Titelbild.jpg
 preview_text: |
   Geologische Highlights entlang dem pazifischen Feuerring, Tier- und Menschenbegegnungen und die vorläufig letzten Kilometer in den Vereinigten Staaten. Bald sind wir in Vancouver, und bald entscheidet sich wie die Reise weitergeht.
-track_number: 
-spread_direction: "W"
+lat_lng: "[47.0, -121.5]"
+track_number: 338
+spread_direction: "E"
 image_metadata:
   - dirname:
     images:

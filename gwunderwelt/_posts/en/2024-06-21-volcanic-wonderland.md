@@ -5,8 +5,9 @@ title: Volcanic Wonderland
 preview_image_id: Titelbild.jpg
 preview_text: |
   Geological highlights along the Pacific Ring of Fire, encounters with animals and people and the last few kilometers in the United States for the time being. Soon we will be in Vancouver, and soon we will decide how our journey shall continue.
-track_number: 
-spread_direction: "W"
+lat_lng: "[47.0, -121.5]"
+track_number: 338
+spread_direction: "E"
 image_metadata:
   - dirname:
     images:

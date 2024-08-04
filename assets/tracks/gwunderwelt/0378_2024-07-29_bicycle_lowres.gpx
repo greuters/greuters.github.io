@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-08-04T02:21:34.624Z</time>
+    <bounds minlat="49.420100000" minlon="-107.367540000" maxlat="49.436603333" maxlon="-107.082790000"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="49.436575000" lon="-107.367540000">
+        <time>2024-07-29T12:41:54Z</time>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.700000</hdop>
+        <vdop>1.030000</vdop>
+        <pdop>1.250000</pdop>
+      </trkpt>
+      <trkpt lat="49.436603333" lon="-107.153311667">
+        <ele>823.600</ele>
+        <time>2024-07-29T15:09:50Z</time>
+        <geoidheight>-18.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.320000</vdop>
+        <pdop>1.610000</pdop>
+      </trkpt>
+      <trkpt lat="49.424576667" lon="-107.150018333">
+        <ele>825.100</ele>
+        <time>2024-07-29T15:12:44Z</time>
+        <geoidheight>-18.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.290000</vdop>
+        <pdop>1.580000</pdop>
+      </trkpt>
+      <trkpt lat="49.420100000" lon="-107.082790000">
+        <ele>803.800</ele>
+        <time>2024-07-29T15:22:02Z</time>
+        <geoidheight>-18.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.880000</hdop>
+        <vdop>1.200000</vdop>
+        <pdop>1.490000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
