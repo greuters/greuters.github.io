@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-08-12T22:54:28.239Z</time>
+    <bounds minlat="49.132661000" minlon="-98.362347000" maxlat="49.192353000" maxlon="-97.392068000"/>
+  </metadata>
+  <trk>
+    <name>03 aug</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000D7</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000D7</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>4</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="49.192184000" lon="-98.362347000">
+        <ele>467.980</ele>
+        <time>2024-08-02T22:23:09.747Z</time>
+      </trkpt>
+      <trkpt lat="49.192353000" lon="-97.551441000">
+        <ele>240.870</ele>
+        <time>2024-08-03T02:31:39.340Z</time>
+      </trkpt>
+      <trkpt lat="49.132661000" lon="-97.549686000">
+        <ele>242.980</ele>
+        <time>2024-08-03T02:59:37.824Z</time>
+      </trkpt>
+      <trkpt lat="49.133228000" lon="-97.392068000">
+        <ele>238.930</ele>
+        <time>2024-08-03T03:47:30.005Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

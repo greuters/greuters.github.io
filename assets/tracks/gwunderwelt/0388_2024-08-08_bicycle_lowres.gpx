@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-08-12T22:54:28.410Z</time>
+    <bounds minlat="45.419959000" minlon="-95.447643000" maxlat="45.912001000" maxlon="-94.080557000"/>
+  </metadata>
+  <trk>
+    <name>08 Aug</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000D7</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000D7</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="45.912001000" lon="-95.447643000">
+        <ele>417.360</ele>
+        <time>2024-08-06T14:25:10.686Z</time>
+      </trkpt>
+      <trkpt lat="45.891151000" lon="-95.377016000">
+        <ele>421.540</ele>
+        <time>2024-08-06T14:50:38.676Z</time>
+      </trkpt>
+      <trkpt lat="45.867641000" lon="-95.146386000">
+        <ele>410.050</ele>
+        <time>2024-08-06T16:06:55.215Z</time>
+      </trkpt>
+      <trkpt lat="45.769171000" lon="-95.038691000">
+        <ele>394.400</ele>
+        <time>2024-08-06T17:05:07.613Z</time>
+      </trkpt>
+      <trkpt lat="45.675072000" lon="-94.813655000">
+        <ele>368.000</ele>
+        <time>2024-08-06T18:31:09.117Z</time>
+      </trkpt>
+      <trkpt lat="45.666530000" lon="-94.701688000">
+        <ele>378.480</ele>
+        <time>2024-08-06T19:08:08.385Z</time>
+      </trkpt>
+      <trkpt lat="45.631970000" lon="-94.595393000">
+        <ele>374.900</ele>
+        <time>2024-08-06T19:46:17.769Z</time>
+      </trkpt>
+      <trkpt lat="45.608007000" lon="-94.427243000">
+        <ele>343.130</ele>
+        <time>2024-08-06T20:42:51.923Z</time>
+      </trkpt>
+      <trkpt lat="45.619578000" lon="-94.393048000">
+        <ele>348.840</ele>
+        <time>2024-08-06T20:55:17.847Z</time>
+      </trkpt>
+      <trkpt lat="45.569137000" lon="-94.315772000">
+        <ele>330.930</ele>
+        <time>2024-08-06T21:30:53.699Z</time>
+      </trkpt>
+      <trkpt lat="45.551606000" lon="-94.149086000">
+        <ele>313.870</ele>
+        <time>2024-08-06T22:32:08.609Z</time>
+      </trkpt>
+      <trkpt lat="45.485609000" lon="-94.153548000">
+        <ele>308.000</ele>
+        <time>2024-08-06T23:06:15.665Z</time>
+      </trkpt>
+      <trkpt lat="45.419959000" lon="-94.080557000">
+        <ele>297.820</ele>
+        <time>2024-08-06T23:52:29.138Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

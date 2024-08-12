@@ -84,6 +84,7 @@ class MapManager {
                     Number(data['trackNumber']),
                     data['color'],
                     data['vehicle'],
+                    data['date'], // TODO: actually parse and format properly for locale
                     data['highresPath'],
                     data['lowresPath'],
                     devMode
@@ -258,10 +259,11 @@ class MapManager {
 };
 
 class GpxTrack {
-    constructor(trackNumber, color, vehicle, highResPath, lowResPath, devMode) {
+    constructor(trackNumber, color, vehicle, date, highResPath, lowResPath, devMode) {
         this.trackNumber = trackNumber;
         this.color = color;
         this.vehicle = vehicle;
+        this.date = date;
         this.highResPath = highResPath;
         this.lowResPath = lowResPath;
         this.devMode = devMode;
@@ -300,7 +302,7 @@ class GpxTrack {
             if (this.devMode) {
                 this.lowResGpx.bindTooltip(`${this.lowResPath}, ${this.midpoint}`);
             } else {
-                this.lowResGpx.bindTooltip(`${(this.lowResGpx.get_distance() / 1000).toFixed(0)}km`);
+                this.lowResGpx.bindTooltip(`${this.date}, ${(this.lowResGpx.get_distance() / 1000).toFixed(0)}km`);
             }
             if (onLoadedCallback) {
                 onLoadedCallback(this);
@@ -335,7 +337,7 @@ class GpxTrack {
                     if (this.devMode) {
                         this.highResGpx.bindTooltip(`${this.highResPath}, ${this.midpoint}`);
                     } else {
-                        this.highResGpx.bindTooltip(`${(this.highResGpx.get_distance() / 1000).toFixed(0)}km`);
+                        this.highResGpx.bindTooltip(`${this.date}, ${(this.highResGpx.get_distance() / 1000).toFixed(0)}km`);
                     }
                     this.displayHighRes(map);
                 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-08-12T22:54:28.577Z</time>
+    <bounds minlat="43.661624000" minlon="-91.052873000" maxlat="43.931910000" maxlon="-90.228292000"/>
+  </metadata>
+  <trk>
+    <name>12 Aug</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000D7</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000D7</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="43.893897000" lon="-91.052873000">
+        <ele>231.020</ele>
+      </trkpt>
+      <trkpt lat="43.889521000" lon="-90.990691000">
+        <ele>230.710</ele>
+      </trkpt>
+      <trkpt lat="43.931910000" lon="-90.797200000">
+        <ele>242.540</ele>
+      </trkpt>
+      <trkpt lat="43.874223000" lon="-90.728904000">
+        <ele>289.810</ele>
+      </trkpt>
+      <trkpt lat="43.859508000" lon="-90.640524000">
+        <ele>351.580</ele>
+      </trkpt>
+      <trkpt lat="43.825751000" lon="-90.611470000">
+        <ele>304.710</ele>
+      </trkpt>
+      <trkpt lat="43.815667000" lon="-90.537584000">
+        <ele>309.720</ele>
+      </trkpt>
+      <trkpt lat="43.831572000" lon="-90.475935000">
+        <ele>322.190</ele>
+      </trkpt>
+      <trkpt lat="43.784983000" lon="-90.337224000">
+        <ele>301.780</ele>
+      </trkpt>
+      <trkpt lat="43.735718000" lon="-90.267529000">
+        <ele>286.160</ele>
+      </trkpt>
+      <trkpt lat="43.683092000" lon="-90.262959000">
+        <ele>289.120</ele>
+      </trkpt>
+      <trkpt lat="43.661624000" lon="-90.228292000">
+        <ele>280.000</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

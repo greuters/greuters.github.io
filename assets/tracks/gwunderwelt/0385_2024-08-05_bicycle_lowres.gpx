@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
+    <time>2024-08-12T22:54:28.306Z</time>
+    <bounds minlat="47.504793000" minlon="-96.812555000" maxlat="48.340128000" maxlon="-96.270005000"/>
+  </metadata>
+  <trk>
+    <name>05 Aug</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000D7</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000D7</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="48.340128000" lon="-96.812555000">
+        <ele>257.020</ele>
+        <time>2024-08-05T01:16:02.868Z</time>
+      </trkpt>
+      <trkpt lat="48.208275000" lon="-96.779101000">
+        <ele>260.030</ele>
+        <time>2024-08-05T02:20:07.894Z</time>
+      </trkpt>
+      <trkpt lat="47.958960000" lon="-96.630834000">
+        <ele>274.000</ele>
+        <time>2024-08-05T04:25:40.909Z</time>
+      </trkpt>
+      <trkpt lat="47.792879000" lon="-96.611258000">
+        <ele>271.120</ele>
+        <time>2024-08-05T05:43:19.589Z</time>
+      </trkpt>
+      <trkpt lat="47.761445000" lon="-96.592745000">
+        <ele>268.520</ele>
+        <time>2024-08-05T06:03:27.040Z</time>
+      </trkpt>
+      <trkpt lat="47.641792000" lon="-96.416440000">
+        <ele>300.460</ele>
+        <time>2024-08-05T07:25:40.263Z</time>
+      </trkpt>
+      <trkpt lat="47.581953000" lon="-96.309005000">
+        <ele>335.520</ele>
+        <time>2024-08-05T08:09:27.250Z</time>
+      </trkpt>
+      <trkpt lat="47.504793000" lon="-96.270005000">
+        <ele>349.000</ele>
+        <time>2024-08-05T08:50:25.952Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
