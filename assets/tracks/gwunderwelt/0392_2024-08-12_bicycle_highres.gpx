@@ -2,8 +2,8 @@
 <gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
   <metadata>
     <desc>File with points/tracks from Locus Map Classic/3.70.9</desc>
-    <time>2024-08-12T22:54:28.018Z</time>
-    <bounds minlat="43.657104000" minlon="-91.052873000" maxlat="43.931961000" maxlon="-90.225632000"/>
+    <time>2024-08-27T16:09:52.780Z</time>
+    <bounds minlat="43.657104000" minlon="-91.052873000" maxlat="43.931961000" maxlon="-90.223955000"/>
   </metadata>
   <trk>
     <name>12 Aug</name>
@@ -465,6 +465,38 @@
       </trkpt>
       <trkpt lat="43.657104000" lon="-90.225632000">
         <ele>279.990</ele>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="43.657456667" lon="-90.223955000">
+        <ele>184.300</ele>
+        <time>2024-08-12T22:41:48.217Z</time>
+        <geoidheight>-34.3</geoidheight>
+        <fix>2d</fix>
+        <sat>3</sat>
+        <hdop>5.370000</hdop>
+        <vdop>1.000000</vdop>
+        <pdop>5.460000</pdop>
+      </trkpt>
+      <trkpt lat="43.657786667" lon="-90.225131667">
+        <ele>256.700</ele>
+        <time>2024-08-13T01:14:49Z</time>
+        <geoidheight>-34.3</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.320000</hdop>
+        <vdop>1.780000</vdop>
+        <pdop>2.220000</pdop>
+      </trkpt>
+      <trkpt lat="43.658121667" lon="-90.225563333">
+        <ele>261.700</ele>
+        <time>2024-08-13T01:15:15Z</time>
+        <geoidheight>-34.3</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.320000</hdop>
+        <vdop>1.780000</vdop>
+        <pdop>2.220000</pdop>
       </trkpt>
     </trkseg>
   </trk>
