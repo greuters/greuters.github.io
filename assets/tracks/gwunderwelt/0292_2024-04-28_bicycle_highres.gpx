@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <time>2024-05-06T15:27:44.404Z</time>
+    <bounds minlat="35.863135000" minlon="-119.079925000" maxlat="36.132318333" maxlon="-118.818125000"/>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="35.863193333" lon="-119.055148333">
+        <time>2024-04-28T02:03:47Z</time>
+        <fix>3d</fix>
+        <sat>7</sat>
+        <hdop>1.090000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.660000</pdop>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="35.863135000" lon="-119.055195000">
+        <time>2024-04-28T14:25:39Z</time>
+      </trkpt>
+      <trkpt lat="35.863573333" lon="-119.055390000">
+        <ele>150.100</ele>
+        <time>2024-04-28T16:10:48Z</time>
+        <geoidheight>-28.6</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.790000</hdop>
+        <vdop>1.130000</vdop>
+        <pdop>1.380000</pdop>
+      </trkpt>
+      <trkpt lat="35.867170000" lon="-119.053781667">
+        <ele>159.800</ele>
+        <time>2024-04-28T16:11:58Z</time>
+        <geoidheight>-28.6</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.060000</hdop>
+        <vdop>1.940000</vdop>
+        <pdop>2.220000</pdop>
+      </trkpt>
+      <trkpt lat="35.890676667" lon="-119.053676667">
+        <ele>169.500</ele>
+        <time>2024-04-28T16:18:19Z</time>
+        <geoidheight>-28.5</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.590000</vdop>
+        <pdop>1.850000</pdop>
+      </trkpt>
+      <trkpt lat="35.891560000" lon="-119.053896667">
+        <ele>174.300</ele>
+        <time>2024-04-28T16:18:35Z</time>
+        <geoidheight>-28.5</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.590000</vdop>
+        <pdop>1.850000</pdop>
+      </trkpt>
+      <trkpt lat="35.891736667" lon="-119.054423333">
+        <ele>174.100</ele>
+        <time>2024-04-28T16:18:47Z</time>
+        <geoidheight>-28.5</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.590000</vdop>
+        <pdop>1.850000</pdop>
+      </trkpt>
+      <trkpt lat="35.891816667" lon="-119.071170000">
+        <ele>143.600</ele>
+        <time>2024-04-28T16:22:31Z</time>
+        <geoidheight>-28.5</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.620000</vdop>
+        <pdop>1.880000</pdop>
+      </trkpt>
+      <trkpt lat="35.892156667" lon="-119.071558333">
+        <ele>145.000</ele>
+        <time>2024-04-28T16:22:42Z</time>
+        <geoidheight>-28.5</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.620000</vdop>
+        <pdop>1.880000</pdop>
+      </trkpt>
+      <trkpt lat="35.965816667" lon="-119.071655000">
+        <ele>133.300</ele>
+        <time>2024-04-28T16:43:00Z</time>
+        <geoidheight>-28.3</geoidheight>
+        <fix>3d</fix>
+        <sat>11</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.590000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.022768333" lon="-119.070963333">
+        <ele>116.800</ele>
+        <time>2024-04-28T16:58:37Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.930000</hdop>
+        <vdop>1.600000</vdop>
+        <pdop>1.850000</pdop>
+      </trkpt>
+      <trkpt lat="36.026131667" lon="-119.071233333">
+        <ele>119.600</ele>
+        <time>2024-04-28T16:59:33Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.580000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.026190000" lon="-119.071796667">
+        <ele>119.300</ele>
+        <time>2024-04-28T16:59:43Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>0.850000</vdop>
+        <pdop>1.200000</pdop>
+      </trkpt>
+      <trkpt lat="36.025988333" lon="-119.071246667">
+        <ele>120.800</ele>
+        <time>2024-04-28T16:59:59Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.580000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.025531667" lon="-119.071156667">
+        <ele>123.600</ele>
+        <time>2024-04-28T17:00:09Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.580000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.025978333" lon="-119.070946667">
+        <ele>123.500</ele>
+        <time>2024-04-28T17:00:27Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.570000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.030226667" lon="-119.070840000">
+        <ele>117.800</ele>
+        <time>2024-04-28T17:01:50Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.550000</vdop>
+        <pdop>1.800000</pdop>
+      </trkpt>
+      <trkpt lat="36.027881667" lon="-119.071085000">
+        <ele>116.700</ele>
+        <time>2024-04-28T17:04:03Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.780000</pdop>
+      </trkpt>
+      <trkpt lat="36.027873333" lon="-119.079415000">
+        <ele>133.100</ele>
+        <time>2024-04-28T17:05:57Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.500000</vdop>
+        <pdop>1.750000</pdop>
+      </trkpt>
+      <trkpt lat="36.028071667" lon="-119.079925000">
+        <ele>125.000</ele>
+        <time>2024-04-28T17:06:13Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>1.490000</vdop>
+        <pdop>1.750000</pdop>
+      </trkpt>
+      <trkpt lat="36.036758333" lon="-119.079648333">
+        <ele>112.800</ele>
+        <time>2024-04-28T17:11:25Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>0.820000</vdop>
+        <pdop>1.180000</pdop>
+      </trkpt>
+      <trkpt lat="36.036803333" lon="-119.071270000">
+        <ele>125.600</ele>
+        <time>2024-04-28T17:13:19Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.900000</hdop>
+        <vdop>1.400000</vdop>
+        <pdop>1.660000</pdop>
+      </trkpt>
+      <trkpt lat="36.037066667" lon="-119.070781667">
+        <ele>127.300</ele>
+        <time>2024-04-28T17:13:30Z</time>
+        <geoidheight>-28.1</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.900000</hdop>
+        <vdop>1.390000</vdop>
+        <pdop>1.660000</pdop>
+      </trkpt>
+      <trkpt lat="36.052060000" lon="-119.070881667">
+        <ele>117.700</ele>
+        <time>2024-04-28T17:17:49Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.920000</hdop>
+        <vdop>1.460000</vdop>
+        <pdop>1.730000</pdop>
+      </trkpt>
+      <trkpt lat="36.072761667" lon="-119.070735000">
+        <ele>117.700</ele>
+        <time>2024-04-28T17:23:51Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.070000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.140000</pdop>
+      </trkpt>
+      <trkpt lat="36.073015000" lon="-119.070246667">
+        <ele>111.800</ele>
+        <time>2024-04-28T17:24:07Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.070000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.140000</pdop>
+      </trkpt>
+      <trkpt lat="36.072988333" lon="-119.053516667">
+        <ele>126.900</ele>
+        <time>2024-04-28T17:27:59Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.080000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.140000</pdop>
+      </trkpt>
+      <trkpt lat="36.073270000" lon="-119.044068333">
+        <ele>124.800</ele>
+        <time>2024-04-28T17:30:16Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.090000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.150000</pdop>
+      </trkpt>
+      <trkpt lat="36.073705000" lon="-119.043863333">
+        <ele>123.900</ele>
+        <time>2024-04-28T17:30:25Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.090000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.150000</pdop>
+      </trkpt>
+      <trkpt lat="36.076586667" lon="-119.043850000">
+        <ele>111.900</ele>
+        <time>2024-04-28T17:31:12Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.090000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.150000</pdop>
+      </trkpt>
+      <trkpt lat="36.076818333" lon="-119.043320000">
+        <ele>111.900</ele>
+        <time>2024-04-28T17:31:28Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.070000</hdop>
+        <vdop>0.880000</vdop>
+        <pdop>1.380000</pdop>
+      </trkpt>
+      <trkpt lat="36.076781667" lon="-119.040438333">
+        <ele>116.400</ele>
+        <time>2024-04-28T17:32:08Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.100000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.150000</pdop>
+      </trkpt>
+      <trkpt lat="36.076870000" lon="-119.043411667">
+        <ele>124.300</ele>
+        <time>2024-04-28T17:46:35Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.000000</hdop>
+        <vdop>0.790000</vdop>
+        <pdop>1.280000</pdop>
+      </trkpt>
+      <trkpt lat="36.077158333" lon="-119.043843333">
+        <ele>126.600</ele>
+        <time>2024-04-28T17:46:55Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.840000</hdop>
+        <vdop>1.100000</vdop>
+        <pdop>1.390000</pdop>
+      </trkpt>
+      <trkpt lat="36.079055000" lon="-119.044060000">
+        <ele>128.900</ele>
+        <time>2024-04-28T17:47:30Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.840000</hdop>
+        <vdop>1.110000</vdop>
+        <pdop>1.390000</pdop>
+      </trkpt>
+      <trkpt lat="36.078926667" lon="-119.046333333">
+        <ele>129.500</ele>
+        <time>2024-04-28T17:48:25Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.300000</vdop>
+        <pdop>1.660000</pdop>
+      </trkpt>
+      <trkpt lat="36.079325000" lon="-119.046595000">
+        <ele>119.100</ele>
+        <time>2024-04-28T17:48:48Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.300000</vdop>
+        <pdop>1.660000</pdop>
+      </trkpt>
+      <trkpt lat="36.079620000" lon="-119.046128333">
+        <ele>124.000</ele>
+        <time>2024-04-28T17:50:37Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.300000</vdop>
+        <pdop>1.650000</pdop>
+      </trkpt>
+      <trkpt lat="36.079648333" lon="-119.045546667">
+        <ele>124.800</ele>
+        <time>2024-04-28T17:50:48Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.300000</vdop>
+        <pdop>1.650000</pdop>
+      </trkpt>
+      <trkpt lat="36.080085000" lon="-119.045398333">
+        <ele>123.500</ele>
+        <time>2024-04-28T17:51:02Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.120000</vdop>
+        <pdop>1.400000</pdop>
+      </trkpt>
+      <trkpt lat="36.080350000" lon="-119.044933333">
+        <ele>134.600</ele>
+        <time>2024-04-28T18:50:24Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.260000</vdop>
+        <pdop>1.520000</pdop>
+      </trkpt>
+      <trkpt lat="36.080631667" lon="-119.043858333">
+        <ele>131.800</ele>
+        <time>2024-04-28T18:51:32Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.260000</vdop>
+        <pdop>1.520000</pdop>
+      </trkpt>
+      <trkpt lat="36.081613333" lon="-119.043941667">
+        <ele>128.000</ele>
+        <time>2024-04-28T18:51:49Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.520000</pdop>
+      </trkpt>
+      <trkpt lat="36.082003333" lon="-119.044236667">
+        <ele>125.800</ele>
+        <time>2024-04-28T18:52:10Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.530000</pdop>
+      </trkpt>
+      <trkpt lat="36.082456667" lon="-119.044218333">
+        <ele>123.200</ele>
+        <time>2024-04-28T18:52:20Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.530000</pdop>
+      </trkpt>
+      <trkpt lat="36.082883333" lon="-119.044426667">
+        <ele>122.700</ele>
+        <time>2024-04-28T18:52:33Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.530000</pdop>
+      </trkpt>
+      <trkpt lat="36.082908333" lon="-119.046108333">
+        <ele>121.100</ele>
+        <time>2024-04-28T21:10:24Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.180000</hdop>
+        <vdop>1.760000</vdop>
+        <pdop>2.120000</pdop>
+      </trkpt>
+      <trkpt lat="36.080540000" lon="-119.045926667">
+        <ele>116.000</ele>
+        <time>2024-04-28T21:11:26Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>1.200000</hdop>
+        <vdop>1.850000</vdop>
+        <pdop>2.210000</pdop>
+      </trkpt>
+      <trkpt lat="36.080128333" lon="-119.046913333">
+        <ele>115.400</ele>
+        <time>2024-04-28T21:12:48Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.160000</hdop>
+        <vdop>1.730000</vdop>
+        <pdop>2.090000</pdop>
+      </trkpt>
+      <trkpt lat="36.079646667" lon="-119.046928333">
+        <ele>114.900</ele>
+        <time>2024-04-28T21:12:58Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.160000</hdop>
+        <vdop>1.730000</vdop>
+        <pdop>2.080000</pdop>
+      </trkpt>
+      <trkpt lat="36.080085000" lon="-119.046778333">
+        <ele>132.600</ele>
+        <time>2024-04-28T23:10:53Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.980000</hdop>
+        <vdop>1.730000</vdop>
+        <pdop>1.990000</pdop>
+      </trkpt>
+      <trkpt lat="36.080326667" lon="-119.046295000">
+        <ele>133.100</ele>
+        <time>2024-04-28T23:11:09Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.960000</hdop>
+        <vdop>0.870000</vdop>
+        <pdop>1.290000</pdop>
+      </trkpt>
+      <trkpt lat="36.080248333" lon="-119.043983333">
+        <ele>132.500</ele>
+        <time>2024-04-28T23:11:47Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.980000</hdop>
+        <vdop>1.720000</vdop>
+        <pdop>1.980000</pdop>
+      </trkpt>
+      <trkpt lat="36.073445000" lon="-119.043918333">
+        <ele>129.500</ele>
+        <time>2024-04-28T23:13:58Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.980000</hdop>
+        <vdop>1.690000</vdop>
+        <pdop>1.950000</pdop>
+      </trkpt>
+      <trkpt lat="36.073248333" lon="-119.043351667">
+        <ele>130.000</ele>
+        <time>2024-04-28T23:14:09Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>8</sat>
+        <hdop>0.980000</hdop>
+        <vdop>1.680000</vdop>
+        <pdop>1.950000</pdop>
+      </trkpt>
+      <trkpt lat="36.073190000" lon="-119.019490000">
+        <ele>134.200</ele>
+        <time>2024-04-28T23:19:50Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.390000</vdop>
+        <pdop>1.630000</pdop>
+      </trkpt>
+      <trkpt lat="36.073073333" lon="-119.018328333">
+        <ele>132.100</ele>
+        <time>2024-04-28T23:20:09Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.850000</hdop>
+        <vdop>0.810000</vdop>
+        <pdop>1.170000</pdop>
+      </trkpt>
+      <trkpt lat="36.072938333" lon="-118.999865000">
+        <ele>152.100</ele>
+        <time>2024-04-28T23:25:00Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.360000</vdop>
+        <pdop>1.600000</pdop>
+      </trkpt>
+      <trkpt lat="36.072466667" lon="-118.999708333">
+        <ele>154.500</ele>
+        <time>2024-04-28T23:25:10Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.360000</vdop>
+        <pdop>1.600000</pdop>
+      </trkpt>
+      <trkpt lat="36.069553333" lon="-118.999783333">
+        <ele>156.900</ele>
+        <time>2024-04-28T23:25:48Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.350000</vdop>
+        <pdop>1.600000</pdop>
+      </trkpt>
+      <trkpt lat="36.058846667" lon="-118.999526667">
+        <ele>147.400</ele>
+        <time>2024-04-28T23:28:46Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.850000</hdop>
+        <vdop>1.330000</vdop>
+        <pdop>1.580000</pdop>
+      </trkpt>
+      <trkpt lat="36.058496667" lon="-118.999116667">
+        <ele>144.100</ele>
+        <time>2024-04-28T23:29:53Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.280000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.058483333" lon="-118.996171667">
+        <ele>137.100</ele>
+        <time>2024-04-28T23:30:32Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.280000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.057358333" lon="-118.991606667">
+        <ele>143.500</ele>
+        <time>2024-04-28T23:31:35Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.055325000" lon="-118.989100000">
+        <ele>154.100</ele>
+        <time>2024-04-28T23:32:22Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.054936667" lon="-118.988005000">
+        <ele>152.500</ele>
+        <time>2024-04-28T23:32:38Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.055130000" lon="-118.974231667">
+        <ele>140.800</ele>
+        <time>2024-04-28T23:35:42Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.490000</pdop>
+      </trkpt>
+      <trkpt lat="36.055030000" lon="-118.949218333">
+        <ele>143.700</ele>
+        <time>2024-04-28T23:41:16Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.910000</pdop>
+      </trkpt>
+      <trkpt lat="36.052880000" lon="-118.946008333">
+        <ele>153.500</ele>
+        <time>2024-04-28T23:42:09Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.920000</pdop>
+      </trkpt>
+      <trkpt lat="36.052051667" lon="-118.945391667">
+        <ele>155.700</ele>
+        <time>2024-04-28T23:42:25Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.920000</pdop>
+      </trkpt>
+      <trkpt lat="36.050728333" lon="-118.944885000">
+        <ele>163.300</ele>
+        <time>2024-04-28T23:42:48Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.920000</pdop>
+      </trkpt>
+      <trkpt lat="36.050473333" lon="-118.944418333">
+        <ele>169.700</ele>
+        <time>2024-04-28T23:42:57Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.920000</pdop>
+      </trkpt>
+      <trkpt lat="36.050445000" lon="-118.943841667">
+        <ele>168.600</ele>
+        <time>2024-04-28T23:43:05Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.920000</pdop>
+      </trkpt>
+      <trkpt lat="36.050875000" lon="-118.942120000">
+        <ele>167.000</ele>
+        <time>2024-04-28T23:43:29Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.020000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.052388333" lon="-118.939000000">
+        <ele>160.000</ele>
+        <time>2024-04-28T23:44:17Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.052505000" lon="-118.937211667">
+        <ele>152.100</ele>
+        <time>2024-04-28T23:44:35Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.980000</hdop>
+        <vdop>0.850000</vdop>
+        <pdop>1.300000</pdop>
+      </trkpt>
+      <trkpt lat="36.052030000" lon="-118.937093333">
+        <ele>149.600</ele>
+        <time>2024-04-28T23:44:45Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.050153333" lon="-118.937185000">
+        <ele>157.800</ele>
+        <time>2024-04-28T23:45:13Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.049741667" lon="-118.937455000">
+        <ele>158.700</ele>
+        <time>2024-04-28T23:45:21Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.980000</hdop>
+        <vdop>0.850000</vdop>
+        <pdop>1.300000</pdop>
+      </trkpt>
+      <trkpt lat="36.049435000" lon="-118.937936667">
+        <ele>158.100</ele>
+        <time>2024-04-28T23:45:29Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.048955000" lon="-118.938001667">
+        <ele>160.200</ele>
+        <time>2024-04-28T23:45:38Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.048236667" lon="-118.937311667">
+        <ele>160.300</ele>
+        <time>2024-04-28T23:45:52Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.047785000" lon="-118.937275000">
+        <ele>158.500</ele>
+        <time>2024-04-28T23:46:00Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.047495000" lon="-118.936796667">
+        <ele>155.400</ele>
+        <time>2024-04-28T23:46:16Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.030000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.930000</pdop>
+      </trkpt>
+      <trkpt lat="36.047506667" lon="-118.930218333">
+        <ele>168.700</ele>
+        <time>2024-04-28T23:47:44Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.047666667" lon="-118.929081667">
+        <ele>170.100</ele>
+        <time>2024-04-28T23:48:00Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.048096667" lon="-118.927976667">
+        <ele>167.700</ele>
+        <time>2024-04-28T23:48:17Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.051321667" lon="-118.923595000">
+        <ele>168.200</ele>
+        <time>2024-04-28T23:49:40Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>1.050000</hdop>
+        <vdop>1.630000</vdop>
+        <pdop>1.940000</pdop>
+      </trkpt>
+      <trkpt lat="36.055535000" lon="-118.915913333">
+        <ele>196.800</ele>
+        <time>2024-04-28T23:52:11Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.056263333" lon="-118.915146667">
+        <ele>200.100</ele>
+        <time>2024-04-28T23:52:28Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.061325000" lon="-118.911768333">
+        <ele>218.100</ele>
+        <time>2024-04-28T23:54:11Z</time>
+        <geoidheight>-28.0</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.840000</pdop>
+      </trkpt>
+      <trkpt lat="36.068681667" lon="-118.904056667">
+        <ele>198.900</ele>
+        <time>2024-04-28T23:56:45Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.069921667" lon="-118.903180000">
+        <ele>206.000</ele>
+        <time>2024-04-28T23:57:06Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.070821667" lon="-118.902778333">
+        <ele>204.400</ele>
+        <time>2024-04-28T23:57:19Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.076003333" lon="-118.901466667">
+        <ele>205.000</ele>
+        <time>2024-04-28T23:58:40Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.077756667" lon="-118.900621667">
+        <ele>204.600</ele>
+        <time>2024-04-28T23:59:12Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.079368333" lon="-118.899378333">
+        <ele>203.400</ele>
+        <time>2024-04-28T23:59:45Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.520000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.087440000" lon="-118.891540000">
+        <ele>204.200</ele>
+        <time>2024-04-29T00:02:17Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.510000</vdop>
+        <pdop>1.810000</pdop>
+      </trkpt>
+      <trkpt lat="36.088075000" lon="-118.890670000">
+        <ele>202.600</ele>
+        <time>2024-04-29T00:02:33Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.010000</hdop>
+        <vdop>1.500000</vdop>
+        <pdop>1.810000</pdop>
+      </trkpt>
+      <trkpt lat="36.090686667" lon="-118.885573333">
+        <ele>203.400</ele>
+        <time>2024-04-29T00:03:53Z</time>
+        <geoidheight>-27.9</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.500000</vdop>
+        <pdop>1.800000</pdop>
+      </trkpt>
+      <trkpt lat="36.091568333" lon="-118.883423333">
+        <ele>204.300</ele>
+        <time>2024-04-29T00:04:25Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.490000</vdop>
+        <pdop>1.800000</pdop>
+      </trkpt>
+      <trkpt lat="36.091256667" lon="-118.882356667">
+        <ele>215.800</ele>
+        <time>2024-04-29T00:04:58Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>1.000000</hdop>
+        <vdop>1.490000</vdop>
+        <pdop>1.790000</pdop>
+      </trkpt>
+      <trkpt lat="36.091591667" lon="-118.881953333">
+        <ele>221.100</ele>
+        <time>2024-04-29T00:20:50Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.910000</hdop>
+        <vdop>0.800000</vdop>
+        <pdop>1.210000</pdop>
+      </trkpt>
+      <trkpt lat="36.091453333" lon="-118.881421667">
+        <ele>218.600</ele>
+        <time>2024-04-29T00:21:06Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.320000</vdop>
+        <pdop>1.630000</pdop>
+      </trkpt>
+      <trkpt lat="36.091690000" lon="-118.880916667">
+        <ele>218.000</ele>
+        <time>2024-04-29T00:21:20Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.320000</vdop>
+        <pdop>1.630000</pdop>
+      </trkpt>
+      <trkpt lat="36.092140000" lon="-118.881010000">
+        <ele>216.400</ele>
+        <time>2024-04-29T00:21:27Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.320000</vdop>
+        <pdop>1.620000</pdop>
+      </trkpt>
+      <trkpt lat="36.092505000" lon="-118.880671667">
+        <ele>211.700</ele>
+        <time>2024-04-29T00:21:41Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.950000</hdop>
+        <vdop>1.320000</vdop>
+        <pdop>1.620000</pdop>
+      </trkpt>
+      <trkpt lat="36.093046667" lon="-118.879711667">
+        <ele>205.800</ele>
+        <time>2024-04-29T00:22:01Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.940000</hdop>
+        <vdop>1.310000</vdop>
+        <pdop>1.620000</pdop>
+      </trkpt>
+      <trkpt lat="36.095668333" lon="-118.877228333">
+        <ele>196.600</ele>
+        <time>2024-04-29T00:22:51Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.980000</hdop>
+        <vdop>1.570000</vdop>
+        <pdop>1.850000</pdop>
+      </trkpt>
+      <trkpt lat="36.097196667" lon="-118.874925000">
+        <ele>200.400</ele>
+        <time>2024-04-29T00:23:31Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.980000</hdop>
+        <vdop>1.570000</vdop>
+        <pdop>1.850000</pdop>
+      </trkpt>
+      <trkpt lat="36.098800000" lon="-118.871206667">
+        <ele>200.000</ele>
+        <time>2024-04-29T00:24:27Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.970000</hdop>
+        <vdop>1.560000</vdop>
+        <pdop>1.840000</pdop>
+      </trkpt>
+      <trkpt lat="36.099408333" lon="-118.870236667">
+        <ele>202.500</ele>
+        <time>2024-04-29T00:24:43Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.970000</hdop>
+        <vdop>1.550000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.101811667" lon="-118.867400000">
+        <ele>198.900</ele>
+        <time>2024-04-29T00:25:38Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.970000</hdop>
+        <vdop>1.550000</vdop>
+        <pdop>1.830000</pdop>
+      </trkpt>
+      <trkpt lat="36.102351667" lon="-118.866398333">
+        <ele>203.500</ele>
+        <time>2024-04-29T00:25:54Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.970000</hdop>
+        <vdop>1.540000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.102721667" lon="-118.864713333">
+        <ele>210.600</ele>
+        <time>2024-04-29T00:26:17Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.970000</hdop>
+        <vdop>1.540000</vdop>
+        <pdop>1.820000</pdop>
+      </trkpt>
+      <trkpt lat="36.102583333" lon="-118.858101667">
+        <ele>229.600</ele>
+        <time>2024-04-29T00:27:45Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.960000</hdop>
+        <vdop>1.530000</vdop>
+        <pdop>1.800000</pdop>
+      </trkpt>
+      <trkpt lat="36.100738333" lon="-118.842718333">
+        <ele>245.700</ele>
+        <time>2024-04-29T00:31:13Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.100626667" lon="-118.831313333">
+        <ele>244.500</ele>
+        <time>2024-04-29T00:33:36Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.260000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.101126667" lon="-118.828341667">
+        <ele>244.100</ele>
+        <time>2024-04-29T00:34:17Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.260000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.101420000" lon="-118.823038333">
+        <ele>259.200</ele>
+        <time>2024-04-29T00:35:29Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.940000</hdop>
+        <vdop>1.450000</vdop>
+        <pdop>1.730000</pdop>
+      </trkpt>
+      <trkpt lat="36.102395000" lon="-118.820941667">
+        <ele>252.300</ele>
+        <time>2024-04-29T00:36:01Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.940000</hdop>
+        <vdop>1.440000</vdop>
+        <pdop>1.720000</pdop>
+      </trkpt>
+      <trkpt lat="36.103670000" lon="-118.819201667">
+        <ele>257.200</ele>
+        <time>2024-04-29T00:36:36Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.104475000" lon="-118.818673333">
+        <ele>262.300</ele>
+        <time>2024-04-29T00:36:54Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.106326667" lon="-118.818608333">
+        <ele>271.200</ele>
+        <time>2024-04-29T00:37:27Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.107211667" lon="-118.818963333">
+        <ele>271.800</ele>
+        <time>2024-04-29T00:37:41Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.109421667" lon="-118.821503333">
+        <ele>268.600</ele>
+        <time>2024-04-29T00:38:25Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.930000</hdop>
+        <vdop>1.420000</vdop>
+        <pdop>1.700000</pdop>
+      </trkpt>
+      <trkpt lat="36.114218333" lon="-118.823990000">
+        <ele>271.300</ele>
+        <time>2024-04-29T00:39:55Z</time>
+        <geoidheight>-27.8</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.930000</hdop>
+        <vdop>1.410000</vdop>
+        <pdop>1.680000</pdop>
+      </trkpt>
+      <trkpt lat="36.118883333" lon="-118.825576667">
+        <ele>291.700</ele>
+        <time>2024-04-29T00:41:19Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.119833333" lon="-118.825606667">
+        <ele>293.600</ele>
+        <time>2024-04-29T00:41:35Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.122206667" lon="-118.825025000">
+        <ele>286.600</ele>
+        <time>2024-04-29T00:42:12Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.270000</vdop>
+        <pdop>1.510000</pdop>
+      </trkpt>
+      <trkpt lat="36.129161667" lon="-118.819743333">
+        <ele>292.000</ele>
+        <time>2024-04-29T00:44:18Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>9</sat>
+        <hdop>0.920000</hdop>
+        <vdop>0.810000</vdop>
+        <pdop>1.220000</pdop>
+      </trkpt>
+      <trkpt lat="36.130478333" lon="-118.818125000">
+        <ele>299.100</ele>
+        <time>2024-04-29T00:44:55Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.810000</hdop>
+        <vdop>0.780000</vdop>
+        <pdop>1.130000</pdop>
+      </trkpt>
+      <trkpt lat="36.131461667" lon="-118.819316667">
+        <ele>315.600</ele>
+        <time>2024-04-29T00:50:42Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.131915000" lon="-118.819238333">
+        <ele>314.900</ele>
+        <time>2024-04-29T00:51:00Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.500000</pdop>
+      </trkpt>
+      <trkpt lat="36.132318333" lon="-118.819535000">
+        <ele>317.200</ele>
+        <time>2024-04-29T00:51:20Z</time>
+        <geoidheight>-27.7</geoidheight>
+        <fix>3d</fix>
+        <sat>10</sat>
+        <hdop>0.820000</hdop>
+        <vdop>1.250000</vdop>
+        <pdop>1.490000</pdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
