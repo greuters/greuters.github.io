@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.8</desc>
+    <time>2024-04-13T20:13:30.788Z</time>
+    <bounds minlat="35.537000000" minlon="-111.907093000" maxlat="35.564375000" maxlon="-111.852632000"/>
+  </metadata>
+  <trk>
+    <name>24 Mar</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:activity>cycling</locus:activity>
+      <locus:rteComputeType>5</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="35.537000000" lon="-111.854959000">
+        <ele>2049.490</ele>
+      </trkpt>
+      <trkpt lat="35.537839000" lon="-111.852632000">
+        <ele>2048.080</ele>
+      </trkpt>
+      <trkpt lat="35.541471000" lon="-111.854026000">
+        <ele>2042.280</ele>
+      </trkpt>
+      <trkpt lat="35.542860000" lon="-111.854925000">
+        <ele>2041.780</ele>
+      </trkpt>
+      <trkpt lat="35.553309000" lon="-111.867999000">
+        <ele>2038.910</ele>
+      </trkpt>
+      <trkpt lat="35.554260000" lon="-111.869363000">
+        <ele>2037.980</ele>
+      </trkpt>
+      <trkpt lat="35.563498000" lon="-111.885070000">
+        <ele>2012.840</ele>
+      </trkpt>
+      <trkpt lat="35.564038000" lon="-111.886343000">
+        <ele>2012.280</ele>
+      </trkpt>
+      <trkpt lat="35.564375000" lon="-111.888016000">
+        <ele>2013.270</ele>
+      </trkpt>
+      <trkpt lat="35.563747000" lon="-111.907093000">
+        <ele>2008.310</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

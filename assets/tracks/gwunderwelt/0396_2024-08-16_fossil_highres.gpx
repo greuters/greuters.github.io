@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.11</desc>
+    <time>2024-10-15T01:13:54.712Z</time>
+    <bounds minlat="43.948970800" minlon="-87.651222200" maxlat="44.092100400" maxlon="-86.450866700"/>
+  </metadata>
+  <trk>
+    <name>16 Aug ferry</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000D7</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000D7</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+    </extensions>
+    <trkseg>
+      <trkpt lat="44.090219500" lon="-87.651222200">
+        <ele>176.070</ele>
+      </trkpt>
+      <trkpt lat="44.091530600" lon="-87.650436600">
+        <ele>174.990</ele>
+      </trkpt>
+      <trkpt lat="44.092100400" lon="-87.648919200">
+        <ele>175.000</ele>
+      </trkpt>
+      <trkpt lat="44.091909100" lon="-87.643526200">
+        <ele>175.000</ele>
+      </trkpt>
+      <trkpt lat="43.952744300" lon="-86.469607500">
+        <ele>176.000</ele>
+      </trkpt>
+      <trkpt lat="43.951894300" lon="-86.455473900">
+        <ele>175.980</ele>
+      </trkpt>
+      <trkpt lat="43.951365200" lon="-86.454126600">
+        <ele>176.000</ele>
+      </trkpt>
+      <trkpt lat="43.949683700" lon="-86.452505800">
+        <ele>176.000</ele>
+      </trkpt>
+      <trkpt lat="43.948970800" lon="-86.450866700">
+        <ele>176.770</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
