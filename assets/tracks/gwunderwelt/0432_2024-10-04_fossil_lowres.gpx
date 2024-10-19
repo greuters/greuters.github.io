@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:locus="http://www.locusmap.eu">
+  <metadata>
+    <desc>File with points/tracks from Locus Map Classic/3.70.13</desc>
+    <time>2024-10-15T01:41:00.635Z</time>
+    <bounds minlat="44.778631000" minlon="-63.688513000" maxlat="63.990381700" maxlon="-22.621929900"/>
+  </metadata>
+  <trk>
+    <name>04 oct</name>
+    <extensions>
+      <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+        <color>0000FF</color>
+        <opacity>0.59</opacity>
+        <width>6.0</width>
+        <extensions>
+          <locus:lsColorBase>#960000FF</locus:lsColorBase>
+          <locus:lsWidth>6.0</locus:lsWidth>
+          <locus:lsUnits>PIXELS</locus:lsUnits>
+        </extensions>
+      </line>
+      <locus:rteComputeType>4</locus:rteComputeType>
+    </extensions>
+    <trkseg>
+      <trkpt lat="44.822861000" lon="-63.674390000">
+        <ele>62.850</ele>
+      </trkpt>
+      <trkpt lat="44.798446000" lon="-63.688513000">
+        <ele>77.900</ele>
+      </trkpt>
+      <trkpt lat="44.778631000" lon="-63.629566000">
+        <ele>39.760</ele>
+      </trkpt>
+      <trkpt lat="44.783003000" lon="-63.601981000">
+        <ele>21.420</ele>
+      </trkpt>
+      <trkpt lat="44.832772000" lon="-63.592585000">
+        <ele>71.100</ele>
+      </trkpt>
+      <trkpt lat="44.884113000" lon="-63.517194000">
+        <ele>128.340</ele>
+      </trkpt>
+      <trkpt lat="63.990381700" lon="-22.621929900"/>
+    </trkseg>
+  </trk>
+</gpx>

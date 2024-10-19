@@ -17,7 +17,7 @@ layout: default
   - GPS tracks should be located in assets/tracks/post_category/, each track having a low and a high
     resolution file named according to the following schema: trackNumber_dd-mm-YYYY_vehicle_resolution.gpx
     Example: 0000_17-12-2022_bicycle_highres.gpx, 0001_17-12-2022_bicycle_lowres.gpx
-    vehicle can be one of [bicycle, sail, ferry]
+    vehicle can be one of [bicycle, sail, fossil]
     trackNumber has to be consecutive increasing integers starting from 0000
 
   Requirements for posts:
@@ -87,7 +87,7 @@ layout: default
     {%- assign colors = 'limegreen green' | split: ' ' -%}
   {%- elsif vehicle == 'sail' -%}
     {%- assign colors = 'dodgerblue navy' | split: ' ' -%}
-  {%- elsif vehicle == 'ferry' -%}
+  {%- elsif vehicle == 'fossil' -%}
     {%- assign colors = 'gray black' | split: ' ' -%}
   {%- else -%}
     {{ 'Unknown vehicle type: ' | append: vehicle | raise_error }}
