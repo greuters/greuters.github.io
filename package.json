@@ -11,7 +11,8 @@
     "replace-images": "rm -r _site/*/assets/images && cp assets/images/favicon.png _site/assets/images/ && rm -rf _site/assets/resized || true && cp -r assets/resized _site/assets/resized",
     "create-track-archives": "for dir in assets/tracks/*; do `find $dir/ -name '*lowres.gpx' -printf '%f\\0' | tar -czf _site/$dir/lowres.tar.gz -C $dir/ --null --files-from -`; done && rm _site/assets/tracks/*/*lowres.gpx",
     "link-tracks": "rm -r _site/*/assets/tracks && find _site/*/assets -maxdepth 0 -type d -execdir ln -s ../../assets/tracks assets/tracks ';'",
-    "serve": "http-server -p 9090 _site/"
+    "serve": "http-server -p 9090 _site/",
+    "update": "npm update --save && npm outdated && gem update bundler && bundler update && echo to update node, manually run: nvm install node and remember to update github workflow"
   },
   "repository": {
     "type": "git",
@@ -25,20 +26,21 @@
   "homepage": "https://github.com/greuters/greuters.github.io#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.8.1",
-    "css-minimizer-webpack-plugin": "^5.0.1",
-    "mini-css-extract-plugin": "^2.7.6",
-    "sass": "^1.68.0",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.88.2",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "leaflet": "^1.9.4",
     "leaflet-fullscreen": "^1.0.2",
-    "leaflet-gpx": "^1.7.0",
-    "lightgallery": "^2.7.2",
+    "leaflet-gpx": "^2.1.2",
+    "lightgallery": "^2.8.1",
     "pako": "^2.1.0",
     "tiny-invariant": "^1.3.3",
     "tinytar-fix": "^0.1.1"

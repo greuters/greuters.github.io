@@ -286,10 +286,9 @@ class GpxTrack {
     loadLowRes(gpxData, onLoadedCallback) {
         new L.GPX(gpxData, {
             async: true,
-            marker_options: {
-                startIconUrl: '',
-                endIconUrl: '',
-                shadowUrl: ''
+            markers: {
+                startIcon: null,
+                endIcon: null
             },
             polyline_options: { color: this.color },
         }).on('addline', (event) => {
