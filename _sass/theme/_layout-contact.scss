@@ -1,3 +1,5 @@
+@use "_variables" as v;
+
 .contact-form {
     display: grid;
     grid-template-areas:
@@ -6,9 +8,9 @@
         "submit empty";
     grid-template-rows: max-content 50vh max-content;
     grid-template-columns: 1fr 2fr;
-    grid-gap: $base-spacing-size;
+    grid-gap: v.$base-spacing-size;
     text-align: left;
-    padding: $base-spacing-size 0;
+    padding: v.$base-spacing-size 0;
     margin: 0;
 
     #name {
@@ -30,27 +32,27 @@
     label {
         display: inline-block;
         position: relative;
-        --input-height: #{3 * $base-font-size};
+        --input-height: #{3 * v.$base-font-size};
     }
 
     label::before,
     label::after {
         position: absolute;
         top: calc(var(--input-height) / 2 - 0.5rem);
-        left: $small-spacing-size;
-        max-width: calc(100% - 2 * $small-spacing-size);
+        left: v.$small-spacing-size;
+        max-width: calc(100% - 2 * v.$small-spacing-size);
         transition: transform 0.4s;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-block: 0;
-        padding-inline: $small-spacing-size;
+        padding-inline: v.$small-spacing-size;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         pointer-events: none;
         transform-origin: left;
-        background-color: $background-color;
+        background-color: v.$background-color;
     }
 
     label::after {
@@ -65,7 +67,7 @@
 
     label:has(input:required)::after,
     label:has(textarea:required)::after {
-        left: calc($small-spacing-size + 0.9rem);
+        left: calc(v.$small-spacing-size + 0.9rem);
         padding-left: 0;
     }
 
@@ -81,24 +83,24 @@
     label:has(textarea:focus)::after,
     label:has(textarea:autofill)::after,
     label:has(textarea:not(:placeholder-shown))::after {
-        transform: translateY(-2 * $base-font-size) scale(0.8);
+        transform: translateY(-2 * v.$base-font-size) scale(0.8);
     }
 
     input {
         display: block;
-        width: calc(100% - 2 * $base-spacing-size);
+        width: calc(100% - 2 * v.$base-spacing-size);
         height: var(--input-height);
-        padding: 0 $base-spacing-size;
-        background: $background-color;
-        font-size: $base-font-size;
+        padding: 0 v.$base-spacing-size;
+        background: v.$background-color;
+        font-size: v.$base-font-size;
     }
 
     textarea {
         resize: vertical;
-        width: calc(100% - 2 * $base-spacing-size);
-        height: calc(100% - 2 * $base-spacing-size);
-        padding: $base-spacing-size;
-        font-size: $base-font-size;
+        width: calc(100% - 2 * v.$base-spacing-size);
+        height: calc(100% - 2 * v.$base-spacing-size);
+        padding: v.$base-spacing-size;
+        font-size: v.$base-font-size;
     }
 
     button {
@@ -106,7 +108,7 @@
     }
 
     input:autofill {
-        box-shadow: inset 0 0 0 666vw $background-color;
+        box-shadow: inset 0 0 0 666vw v.$background-color;
     }
 
     input::placeholder,

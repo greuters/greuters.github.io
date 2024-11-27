@@ -1,3 +1,5 @@
+@use "_variables" as v;
+
 /* Lightgallery */
 .lg-inline .lg-backdrop {
     background-color: transparent;
@@ -8,8 +10,8 @@
     // make sure any landscape image will be fully visible
     // portraits are automatically scaled-down by lightgallery
     height: min(70vh, 70vw);
-    padding-block-end: $base-spacing-size;
-    margin-block: $base-spacing-size;
+    padding-block-end: v.$base-spacing-size;
+    margin-block: v.$base-spacing-size;
     // TODO: center images vertically inside
 }
 
@@ -17,7 +19,7 @@
     width: fit-content;
     margin: auto;
     background-color: rgba(black, 0.8);
-    padding: $small-spacing-size;
+    padding: v.$small-spacing-size;
     border-radius: 3px;
 }
 
@@ -54,7 +56,7 @@ figure.float-inline-start {
         width: 100%;
     }
 
-    @media screen and (min-width: $palm-width) {
+    @media screen and (min-width: v.$palm-width) {
         max-width: calc(50% - 1rem);
         margin-inline-end: 1rem;
         float: inline-start;
@@ -69,7 +71,7 @@ figure.float-inline-end {
         width: 100%;
     }
 
-    @media screen and (min-width: $palm-width) {
+    @media screen and (min-width: v.$palm-width) {
         max-width: calc(50% - 1rem);
         margin-inline-start: 1rem;
         float: inline-end;
@@ -88,7 +90,7 @@ figure.float-inline-end {
 .image-divider {
     display: flex;
     flex-direction: column;
-    gap: $small-spacing-size;
+    gap: v.$small-spacing-size;
 
     img {
         width: 100%;
@@ -96,7 +98,7 @@ figure.float-inline-end {
         vertical-align: middle;
     }
 
-    @media screen and (min-width: $palm-width) {
+    @media screen and (min-width: v.$palm-width) {
         flex-direction: row;
     }
 }

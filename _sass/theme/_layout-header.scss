@@ -1,5 +1,7 @@
+@use "_variables" as v;
+
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid v.$grey-color-light;
     margin: 0.5rem 0;
     padding: 0.5rem 0;
     font-size: 1.3rem;
@@ -48,7 +50,7 @@
     }
 
     // On wider screens, unfold toplevel-urls to a flat list
-    @media screen and (min-width: $palm-width) {
+    @media screen and (min-width: v.$palm-width) {
         .toplevel-urls.dropdown {
             display: flex;
             flex-direction: row;
@@ -97,21 +99,21 @@
 
     // Navigation links
     a {
-        color: $text-color;
+        color: v.$text-color;
         border-color: transparent;
         text-decoration: none;
         border-bottom: 0.3rem solid;
     }
 
     li.current-toplevel a {
-        color: $brand-color;
-        border-color: $brand-color;
+        color: v.$brand-color;
+        border-color: v.$brand-color;
     }
 
     a:hover,
     a:focus {
-        color: $brand-color;
-        border-color: $brand-color;
+        color: v.$brand-color;
+        border-color: v.$brand-color;
         transition:
             border-color 0.3s,
             color 1s;

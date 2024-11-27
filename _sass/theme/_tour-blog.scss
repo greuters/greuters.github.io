@@ -1,3 +1,5 @@
+@use "_variables" as v;
+
 #map-box {
     position: sticky;
     top: 0;
@@ -7,14 +9,14 @@
 }
 
 // disable map in single-column layout if viewport height is too small
-@media screen and (max-width: $palm-width) and (max-height: 600px) {
+@media screen and (max-width: v.$palm-width) and (max-height: 600px) {
     #map-box {
         display: none;
     }
 }
 
 // disable map in multi-column layout if viewport height is too small
-@media screen and (min-width: $palm-width) and (max-height: 400px) {
+@media screen and (min-width: v.$palm-width) and (max-height: 400px) {
     #map-box {
         display: none;
     }
@@ -37,7 +39,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: $palm-width) {
+@media screen and (min-width: v.$palm-width) {
     #map-box ul {
         display: initial;
     }

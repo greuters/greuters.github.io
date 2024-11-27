@@ -1,14 +1,16 @@
+@use "_variables" as v;
+
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid v.$grey-color-light;
     margin: 0.5rem 0;
     padding: 0.5rem 0;
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
-    color: $grey-color;
+    color: v.$grey-color;
     flex-direction: column;
 
-    @media screen and (min-width: $palm-width) {
+    @media screen and (min-width: v.$palm-width) {
         flex-direction: row;
         column-gap: 2rem;
     }
@@ -23,5 +25,5 @@
 .site-footer .svg-icon {
     width: 1rem;
     height: 1rem;
-    color: $grey-color;
+    color: v.$grey-color;
 }

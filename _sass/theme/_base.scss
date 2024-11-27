@@ -1,0 +1,373 @@
+/*
+Copyright notice: This file was originally based on jekyll minima theme
+
+The MIT License (MIT)
+
+Copyright (c) 2016-present Parker Moore and the minima contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+@use "sass:color";
+@use "_variables" as v;
+@use "_placeholders";
+
+@mixin relative-font-size($ratio) {
+  font-size: v.$base-font-size * $ratio;
+}
+
+/**
+ * Reset some basic elements
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font: v.$base-font-weight #{v.$base-font-size}/#{v.$base-line-height} v.$base-font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+
+  color: v.$text-color;
+  background-image: linear-gradient(white 60%, v.$grey-color-light 100%);
+  background-color: v.$background-color;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  max-width: calc(#{v.$content-width} - (#{v.$small-spacing-size} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: v.$small-spacing-size;
+  padding-left: v.$small-spacing-size;
+  @extend %clearfix;
+
+  @media screen and (min-width: v.$palm-width) {
+    max-width: calc(#{v.$content-width} - (#{v.$base-spacing-size} * 2));
+    padding-right: v.$base-spacing-size;
+    padding-left: v.$base-spacing-size;
+  }
+}
+
+hr {
+  margin-block: v.$large-spacing-size;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure {
+  margin-bottom: calc(v.$spacing-unit / 2);
+}
+
+/**
+ * `main` element
+ */
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: v.$small-font-size;
+}
+
+/**
+ * Lists
+ */
+ul,
+ol {
+  margin-left: v.$spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: v.$base-font-weight;
+}
+
+/**
+ * Links
+ */
+a {
+  color: v.$brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: color.scale(v.$brand-color, $lightness: -15%);
+  }
+
+  &:hover {
+    color: v.$text-color;
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: v.$grey-color;
+  border-left: 4px solid v.$grey-color-light;
+  padding-left: calc(v.$spacing-unit / 2);
+  @include relative-font-size(1.125);
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  @include relative-font-size(0.9375);
+  border: 1px solid v.$grey-color-light;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{v.$content-width} - (#{v.$spacing-unit} * 2));
+  max-width: calc(#{v.$content-width} - (#{v.$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: v.$spacing-unit;
+  padding-left: v.$spacing-unit;
+  @extend %clearfix;
+
+  @media screen and (min-width: v.$laptop-width) {
+    max-width: -webkit-calc(#{v.$content-width} - (#{v.$spacing-unit}));
+    max-width: calc(#{v.$content-width} - (#{v.$spacing-unit}));
+    padding-right: calc(v.$spacing-unit / 2);
+    padding-left: calc(v.$spacing-unit / 2);
+  }
+}
+
+/**
+ * Icons
+ */
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #{v.$grey-color};
+  padding-right: 5px;
+  vertical-align: text-top;
+}
+
+.social-media-list {
+  li + li {
+    padding-top: 5px;
+  }
+}
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: v.$spacing-unit;
+  width: 100%;
+  text-align: v.$table-text-align;
+  color: color.scale(v.$text-color, $lightness: 18%);
+  border-collapse: collapse;
+  border: 1px solid v.$grey-color-light;
+  tr {
+    &:nth-child(even) {
+      background-color: color.scale(v.$grey-color-light, $lightness: 6%);
+    }
+  }
+  th,
+  td {
+    padding: (calc(v.$spacing-unit / 3)) (calc(v.$spacing-unit / 2));
+  }
+  th {
+    background-color: color.scale(v.$grey-color-light, $lightness: 3%);
+    border: 1px solid color.scale(v.$grey-color-light, $lightness: -4%);
+    border-bottom-color: color.scale(v.$grey-color-light, $lightness: -12%);
+  }
+  td {
+    border: 1px solid v.$grey-color-light;
+  }
+}
+
+table.hidden-borders {
+  border: 0;
+
+  tr {
+    background-color: unset;
+  }
+
+  th,
+  td {
+    border: 0;
+  }
+}
+
+/**
+ * Various snippets for custom classes
+ */
+.message-box {
+  background-color: v.$grey-color-light;
+  border: 1px solid v.$brand-color;
+  border-radius: 3px;
+  margin-bottom: v.$base-spacing-size;
+  text-align: center;
+}
+
+.svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.youtube-fullwidth {
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  width: calc(#{v.$content-width} - (#{v.$small-spacing-size} * 2));
+
+  @media screen and (min-width: v.$palm-width) {
+    width: calc(#{v.$content-width} - (#{v.$base-spacing-size} * 2));
+  }
+}
+
+.youtube-halfwidth {
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  width: calc(#{v.$content-width} - (#{v.$small-spacing-size} * 2));
+
+  @media screen and (min-width: v.$palm-width) {
+    width: calc(#{v.$content-width} / 2 - #{v.$base-spacing-size} * 2);
+  }
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inline-list {
+  list-style-type: disc;
+  margin-inline: 0;
+  margin-block: 0;
+
+  li {
+    display: inline list-item;
+    margin-inline: 0.2rem;
+  }
+
+  li:first-child {
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-inline-start: 0;
+  }
+}
