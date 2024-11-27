@@ -323,10 +323,9 @@ class GpxTrack {
         } else {
             new L.GPX(this.highResPath, {
                 async: true,
-                marker_options: {
-                    startIconUrl: '',
-                    endIconUrl: '',
-                    shadowUrl: ''
+                markers: {
+                    startIcon: null,
+                    endIcon: null
                 },
                 polyline_options: { color: this.color },
             }).on('loaded', (event) => {
