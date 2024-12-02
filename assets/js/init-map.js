@@ -381,11 +381,13 @@ class Post {
         const thumbnailHeight = tH * normalizationFactor;
 
         this.iconMap = new Map();
+        const imageUrl = previewImageHtml.dataset.thumbnailPath;
+        preloadImage(imageUrl);
         for (const scaleFactor of Post.scaleFactorMap.values()) {
             if (!this.iconMap.has(scaleFactor)) {
                 this.iconMap.set(scaleFactor,
                     L.icon({
-                        iconUrl: previewImageHtml.dataset.thumbnailPath,
+                        iconUrl: imageUrl,
                         iconSize: [thumbnailWidth * scaleFactor, thumbnailHeight * scaleFactor],
                     }));
             }
@@ -431,6 +433,11 @@ class Post {
         this.marker.remove();
     };
 };
+
+function preloadImage(url) {
+    let img = new Image();
+    img.src = url;
+}
 
 function initMap() {
     const script = document.getElementById('init-map');
