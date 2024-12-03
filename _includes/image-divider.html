@@ -28,6 +28,7 @@
         path: {{ image[img_path] | replace_first: '/', '' }}
         alt: {{ image[img_alt] | default: image[img_name] }}
         caption: "{{ image[img_caption] }}"
+        num_images: {{ ids.size }}
       {% endresponsive_image_block %}
     {%- endif -%}
   {%- endfor -%}

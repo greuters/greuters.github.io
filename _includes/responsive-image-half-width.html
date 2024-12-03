@@ -1,6 +1,10 @@
 {% comment %}
-  Responsive image optimized to occupy at most half of the screen width.
+  Responsive image optimized to occupy at most half of the content width.
 {% endcomment %}
+
+{%- assign content_width = "1200px" -%}
+{%- assign palm_width = "800px" -%}
+
 
 {%- capture srcset -%}
 {{ original.path | relative_url }} {{ original.width }}w,
@@ -19,7 +23,7 @@
   data-thumbnail-path="{{ thumbnail.path | relative_url }}"
   loading="{{ loading }}"
   srcset="{{ srcset }}"
-  sizes="(max-width: 2048px) 800px, 1024px"
+  sizes="(min-width: {{ content_width }}) calc({{ content_width }} / 2), (min-width: {{ palm_width }}) 50vw, 100vw"
   src="{{ original.path | relative_url }}"
   alt="{{ alt }}"
 >

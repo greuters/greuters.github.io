@@ -8,11 +8,10 @@
 {% endfor %}
 {%- endcapture -%}
 {%- assign thumbnail = resized | last -%}
-
 <a
   href="{{ original.path | relative_url }}"
   data-srcset="{{ srcset }}"
-  data-sizes="(max-width: 800px) 800px, 1024px"
+  data-sizes="min(100vw, calc(100vh * {{original.width}} / {{original.height}}))"
   data-sub-html="<div class='lightGallery-captions'>{{ caption }}</div>"
   data-external-thumb-image="{{ thumbnail.path | relative_url }}"
   hidden

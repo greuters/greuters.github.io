@@ -1,3 +1,6 @@
+{%- assign content_width = "1200px" -%}
+{%- assign palm_width = "800px" -%}
+
 {%- capture srcset -%}
 {{ original.path | relative_url }} {{ original.width }}w,
 {%- for i in resized -%}
@@ -11,7 +14,7 @@
   <figure>
     <img
       srcset="{{ srcset }}"
-      sizes="(max-width: 800px) 800px, 1024px"
+      sizes="(min-width: {{ content_width }}) calc({{ content_width }} / {{num_images}}), (min-width: {{ palm_width }}) calc(100vw / {{num_images}}), 100vw"
       src="{{ original.path | relative_url }}"
       alt="{{ alt }}"
     >

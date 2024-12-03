@@ -1,6 +1,8 @@
 {% comment %}
-  Responsive image optimized to occupy the whole screen width.
+  Responsive image optimized to occupy the whole content width.
 {% endcomment %}
+
+{%- assign content_width = "1200px" -%}
 
 {%- capture srcset -%}
 {{ original.path | relative_url }} {{ original.width }}w,
@@ -18,7 +20,7 @@
   data-thumbnail-height="{{ thumbnail.height }}"
   data-thumbnail-path="{{ thumbnail.path | relative_url }}"
   srcset="{{ srcset }}"
-  sizes="(max-width: 800px) 800px, 1024px"
+  sizes="min(100vw, {{ content_width }})"
   src="{{ original.path | relative_url }}"
   alt="{{ alt }}"
 >
