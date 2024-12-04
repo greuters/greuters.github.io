@@ -1,4 +1,5 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const zlib = require("zlib");
+const CompressionPlugin = require("compression-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -14,13 +15,30 @@ module.exports = {
   entry: "./webpack/entry.js",
   output: {
     path: __dirname + "/assets/dist/",
-    filename: "bundle.js"
+    filename: "bundle.js",
+    clean: true,
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new CleanWebpackPlugin(
-        {verbose: true}
-    )
+    new CompressionPlugin({
+      filename: "[path][base].gz",
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
+    new CompressionPlugin({
+      filename: "[path][base].br",
+      algorithm: "brotliCompress",
+      test: /\.(js|css|html|svg)$/,
+      compressionOptions: {
+        params: {
+          [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+        },
+      },
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
   ],
   module: {
     rules: [

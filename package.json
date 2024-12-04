@@ -12,6 +12,7 @@
     "create-track-archives": "for dir in assets/tracks/*; do `find $dir/ -name '*lowres.gpx' -printf '%f\\0' | tar -czf _site/$dir/lowres.tar.gz -C $dir/ --null --files-from -`; done && rm _site/assets/tracks/*/*lowres.gpx",
     "link-tracks": "rm -r _site/*/assets/tracks && find _site/*/assets -maxdepth 0 -type d -execdir ln -s ../../assets/tracks assets/tracks ';'",
     "serve": "http-server -p 9090 _site/",
+    "serve-benchmark": "http-server -p 9090 -g -b -S -C cert.pem _site/",
     "update": "npm update --save && npm outdated && gem update bundler && bundler update && echo to update node, manually run: nvm install node and remember to update github workflow"
   },
   "repository": {
@@ -25,7 +26,7 @@
   },
   "homepage": "https://github.com/greuters/greuters.github.io#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^11.1.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "mini-css-extract-plugin": "^2.9.2",
