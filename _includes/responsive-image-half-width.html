@@ -21,6 +21,9 @@
   data-thumbnail-width="{{ thumbnail.width }}"
   data-thumbnail-height="{{ thumbnail.height }}"
   data-thumbnail-path="{{ thumbnail.path | relative_url }}"
+  {% if highpriority == true %}
+  fetchpriority="high"
+  {% endif %}
   loading="{{ loading }}"
   srcset="{{ srcset }}"
   sizes="(min-width: {{ content_width }}) calc({{ content_width }} / 2), (min-width: {{ palm_width }}) 50vw, 100vw"

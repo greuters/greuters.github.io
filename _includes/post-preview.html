@@ -18,6 +18,7 @@
         template: _includes/responsive-image-half-width.html
         path: {{ preview_image[img_path] | replace_first: '/', '' }}
         alt: {{ preview_image[img_alt] | default: preview_image[img_name] }}
+        highpriority: {{ include.highpriority | default: false }}
         loading: {{ include.loading | default: 'eager' }}
       {% endresponsive_image_block %}
     </a>

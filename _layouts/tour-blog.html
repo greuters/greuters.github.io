@@ -197,12 +197,17 @@ required_modules:
           }}
       {%- endcase -%}
 
+      {%- if forloop.index0 == 0 -%}
+        {%- assign highpriority = true -%}
+      {%- else -%}
+        {%- assign highpriority = false -%}
+      {%- endif -%}
       {%- if forloop.index0 < 2 -%}
         {%- assign loadingStrategy = 'eager' -%}
       {%- else -%}
         {%- assign loadingStrategy = 'lazy' -%}
       {%- endif -%}
-      {%- include post-preview.html post=post track_number=trackNumber lat_lng=post.lat_lng spread_lat_lng=spread_lat_lng loading=loadingStrategy -%}
+      {%- include post-preview.html post=post track_number=trackNumber lat_lng=post.lat_lng spread_lat_lng=spread_lat_lng highpriority=highpriority loading=loadingStrategy -%}
     </li>
   {%- endfor -%}
 </ul>
