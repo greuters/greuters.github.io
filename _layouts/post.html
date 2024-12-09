@@ -1,5 +1,7 @@
 ---
 layout: default
+required_modules:
+- init_inline_galleries
 ---
 <article class="post h-entry hentry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
@@ -26,9 +28,9 @@ layout: default
 </article>
 
 <script
-  id="init-inline-gallery"
-  defer
-  src="/assets/js/init-inline-galleries.js"
+  id="init-inline-galleries"
+  type="module"
+  src="/assets/dist/init_inline_galleries.bundle.js"
   data-close-gallery-l10n="{{ site.data[site.active_lang].l10n.closeGallery }}"
   data-toggle-maximize-l10n="{{ site.data[site.active_lang].l10n.toggleMaximize }}"
   data-previous-slide-l10n="{{ site.data[site.active_lang].l10n.previousSlide }}"

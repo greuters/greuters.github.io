@@ -1,5 +1,7 @@
 ---
 layout: default
+required_modules:
+- init_map
 ---
 {% comment %}
   Dedicated layout for tour blogs
@@ -209,7 +211,7 @@ layout: default
   {{ content | newline_to_br | replace: 'br /', 'br' }}
 </aside>
 
-<script id="track-data" type="application/json">
+<script id="track-data" type="application/json" defer>
   [
     {% for track in tracks %}
       {
@@ -234,8 +236,8 @@ layout: default
 {%- endif -%}
 <script
   id="init-map"
-  defer
-  src="/assets/js/init-map.js"
+  type="module"
+  src="/assets/dist/init_map.bundle.js"
   data-dev-mode="{{ devMode }}"
   data-lowres-track-archive="{{ "/assets/tracks/" | append: page.post_category | append: "/lowres.tar.gz"}}"
   data-init-bounds="{{ page.init_bounds }}"

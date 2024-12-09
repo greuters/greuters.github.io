@@ -1,3 +1,12 @@
+import L from "leaflet";
+import 'leaflet-fullscreen/dist/Leaflet.fullscreen.js';
+import 'leaflet-gpx/gpx.js';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
+
+import { untar } from 'tinytar-fix/dist/tinytar.js';
+import { ungzip } from 'pako/dist/pako.esm.mjs';
+
 class MapManager {
     static minZoom = 1;
     static maxZoom = 16;
@@ -90,7 +99,9 @@ class MapManager {
                     devMode
                 );
                 const lowresTrack = lowresTracks[track.trackNumber];
-                invariant(data['lowresPath'].endsWith(lowresTrack.name), 'corrupt lowres track archive');
+                if (!data['lowresPath'].endsWith(lowresTrack.name)) {
+                    throw Error('corrupt lowres track archive')
+                }
                 if (deferredPostMap.has(track.trackNumber)) {
                     track.loadLowRes(utf8decoder.decode(lowresTrack.data), (track) => {
                         for (let postHtml of deferredPostMap.get(track.trackNumber)) {
@@ -465,27 +476,29 @@ function initMap() {
     }).addTo(map);
     map.fitBounds(JSON.parse(script.dataset.initBounds));
 
-    window.mapManager = new MapManager(
-        map,
-        script.dataset.lowresTrackArchive,
-        JSON.parse(document.getElementById("track-data").text),
-        Array.from(document.querySelectorAll('#post-list .post-preview')),
-        devMode);
+    window.addEventListener("load", function () {
+        window.mapManager = new MapManager(
+            map,
+            script.dataset.lowresTrackArchive,
+            JSON.parse(document.getElementById("track-data").text),
+            Array.from(document.querySelectorAll('#post-list .post-preview')),
+            devMode);
+
+        window.onresize = function () {
+            if (getComputedStyle(document.querySelector('#map-box')).display === 'none') {
+                if (window.mapManager) {
+                    window.mapManager.remove();
+                    delete window.mapManager;
+                }
+            } else {
+                if (window.mapManager) {
+                    window.mapManager.onResize();
+                } else {
+                    initMap();
+                }
+            }
+        };
+    });
 }
 
-window.onload = initMap;
-
-window.onresize = function () {
-    if (getComputedStyle(document.querySelector('#map-box')).display === 'none') {
-        if (window.mapManager) {
-            window.mapManager.remove();
-            delete window.mapManager;
-        }
-    } else {
-        if (window.mapManager) {
-            window.mapManager.onResize();
-        } else {
-            initMap();
-        }
-    }
-};
+initMap();

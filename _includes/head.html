@@ -10,8 +10,14 @@
   </title>
 
   <link rel="stylesheet" href="{{'/assets/dist/main.css' | relative_url }}">
-  <link rel="stylesheet" href="{{'/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+
+  {% if layout.required_modules %}
+    {% for module in layout.required_modules %}
+      <link rel="stylesheet" href="{{ '/assets/dist/' | append: module | append: '.css' | relative_url }}">
+      <link rel="modulepreload" href="{{ '/assets/dist/' | append: module | append: '.bundle.js' | relative_url }}">
+    {% endfor %}
+  {% endif %}
 
   {% feed_meta %}
 
@@ -29,6 +35,4 @@
       {% endstatic_href %}
     >
   {% endfor %}
-
-  <script src="/assets/dist/bundle.js"></script>
 </head>

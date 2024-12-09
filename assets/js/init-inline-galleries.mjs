@@ -1,5 +1,13 @@
-window.onload = function () {
-    const script = document.getElementById('init-inline-gallery');
+import lightGallery from "lightgallery";
+import lgAutoplay from "lightgallery/plugins/autoplay/lg-autoplay.es5.js";
+import lgThumbnail from "lightgallery/plugins/thumbnail/lg-thumbnail.es5.js";
+
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-autoplay.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+function init() {
+    const script = document.getElementById('init-inline-galleries');
     const galleries = document.getElementsByClassName("inline-gallery-container");
     for (let i = 0; i < galleries.length; i++) {
         let gallery = lightGallery(galleries[i], {
@@ -59,3 +67,5 @@ window.onload = function () {
         gallery.openGallery();
     }
 }
+
+init();

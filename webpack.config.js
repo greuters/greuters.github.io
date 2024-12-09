@@ -5,17 +5,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-  module: {
-   },
-};
-
-module.exports = {
   mode: 'none',
   devtool: "source-map",
-  entry: "./webpack/entry.js",
+  entry: {
+    main: "./webpack/entry.js",
+    init_map: "./assets/js/init-map.mjs",
+    init_inline_galleries: "./assets/js/init-inline-galleries.mjs",
+  },
   output: {
     path: __dirname + "/assets/dist/",
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     clean: true,
   },
   plugins: [
@@ -24,7 +23,7 @@ module.exports = {
       filename: "[path][base].gz",
       algorithm: "gzip",
       test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
+      threshold: 1024,
       minRatio: 0.8,
     }),
     new CompressionPlugin({
@@ -36,7 +35,7 @@ module.exports = {
           [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
         },
       },
-      threshold: 10240,
+      threshold: 1024,
       minRatio: 0.8,
     }),
   ],
@@ -45,24 +44,24 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-            MiniCssExtractPlugin.loader,
-            "css-loader",
-            "sass-loader"
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader"
         ],
       }
     ],
   },
   optimization: {
-      minimizer: [
-          new TerserPlugin({
-            terserOptions: {
-              compress: {
-                drop_console: true,
-              },
-              mangle: true,
-            },
-          }),
-         new CssMinimizerPlugin(),
-      ],
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: true,
+          },
+          mangle: true,
+        },
+      }),
+      new CssMinimizerPlugin(),
+    ],
   }
 };
