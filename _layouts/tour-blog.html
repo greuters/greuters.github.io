@@ -41,12 +41,12 @@ required_modules:
 {%- endif -%}
 
 {% comment %} load gpx tracks {% endcomment %}
-{% assign track_number = 0 %}
-{% assign track_color = 1 %}
-{% assign track_vehicle = 2 %}
-{% assign track_highres_path = 3 %}
-{% assign track_lowres_path = 4 %}
-{% assign track_date = 5 %}
+{%- assign track_number = 0 -%}
+{%- assign track_color = 1 -%}
+{%- assign track_vehicle = 2 -%}
+{%- assign track_highres_path = 3 -%}
+{%- assign track_lowres_path = 4 -%}
+{%- assign track_date = 5 -%}
 
 {%- assign highresTrackFiles = site.static_files
   | where_exp: 'file', 'file.path contains "assets/tracks"'
@@ -105,14 +105,14 @@ required_modules:
 
   {%- assign tracks = tracks | push: track -%}
   {%- assign expectedTrackNumber = expectedTrackNumber | plus: 1 -%}
-{% endfor %}
+{%- endfor -%}
 
 {% comment %} initialize sorted map trackDate:trackNumber {% endcomment %}
 {%- assign trackDateMap = site.emptyArray -%}
-{% for track in tracks %}
+{%- for track in tracks -%}
   {%- assign entry = track[track_date] | date: '%Y-%m-%d' | append: ':' | append: track[track_number] -%}
   {%- assign trackDateMap = trackDateMap | push: entry -%}
-{% endfor %}
+{%- endfor -%}
 {%- assign trackDateMap = trackDateMap | sort -%}
 
 <aside id="map-box">
@@ -130,7 +130,7 @@ required_modules:
           {%- assign entryDate = entry | split: ':' | first -%}
           {%- assign postDate = post.date | date: '%Y-%m-%d' -%}
           {%- if postDate <= entryDate -%}
-            {% break %}
+            {%- break -%}
           {%- endif -%}
         {%- endfor -%}
       {%- else -%}

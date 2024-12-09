@@ -65,40 +65,40 @@
       </ul>
 {%- endcomment -%}
 
-{% assign img_id = 0 %}
-{% assign img_name = 1 %}
-{% assign img_path = 2 %}
-{% assign img_modified_time = 3 %}
-{% assign img_basename = 4 %}
-{% assign img_extname = 5 %}
-{% assign img_collection = 6 %}
-{% assign img_alt = 7 %}
-{% assign img_caption = 8 %}
+{%- assign img_id = 0 -%}
+{%- assign img_name = 1 -%}
+{%- assign img_path = 2 -%}
+{%- assign img_modified_time = 3 -%}
+{%- assign img_basename = 4 -%}
+{%- assign img_extname = 5 -%}
+{%- assign img_collection = 6 -%}
+{%- assign img_alt = 7 -%}
+{%- assign img_caption = 8 -%}
 
-{% assign pageToLoad = site.pages | where_exp: 'page', 'page.path == include.page_path' | first %}
+{%- assign pageToLoad = site.pages | where_exp: 'page', 'page.path == include.page_path' | first -%}
 {%- if pageToLoad == null -%}
-  {% assign pageToLoad = site.posts | where_exp: 'page', 'page.path == include.page_path' | first %}
+  {%- assign pageToLoad = site.posts | where_exp: 'page', 'page.path == include.page_path' | first -%}
 {%- endif -%}
 {%- if pageToLoad == null -%}
   <h1>{{ 'Failed to find page with page.path=`' | append: include.page_path | raise_error }}"</h1>
 {%- endif -%}
 
 {%- comment -%} page.name is empty on posts, thus parsing page.path manually to find basename {%- endcomment -%}
-{% assign basename = pageToLoad.path | split: '/' | last | split: '.' | first %}
-{% assign page_imagefiles = site.static_files | where_exp: 'image', 'image.path contains basename' %}
+{%- assign basename = pageToLoad.path | split: '/' | last | split: '.' | first -%}
+{%- assign page_imagefiles = site.static_files | where_exp: 'image', 'image.path contains basename' -%}
 
 {% comment %} <h1>Inside page static files: {{page_imagefiles}}</h1> {% endcomment %}
-{% assign page_images = site.emptyArray %}
+{%- assign page_images = site.emptyArray -%}
 
 {%- for collection in pageToLoad.image_metadata -%}
   {%- for metadata in collection.images -%}
-    {% assign id = collection.dirname %}
+    {%- assign id = collection.dirname -%}
     {%- unless collection.dirname == null -%}
-      {% assign id = id | append: '/' %}
+      {%- assign id = id | append: '/' -%}
     {%- endunless -%}
-    {% assign id = id | append: metadata.filename %}
+    {%- assign id = id | append: metadata.filename -%}
 
-    {% assign imagefile = page_imagefiles | where_exp: 'image', 'image.path contains id' | first %}
+    {%- assign imagefile = page_imagefiles | where_exp: 'image', 'image.path contains id' | first -%}
     {%- if imagefile == null -%}
       <h1>
         {{
@@ -114,18 +114,18 @@
       </h1>
     {%- endif -%}
 
-    {% assign image = site.emptyArray %}
-    {% assign image = image | push: id %}
-    {% assign image = image | push: imagefile.name %}
-    {% assign image = image | push: imagefile.path %}
-    {% assign image = image | push: imagefile.modified_time %}
-    {% assign image = image | push: imagefile.basename %}
-    {% assign image = image | push: imagefile.extname %}
-    {% assign image = image | push: collection.dirname %}
-    {% assign image = image | push: metadata.alt %}
-    {% assign image = image | push: metadata.caption %}
+    {%- assign image = site.emptyArray -%}
+    {%- assign image = image | push: id -%}
+    {%- assign image = image | push: imagefile.name -%}
+    {%- assign image = image | push: imagefile.path -%}
+    {%- assign image = image | push: imagefile.modified_time -%}
+    {%- assign image = image | push: imagefile.basename -%}
+    {%- assign image = image | push: imagefile.extname -%}
+    {%- assign image = image | push: collection.dirname -%}
+    {%- assign image = image | push: metadata.alt -%}
+    {%- assign image = image | push: metadata.caption -%}
 
-    {% assign page_images = page_images | push: image %}
+    {%- assign page_images = page_images | push: image -%}
   {%- endfor -%}
 {%- endfor -%}
 
