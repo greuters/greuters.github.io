@@ -71,6 +71,7 @@ parallel_localization: true
 # Settings for jekyll-responsive-image
 responsive_image:
   template: _includes/responsive-image.html
+  default_quality: 85
   sizes:
     - width: 1366
     - width: 840

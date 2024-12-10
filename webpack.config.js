@@ -63,5 +63,6 @@ module.exports = {
       }),
       new CssMinimizerPlugin(),
     ],
+    usedExports: true,
   }
 };
