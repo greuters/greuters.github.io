@@ -13,10 +13,10 @@
 <div id="inline-gallery-{{include.collection}}" class="inline-gallery-container">
   {%- for image in page_images -%}
     {%- if image[img_collection] == include.collection -%}
-      {%- capture srcset_avif -%}
+      {%- capture srcset_webp -%}
         {%-
           picture
-          lightgallery-srcset-avif
+          lightgallery-srcset-webp
           "{{ image[img_jpt_relative_path] }}"
         -%}
       {%- endcapture -%}
@@ -28,7 +28,7 @@
        -%}
       {%- endcapture -%}
       {%- assign media_query = 'min(100vw, calc(100vh * ' | append: image[img_aspect_ratio] | append: '))' -%}
-      {%- assign src = "'" | append: '[{"srcset": "' | append: srcset_avif | append: '", "type": "image/avif"}, {"srcset": "' | append: srcset_jpg | append: '", "type": "image/jpeg"}]' | append: "'" -%}
+      {%- assign src = "'" | append: '[{"srcset": "' | append: srcset_webp | append: '", "type": "image/webp"}, {"srcset": "' | append: srcset_jpg | append: '", "type": "image/jpeg"}]' | append: "'" -%}
       <a
         data-sources={{ src }}
         data-sizes="min(100vw, calc(100vh * {{ image[img_aspect_ratio] }}))"

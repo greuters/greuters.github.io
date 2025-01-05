@@ -8,9 +8,10 @@ media_queries:
 
 presets:
   base: &base
-    formats: [avif, jpg]
+    formats: [webp, jpg]
     format_quality:
       jpg: 60
+      webp: 55
       avif: 50
 
   fullwidth:
@@ -55,9 +56,9 @@ presets:
     markup: naked_srcset
     widths: [420, 730, 1366, 1600] # oversized for high DPR devices, but max available input image size = 1600px
 
-  lightgallery-srcset-avif:
+  lightgallery-srcset-webp:
     <<: *lightgallery-srcset
-    formats: [avif]
+    formats: [webp]
 
   lightgallery-srcset-jpg:
     <<: *lightgallery-srcset
