@@ -51,7 +51,7 @@ Moosüberwachsene Lavafelder im Morgengrauen, eigentlich fast die Insel an sich,
 
 Kalt ist es hier, die ersten Tage an der Südküste zwar super sonnig aber vergletschert, irgendwie mystisch. Wasserfälle, Vulkane, Feuer und Eis treffen aufeinander. Gipfel und Gletscher tauchen aus verwehten Nebelwänden auf, eingerahmt vom Meer. Und eine unverständlich schnelle Sprache, schön anzuhören im Radio, als Automassentouristen auf der Ringstrasse unterwegs.
 
-{% include image-divider.html ids="Wind.jpg" %}
+{% include image-divider.html ids="Wind.jpg, DSCF6902.jpg" %}
 
 Nicht umsonst warnen die Vermietungen allesamt vor eingedrückten Türen: der Wind bläst immer, doch kaum je stetig. Heftige Böen kommen aus jeder Richtung - gut haben wir uns nicht entschieden, unser Glück deutlich nach Ende der Fahrradsaison noch auf die Probe zu stellen. Die wenigen Radler denen wir begegnen sind jedoch erstaunlich frohgemut. Muss man wohl sein, um bei diesen Bedingungen unterwegs zu sein. Wir haben uns einen Mini-Camper gemietet, bringen unser Rad noch im Karton verpackt zum Fährhafen im Osten des Landes und fahren dabei einmal um die Insel. Spätestens im Nordosten - rotschwarz verschneite Landschaften, deutlich rauher und kaum besiedelt, nur Schafe und Pferde harren aus - wären wir mit unserem Setup wohl nicht mehr weitergekommen.
 

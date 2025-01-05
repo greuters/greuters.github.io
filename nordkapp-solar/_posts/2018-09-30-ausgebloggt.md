@@ -13,7 +13,7 @@ image_metadata:
   - dirname:
     images:
     - {filename: preview.jpg, caption: , alt: } 
-    - {filename: map.png, caption: , alt: } 
+    - {filename: map.jpg, caption: , alt: } 
     - {filename: welcome.jpg, caption: , alt: } 
 ---
 
@@ -23,7 +23,7 @@ Am wichtigsten für die fleissige Leserin vielleicht: am 30. Oktober werden wir 
 
 In unserem stillen Rückzugsort in Spanien haben wir unzählige Bilder durchforstet, die Auswahl immer weiter reduziert und zu einer Geschichte destilliert. Zu dieser Erzählung möchten wir euch gern einladen:
  
-{% include image.liquid id="map.png" class="centered" %}
+{% include image.liquid id="map.jpg" class="centered" %}
 
 Am 30. Oktober um 20.00 im Treffpunkt, Genossenschaftsstr. 13, 8050 Zürich. 
 
