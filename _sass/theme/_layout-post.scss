@@ -9,7 +9,7 @@
             display: none;
         }
 
-        @media screen and (min-width: $palm-width) {
+        @media screen and (min-width: $tablet-width) {
             .metadata {
                 display: initial;
                 align-self: center;

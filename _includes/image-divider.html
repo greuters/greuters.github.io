@@ -12,24 +12,34 @@
 
   Optionally, add show_captions=true if you want to add captions below the images
 {%- endcomment -%}
+{%- assign content_width = "1200px" -%}
+{%- assign tablet_width = "800px" -%}
 
 {% include load-images.liquid page_path=page.path %}
 
 {% assign ids = include.ids | split: ', ' %}
 
 <div class="image-divider">
-  {%- for id in ids -%}
+  {% for id in ids %}
     {%- assign image = page_images | where_exp: 'image', 'image[img_id] == id' | first -%}
     {%- if image == null -%}
       <img src="" alt="{{'Imagefile with id=`' | append: id | append: '` is missing!' | raise_error }}">
     {%- else -%}
-      {% responsive_image_block %}
-        template: _includes/responsive-image-flex.html
-        path: {{ image[img_path] | replace_first: '/', '' }}
-        alt: {{ image[img_alt] | default: image[img_name] }}
-        caption: "{{ image[img_caption] }}"
-        num_images: {{ ids.size }}
-      {% endresponsive_image_block %}
+      <div style="flex: {{ image[img_aspect_ratio] }}">
+        <figure>
+          {%
+            picture
+            image-divider
+            "{{ image[img_jpt_relative_path] }}"
+            --alt {{ image[img_alt] | default: image[img_name] }}
+            --source sizes="(min-width: {{ content_width }}) calc({{ content_width }} / {{ ids.size }}), (min-width: {{ tablet_width }}) calc(100vw / {{ ids.size }}), 100vw"
+          %}
+
+          {%- if image[img_caption] != "" -%}
+            <figcaption>{{ image[img_caption] }}</figcaption>
+          {% endif %}
+        </figure>
+      </div> 
     {%- endif -%}
   {%- endfor -%}
 </div>

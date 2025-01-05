@@ -50,7 +50,7 @@
     }
 
     // On wider screens, unfold toplevel-urls to a flat list
-    @media screen and (min-width: v.$palm-width) {
+    @media screen and (min-width: v.$tablet-width) {
         .toplevel-urls.dropdown {
             display: flex;
             flex-direction: row;

@@ -1,5 +1,10 @@
 @use "_variables" as v;
 
+/* General */
+img {
+    height: auto;
+}
+
 /* Lightgallery */
 .lg-inline .lg-backdrop {
     background-color: transparent;
@@ -46,6 +51,10 @@ figure.centered {
     width: fit-content;
     max-width: 100%;
     margin-inline: auto;
+
+    img {
+        width: 100%;
+    }
 }
 
 figure.float-inline-start {
@@ -56,7 +65,7 @@ figure.float-inline-start {
         width: 100%;
     }
 
-    @media screen and (min-width: v.$palm-width) {
+    @media screen and (min-width: v.$tablet-width) {
         max-width: calc(50% - 1rem);
         margin-inline-end: 1rem;
         float: inline-start;
@@ -71,7 +80,7 @@ figure.float-inline-end {
         width: 100%;
     }
 
-    @media screen and (min-width: v.$palm-width) {
+    @media screen and (min-width: v.$tablet-width) {
         max-width: calc(50% - 1rem);
         margin-inline-start: 1rem;
         float: inline-end;
@@ -94,11 +103,15 @@ figure.float-inline-end {
 
     img {
         width: 100%;
-        height: auto;
         vertical-align: middle;
     }
 
-    @media screen and (min-width: v.$palm-width) {
+    @media screen and (min-width: v.$tablet-width) {
         flex-direction: row;
     }
+}
+
+/* map */
+img.preview-thumbnail {
+    display: none;
 }

@@ -8,7 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-raise_liquid_error"
   gem "jekyll-image-size", "~> 1.2"
   gem "jekyll-sass-converter"
-  gem "jekyll-responsive-image"
+  gem "jekyll_picture_tag"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

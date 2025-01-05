@@ -4,13 +4,13 @@
   "description": "",
   "private": true,
   "scripts": {
-    "clean": "bundle exec jekyll clean && rm -rf assets/resized",
-    "dev": "webpack --mode=development && bundle exec jekyll build && npm run replace-images && bundle exec jekyll serve",
+    "clean": "bundle exec jekyll clean",
+    "dev": "webpack --mode=development && bundle exec jekyll build && bundle exec jekyll serve",
     "build": "webpack --mode=production && JEKYLL_ENV=production bundle exec jekyll build",
-    "postbuild": "npm run replace-images && npm run create-track-archives && npm run link-tracks",
-    "replace-images": "rm -r _site/*/assets/images && cp assets/images/favicon.png _site/assets/images/ && rm -rf _site/assets/resized || true && cp -r assets/resized _site/assets/resized",
+    "postbuild": "npm run create-track-archives && npm run link-tracks && npm run clean-images",
     "create-track-archives": "for dir in assets/tracks/*; do `find $dir/ -name '*lowres.gpx' -printf '%f\\0' | tar -czf _site/$dir/lowres.tar.gz -C $dir/ --null --files-from -`; done && rm _site/assets/tracks/*/*lowres.gpx",
     "link-tracks": "rm -r _site/*/assets/tracks && find _site/*/assets -maxdepth 0 -type d -execdir ln -s ../../assets/tracks assets/tracks ';'",
+    "clean-images": "rm -r _site/assets/images/*/ && rm -r _site/*/assets/images",
     "serve": "http-server -p 9090 _site/",
     "serve-benchmark": "http-server -p 9090 -g -b -S -C cert.pem _site/",
     "update": "npm update --save && npm outdated && gem update bundler && bundler update && echo to update node, manually run: nvm install node and remember to update github workflow"

@@ -12,16 +12,34 @@
     | where_exp: 'image', 'image[img_id] == include.post.preview_image_id'
     | first
   %}
+  {%- if include.highpriority -%}
+    {%- assign fetchpriority = 'high' -%}
+  {%- else -%}
+    {%- assign fetchpriority = 'auto' -%}
+  {%- endif -%}
   {%- if preview_image -%}
+
     <a href="{{include.post.url | relative_url}}" class="preview-image">
-      {% responsive_image_block %}
-        template: _includes/responsive-image-half-width.html
-        path: {{ preview_image[img_path] | replace_first: '/', '' }}
-        alt: {{ preview_image[img_alt] | default: preview_image[img_name] }}
-        highpriority: {{ include.highpriority | default: false }}
-        loading: {{ include.loading | default: 'eager' }}
-      {% endresponsive_image_block %}
+      {%
+        picture
+        halfwidth
+        "{{ preview_image[img_jpt_relative_path] }}"
+        --alt {{ preview_image[img_alt] | default: preview_image[img_name] }}
+        --img fetchpriority="{{ fetchpriority }}"
+        --img loading="{{ include.loading | default: 'eager' }}"
+      %}
     </a>
+
+    {% comment %}
+      add thumbnail to trigger jpt generation; visible version is lazy loaded by init-map.mjs
+    {% endcomment %}
+    {%
+      picture
+      preview-thumbnail
+      "{{ preview_image[img_jpt_relative_path] }}"
+      --alt {{ preview_image[img_alt] | default: preview_image[img_name] }}
+    %}
+
   {%- endif -%}
 
   {% include post-metadata.html post=post %}

@@ -1,0 +1,54 @@
+# css related base measurements
+content_width: &content_width '1200px'
+
+media_queries:
+  mobile: 'min-width: 420px'
+  tablet: 'min-width: 800px'
+  wide: 'min-width: 1200px'
+
+presets:
+  fullwidth:
+    # occupy the whole width on all screens
+    dimension_attributes: true
+    formats: [webp, original]
+    widths: [420, 730, 840, 1366, 1600] # oversized for high DPR devices, but max available input image size = 1600px
+    sizes:
+      wide: *content_width
+    size: '100vw'
+    fallback_width: 840
+
+  halfwidth:
+    # occupy only half the width on tablets and bigger
+    dimension_attributes: true
+    formats: [webp, original]
+    widths: [420, 600, 730, 840, 1200, 1300] # oversized up to DPR 3x430px
+    sizes:
+      tablet: 'min(50vw, 580px)'
+    size: '100vw'
+    fallback_width: 600
+
+  preview-thumbnail:
+    dimension_attributes: true
+    markup: data_img
+    widths: [100]
+    fallback_format: original
+    fallback_width: 100
+    attributes:
+      img: class="preview-thumbnail"
+
+  image-divider:
+    dimension_attributes: true
+    formats: [webp, original]
+    widths: [250, 420, 730, 840, 1366, 1600] # oversized for high DPR devices, but max available input image size = 1600px
+    fallback_width: 420
+
+  lightgallery-srcset:
+    formats: [webp, original]
+    widths: [420, 730, 840, 1366, 1600] # oversized for high DPR devices, but max available input image size = 1600px
+    markup: naked_srcset
+
+  lightgallery-thumbnail:
+    markup: img
+    widths: [60]
+    fallback_format: original
+    fallback_width: 60

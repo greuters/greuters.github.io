@@ -12,7 +12,7 @@ class MapManager {
     static maxZoom = 16;
     static scrollingMinZoom = 7;
     static highResMinZoom = 10;
-    static animationMaxZoom = 4;
+    static animationMaxZoom = 3;
 
     constructor(map, lowresTrackArchive, trackData, postHtmls, devMode) {
         this.intervalId = null;
@@ -384,15 +384,13 @@ class Post {
         this.html = html;
         this.trackNumber = Number(html.dataset.trackNumber);
 
-        const previewImageHtml = html.querySelector(".preview-image img");
-        const tW = Number(previewImageHtml.dataset.thumbnailWidth);
-        const tH = Number(previewImageHtml.dataset.thumbnailHeight);
-        const normalizationFactor = Post.thumbnailMaxDim / Math.max(tW, tH);
-        const thumbnailWidth = tW * normalizationFactor;
-        const thumbnailHeight = tH * normalizationFactor;
+        const previewThumbnailHtml = html.querySelector("img.preview-thumbnail");
+        const normalizationFactor = Post.thumbnailMaxDim / Math.max(previewThumbnailHtml.width, previewThumbnailHtml.height);
+        const thumbnailWidth = previewThumbnailHtml.width * normalizationFactor;
+        const thumbnailHeight = previewThumbnailHtml.height * normalizationFactor;
 
         this.iconMap = new Map();
-        const imageUrl = previewImageHtml.dataset.thumbnailPath;
+        const imageUrl = previewThumbnailHtml.dataset.src;
         preloadImage(imageUrl);
         for (const scaleFactor of Post.scaleFactorMap.values()) {
             if (!this.iconMap.has(scaleFactor)) {

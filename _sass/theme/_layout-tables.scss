@@ -1,0 +1,43 @@
+@use "_variables" as v;
+
+/**
+ * Tables
+ */
+table {
+    margin-bottom: v.$spacing-unit;
+    width: 100%;
+    text-align: v.$table-text-align;
+    color: color.scale(v.$text-color, $lightness: 18%);
+    border-collapse: collapse;
+    border: 1px solid v.$grey-color-light;
+    tr {
+        &:nth-child(even) {
+            background-color: color.scale(v.$grey-color-light, $lightness: 6%);
+        }
+    }
+    th,
+    td {
+        padding: (calc(v.$spacing-unit / 3)) (calc(v.$spacing-unit / 2));
+    }
+    th {
+        background-color: color.scale(v.$grey-color-light, $lightness: 3%);
+        border: 1px solid color.scale(v.$grey-color-light, $lightness: -4%);
+        border-bottom-color: color.scale(v.$grey-color-light, $lightness: -12%);
+    }
+    td {
+        border: 1px solid v.$grey-color-light;
+    }
+}
+
+table.hidden-borders {
+    border: 0;
+
+    tr {
+        background-color: unset;
+    }
+
+    th,
+    td {
+        border: 0;
+    }
+}

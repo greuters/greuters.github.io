@@ -82,7 +82,7 @@ body {
   padding-left: v.$small-spacing-size;
   @extend %clearfix;
 
-  @media screen and (min-width: v.$palm-width) {
+  @media screen and (min-width: v.$tablet-width) {
     max-width: calc(#{v.$content-width} - (#{v.$base-spacing-size} * 2));
     padding-right: v.$base-spacing-size;
     padding-left: v.$base-spacing-size;
@@ -334,7 +334,7 @@ table.hidden-borders {
   max-width: 100%;
   width: calc(#{v.$content-width} - (#{v.$small-spacing-size} * 2));
 
-  @media screen and (min-width: v.$palm-width) {
+  @media screen and (min-width: v.$tablet-width) {
     width: calc(#{v.$content-width} - (#{v.$base-spacing-size} * 2));
   }
 }
@@ -344,7 +344,7 @@ table.hidden-borders {
   max-width: 100%;
   width: calc(#{v.$content-width} - (#{v.$small-spacing-size} * 2));
 
-  @media screen and (min-width: v.$palm-width) {
+  @media screen and (min-width: v.$tablet-width) {
     width: calc(#{v.$content-width} / 2 - #{v.$base-spacing-size} * 2);
   }
 }

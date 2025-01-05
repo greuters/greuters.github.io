@@ -14,7 +14,7 @@
 }
 
 /* common stuff for wider screen grid layouts */
-@media screen and (min-width: $palm-width) {
+@media screen and (min-width: $tablet-width) {
     .post-preview {
         display: grid;
         row-gap: $small-spacing-size;

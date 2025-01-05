@@ -25,7 +25,6 @@ function init() {
             slideShowAutoplay: false,
             slideShowInterval: 6000,
             defaultCaptionHeight: '1.5rem',
-            exThumbImage: 'data-external-thumb-image',
             strings: {
                 closeGallery: script.dataset.closeGalleryL10n,
                 toggleMaximize: script.dataset.toggleMaximizeL10n,

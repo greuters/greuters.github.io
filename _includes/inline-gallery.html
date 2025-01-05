@@ -11,14 +11,23 @@
 {% include load-images.liquid page_path=page.path %}
 
 <div id="inline-gallery-{{include.collection}}" class="inline-gallery-container">
-  {% for image in page_images %}
-    {% if image[img_collection] == include.collection %}
-      {% responsive_image_block %}
-        template: _includes/responsive-image-lg.html
-        path: {{ image[img_path] | replace_first: '/', '' }}
-        alt: {{ image[img_alt] | default: image[img_name] }}
-        caption: "{{ image[img_caption] }}"
-      {% endresponsive_image_block %}
+  {%- for image in page_images -%}
+    {%- if image[img_collection] == include.collection -%}
+      {%- capture srcset -%}
+       {%-
+         picture
+         lightgallery-srcset
+         "{{ image[img_jpt_relative_path] }}"
+       -%}
+      {%- endcapture -%}
+      <a
+        data-srcset="{{ srcset }}"
+        data-sizes="min(100vw, calc(100vh * {{ image[img_aspect_ratio] }}))"
+        data-sub-html="<div class='lightGallery-captions'>{{ image[img_caption] }}</div>"
+        hidden
+      >
+        {% picture lightgallery-thumbnail "{{ image[img_jpt_relative_path] }}" %}
+      </a>
     {% endif %}
   {% endfor %}
 </div>

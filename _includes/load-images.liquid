@@ -54,6 +54,10 @@
      - img_collection
      - img_alt
      - img_caption
+     - img_width
+     - img_height
+     - img_aspect_ratio
+     - img_jpt_relative_path
 
   3. As an example, create a list of all images of the page with an alternative text if available:
       <ul>
@@ -74,6 +78,12 @@
 {%- assign img_collection = 6 -%}
 {%- assign img_alt = 7 -%}
 {%- assign img_caption = 8 -%}
+{%- assign img_width = 9 -%}
+{%- assign img_height = 10 -%}
+{%- assign img_aspect_ratio = 11 -%}
+{% comment %} path relative to jekyll_picture_tag source / output {% endcomment %}
+{%- assign img_jpt_relative_path = 12 -%}
+
 
 {%- assign pageToLoad = site.pages | where_exp: 'page', 'page.path == include.page_path' | first -%}
 {%- if pageToLoad == null -%}
@@ -114,6 +124,16 @@
       </h1>
     {%- endif -%}
 
+    {%- capture width -%}
+      {%- imagesize imagefile.path:width -%}
+    {%- endcapture -%}
+    {%- capture height -%}
+      {%- imagesize imagefile.path:height -%}
+    {%- endcapture -%}
+    {%- assign height_float = height | times: 1.0 -%} 
+    {%- assign aspect_ratio = width | divided_by: height_float -%}
+    {%- assign jpt_relative_path = imagefile.path | replace_first: '/assets/images', '' -%}
+
     {%- assign image = site.emptyArray -%}
     {%- assign image = image | push: id -%}
     {%- assign image = image | push: imagefile.name -%}
@@ -124,6 +144,10 @@
     {%- assign image = image | push: collection.dirname -%}
     {%- assign image = image | push: metadata.alt -%}
     {%- assign image = image | push: metadata.caption -%}
+    {%- assign image = image | push: width -%}
+    {%- assign image = image | push: height -%}
+    {%- assign image = image | push: aspect_ratio -%}
+    {%- assign image = image | push: jpt_relative_path -%}
 
     {%- assign page_images = page_images | push: image -%}
   {%- endfor -%}
