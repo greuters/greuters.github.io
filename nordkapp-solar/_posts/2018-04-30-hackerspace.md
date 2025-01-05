@@ -2,7 +2,7 @@
 layout: post
 lang: de
 title: Hackerspaces and beyond
-preview_image_id: titel.jpeg
+preview_image_id: titel.jpg
 preview_text: |
   Unerwartete Hilfe und sehenswerte Städte, ein zweiter toller Besuch auf unserer Reise und ein abwechslungsreiches Land mit offenen, gesprächigen Bewohnern. Polen deluxe.
 track_number: 24
@@ -11,34 +11,34 @@ spread_direction: "SE"
 image_metadata:
   - dirname:
     images:
-      - {filename: "schuesse.jpeg", caption: "", alt: ""}
-      - {filename: "titel.jpeg", caption: "", alt: ""}
+      - {filename: "schuesse.jpg", caption: "", alt: ""}
+      - {filename: "titel.jpg", caption: "", alt: ""}
 
   - dirname: gallery1
     images:
-      - {filename: "schweissen.jpeg", caption: "", alt: ""}
-      - {filename: "farbe.jpeg", caption: "", alt: ""}
-      - {filename: "testfahrt.jpeg", caption: "", alt: ""}
-      - {filename: "katze.jpeg", caption: "", alt: ""}
-      - {filename: "wandbild.jpeg", caption: "", alt: ""}
+      - {filename: "schweissen.jpg", caption: "", alt: ""}
+      - {filename: "farbe.jpg", caption: "", alt: ""}
+      - {filename: "testfahrt.jpg", caption: "", alt: ""}
+      - {filename: "katze.jpg", caption: "", alt: ""}
+      - {filename: "wandbild.jpg", caption: "", alt: ""}
   - dirname: gallery2
     images:
-      - {filename: "kaefer.jpeg", caption: "", alt: ""}
-      - {filename: "wald.jpeg", caption: "", alt: ""}
-      - {filename: "sprung.jpeg", caption: "", alt: ""}
-      - {filename: "spuren.jpeg", caption: "Wir hinterlassen Spuren", alt: ""}
-      - {filename: "schleiche.jpeg", caption: "Wer kommt da über den Weg gekrochen?", alt: ""}
-      - {filename: "pilz.jpeg", caption: "", alt: ""}
-      - {filename: "schmetterling.jpeg", caption: "", alt: ""}
+      - {filename: "kaefer.jpg", caption: "", alt: ""}
+      - {filename: "wald.jpg", caption: "", alt: ""}
+      - {filename: "sprung.jpg", caption: "", alt: ""}
+      - {filename: "spuren.jpg", caption: "Wir hinterlassen Spuren", alt: ""}
+      - {filename: "schleiche.jpg", caption: "Wer kommt da über den Weg gekrochen?", alt: ""}
+      - {filename: "pilz.jpg", caption: "", alt: ""}
+      - {filename: "schmetterling.jpg", caption: "", alt: ""}
   - dirname: gallery3
     images:
-      - {filename: "reisende.jpeg", caption: "", alt: ""}
-      - {filename: "fuehrung.jpeg", caption: "", alt: ""}
-      - {filename: "spuren.jpeg", caption: "Spuren vom 2. Weltkrieg", alt: ""}
-      - {filename: "slawek.jpeg", caption: "Slawek", alt: ""}
-      - {filename: "ausblick.jpeg", caption: "", alt: ""}
-      - {filename: "ornament.jpeg", caption: "", alt: ""}
-      - {filename: "nebel.jpeg", caption: "", alt: ""}
+      - {filename: "reisende.jpg", caption: "", alt: ""}
+      - {filename: "fuehrung.jpg", caption: "", alt: ""}
+      - {filename: "spuren.jpg", caption: "Spuren vom 2. Weltkrieg", alt: ""}
+      - {filename: "slawek.jpg", caption: "Slawek", alt: ""}
+      - {filename: "ausblick.jpg", caption: "", alt: ""}
+      - {filename: "ornament.jpg", caption: "", alt: ""}
+      - {filename: "nebel.jpg", caption: "", alt: ""}
 ---
 Marcin & Zbyszek: Ihr seid die Besten (nicht nur als Möbelschreiner) - zwei kreative Jungs, die mit alten, für ihre Pannen berühmten Lastwagen um die Welt ziehen ([Reiseblog](http://zukiemprzezswiat.pl/)), dabei das Schweissen gelernt haben und gleich ein Unikat-Labor mit Möbelmacherei aus dem Boden stampfen. Zuerst verstärkt Zbyszek unseren Anhänger professionell, danach wollen die zwei nicht einmal etwas für die Arbeit haben: „We don‘t charge crazy people!“ – Ehrensache. Stattdessen zeigt uns Marcin die alte Tramstation mit Busoldtimern, wir werden zu einem Konzert am Abend eingeladen und eine Übernachtung wär auch noch dabei. Leider haben wir uns (wegen eines gemachten Couchsurfing-Angebots in Lodz zwei Tage später) gegen das verlockende Konzert und die Velo-Messe am nächsten Tag entschieden - wir sind irgendwie noch nicht ganz im spontanen Reise-Modus angelangt, was wir später noch bereuen. 
  
@@ -54,7 +54,7 @@ Birkenland. Sanft rollende Ebene im Frühlingskleid. Dahingleiten wie Fliegen, F
 <br>
 Szenenwechsel. Drei Tage Grossstadt, drei Tage Warschau. 
 
-{% include image-divider.html ids="schuesse.jpeg" %}
+{% include image-divider.html ids="schuesse.jpg" %}
 
 Zuerst mit herzlich-kuriosen Begegnungen im Park: ein alter Mann ist freudig berührt von unseren Rädern, erzählt wild drauflos von allen Ländern die er vor langem bereist hat – die Gesten sind vielsagend, auch wenn wir kein Wort verstehen. Jetzt geht das leider nicht mehr (obwohl er immer noch auf dem Velo unterwegs ist), aber früher schien er ein grosser Tourenfahrer gewesen zu sein. Mithilfe eines jungen Paars werden die Geschichten dann klarer, und neue Überraschungen warten. Wir können nach der Adresse fragen, und nehmen uns vor, dem Weitgereisten ab und zu eine Postkarte zu schicken.
 

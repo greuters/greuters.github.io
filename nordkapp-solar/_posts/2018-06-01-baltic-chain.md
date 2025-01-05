@@ -11,27 +11,27 @@ spread_direction: "E"
 image_metadata:
   - dirname:
     images:
-      - {filename: "kuppel.jpeg", caption: "", alt: ""}
+      - {filename: "kuppel.jpg", caption: "", alt: ""}
       - {filename: "titel.jpg", caption: "", alt: ""}
 
   - dirname: gallery
     images:
-      - {filename: "christo.jpeg", caption: "Christo&Christo auf dem Weg nach Riga", alt: ""}
-      - {filename: "spinner.jpeg", caption: "", alt: ""}
-      - {filename: "riga.jpeg", caption: "Riga", alt: ""}
-      - {filename: "camping.jpeg", caption: "", alt: ""}
-      - {filename: "strandabend.jpeg", caption: "Abend am Strand geniessen ..", alt: ""}
-      - {filename: "feuer.jpeg", caption: ".. mit FeuerSommerSonnenuntergang", alt: ""}
-      - {filename: "aussicht.jpeg", caption: "Frühstück mit super Aussicht", alt: ""}
-      - {filename: "schnecken.jpeg", caption: "", alt: ""}
-      - {filename: "badefluss.jpeg", caption: "Badefluss in Lettland", alt: ""}
-      - {filename: "makerspace.jpeg", caption: "im Hafen von Tallin", alt: ""}
-      - {filename: "3d-bild.jpeg", caption: "3D-Wandbild in der Künstlerstadt", alt: ""}
-      - {filename: "ferry.jpeg", caption: "Ab über das Meer (als Fussgänger-'Auto')", alt: ""}
-      - {filename: "kapelle.jpeg", caption: "Kapelle mal anders - ein magischer Ort", alt: ""}
-      - {filename: "flugshow.jpeg", caption: "Flugshow über Helsinki", alt: ""}
-      - {filename: "schweissen.jpeg", caption: "Danke für die grossartige Hilfe!", alt: ""}
-      - {filename: "schnellweg.jpeg", caption: "Das ist mal ein Radweg! Auf der alten Eisenbahnspur durchs Stadtzentrum.", alt: ""}
+      - {filename: "christo.jpg", caption: "Christo&Christo auf dem Weg nach Riga", alt: ""}
+      - {filename: "spinner.jpg", caption: "", alt: ""}
+      - {filename: "riga.jpg", caption: "Riga", alt: ""}
+      - {filename: "camping.jpg", caption: "", alt: ""}
+      - {filename: "strandabend.jpg", caption: "Abend am Strand geniessen ..", alt: ""}
+      - {filename: "feuer.jpg", caption: ".. mit FeuerSommerSonnenuntergang", alt: ""}
+      - {filename: "aussicht.jpg", caption: "Frühstück mit super Aussicht", alt: ""}
+      - {filename: "schnecken.jpg", caption: "", alt: ""}
+      - {filename: "badefluss.jpg", caption: "Badefluss in Lettland", alt: ""}
+      - {filename: "makerspace.jpg", caption: "im Hafen von Tallin", alt: ""}
+      - {filename: "3d-bild.jpg", caption: "3D-Wandbild in der Künstlerstadt", alt: ""}
+      - {filename: "ferry.jpg", caption: "Ab über das Meer (als Fussgänger-'Auto')", alt: ""}
+      - {filename: "kapelle.jpg", caption: "Kapelle mal anders - ein magischer Ort", alt: ""}
+      - {filename: "flugshow.jpg", caption: "Flugshow über Helsinki", alt: ""}
+      - {filename: "schweissen.jpg", caption: "Danke für die grossartige Hilfe!", alt: ""}
+      - {filename: "schnellweg.jpg", caption: "Das ist mal ein Radweg! Auf der alten Eisenbahnspur durchs Stadtzentrum.", alt: ""}
 ---
 
 Schon am ersten Tag lernen wir Grandpa kennen, einen freundlichen älteren Herrn der fragt, ob er ein Bild von uns auf seine Website stellen darf. Ein spürbar gebildeter Pensionär und Hobbyfotograf. In Grobina werden wir spontan auf den lokalen Wikinger-Camping eingeladen, am Wochenende gäbe es ein ganzes Festival zum Thema. Wir haben aber vor noch etwas weiter zu ziehen, und geniessen daher nur den schönen Park - mit sauberen Toiletten, unlesbaren Infos und Trinkwasser zum Kochen. Die Menschen scheinen wieder viel offener, neugierig. Das gilt auch für die Touristen, wie wir später noch erleben.
@@ -42,7 +42,7 @@ Anderthalb Tage im Rigaer Zoo. Lustige Begegnungen und erstaunte Gespräche, sel
 
 Nach dem kurzen Unterbruch: wieder eine Strasse, Lastwagen, Autos und wir. Zwar wird viel gegrüsst, Daumen zeigen hoch (wollen die echt alle bei uns mitfahren?) und aus einem roten Wuschelkopf blitzt ein lachendes Gesicht – aber dennoch anstrengend. Ich ertappe mich dabei, Kilometer und Minuten zu zählen. Hoffentlich wird Estland wieder angenehmer für uns. Und Finnland: wir freuen uns auf nordische Strassen! Dafür gibts am Abend wieder ein Geschenk: Sand massieren bis Pudding entsteht. Feuerwarmes Knirschen, dass sich an die Fusssohlen schmiegt Unsere eigene Wellenrippelinsel. Strandidylle für uns allein mit Sonnenuntergang um lettisch Elf. 
 
-{% include image-divider.html ids="kuppel.jpeg" %}
+{% include image-divider.html ids="kuppel.jpg" %}
 
 Wunderbar asphaltierte, und trotzdem verkehrsarme Abschnitte der EV 13 - Willkommen in Estland. Die Föhrenwälder mit Birkenflecken bleiben ähnlich, lange Gassen entlang des Meers, meist etwas weiter landeinwärts. Besondere Grossstein-Häuser und bunte Holzkirchen, freundlich Grüssende und Daumenhoch-Menschen. Eine wärmende Begegnung mit Raimund gleich nach der Grenze: im Weltkrieg geboren unter sicher nicht einfachen Bedingungen, offen und herzlich interessiert, wirkt er mitten im Leben. Mit 75 Jahren per Rad unterwegs von Deutschland nach Karelien und wieder zurück. Alle Achtung!
 

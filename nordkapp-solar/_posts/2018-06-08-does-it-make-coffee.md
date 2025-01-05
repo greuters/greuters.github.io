@@ -12,22 +12,22 @@ image_metadata:
   - dirname:
     images:
       - {filename: "fragen.jpg", caption: "", alt: ""}
-      - {filename: "rad-ab.jpeg", caption: "Kann man was helfen, habt ihr ne Panne?", alt: ""}
+      - {filename: "rad-ab.jpg", caption: "Kann man was helfen, habt ihr ne Panne?", alt: ""}
 
   - dirname: gallery
     images:
-      - {filename: "rennfahrer.jpeg", caption: "", alt: ""}
-      - {filename: "wifi.jpeg", caption: "", alt: ""}
-      - {filename: "bauern.jpeg", caption: "", alt: ""}
-      - {filename: "bauarbeiter.jpeg", caption: "", alt: ""}
-      - {filename: "ablage.jpeg", caption: "Hmm.. ja, auch als Ablage wird unser Anhänger ungefragt genutzt", alt: ""}
-      - {filename: "john.jpeg", caption: "John, von Norwegen kommend", alt: ""}
-      - {filename: "sonne-tanken.jpeg", caption: "", alt: ""}
-      - {filename: "tieflieger.jpeg", caption: "", alt: ""}
+      - {filename: "rennfahrer.jpg", caption: "", alt: ""}
+      - {filename: "wifi.jpg", caption: "", alt: ""}
+      - {filename: "bauern.jpg", caption: "", alt: ""}
+      - {filename: "bauarbeiter.jpg", caption: "", alt: ""}
+      - {filename: "ablage.jpg", caption: "Hmm.. ja, auch als Ablage wird unser Anhänger ungefragt genutzt", alt: ""}
+      - {filename: "john.jpg", caption: "John, von Norwegen kommend", alt: ""}
+      - {filename: "sonne-tanken.jpg", caption: "", alt: ""}
+      - {filename: "tieflieger.jpg", caption: "", alt: ""}
 
 ---
 
-{% include image.liquid id="rad-ab.jpeg" class="float-inline-start"%}
+{% include image.liquid id="rad-ab.jpg" class="float-inline-start"%}
 
 __*Ihr geht ja ab wie Spitzhacke!*__
 

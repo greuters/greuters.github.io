@@ -14,10 +14,10 @@ image_metadata:
       - {filename: "titel.jpg", caption: "", alt: ""}
   - dirname: gallery
     images:
-      - {filename: "lenken.jpeg", caption: "Lenken will gelernt sein!", alt: ""}
-      - {filename: "zelt.jpeg", caption: "", alt: ""}
-      - {filename: "abend.jpeg", caption: "", alt: ""}
-      - {filename: "schnee.jpeg", caption: "Unser Schneezelt. Bereit, neugierige Besucher zu empfangen.", alt: ""}
+      - {filename: "lenken.jpg", caption: "Lenken will gelernt sein!", alt: ""}
+      - {filename: "zelt.jpg", caption: "", alt: ""}
+      - {filename: "abend.jpg", caption: "", alt: ""}
+      - {filename: "schnee.jpg", caption: "Unser Schneezelt. Bereit, neugierige Besucher zu empfangen.", alt: ""}
 ---
 Am Freitag haben wir durchzogenes Wetter - mal Regen, mal etwas Sonne, doch insgesamt ein toller Fahrradtag. Und tatsächlich tragen die Solarzellen auch etwas zu unseren ersten hundert Kilometern bei. Detaillierte Infos für die Statistiker folgen in einem späteren Post.. Der Veloweg der Glatt entlang ist ein Genuss - immer leicht abfallend, nach dem Flughafen sanft rauschend dem Fluss folgend, mit gutem Belag und schöner Umgebung. Am Abend finden wir problemlos unser erstes Nachtquartier bei einem gastfreundlichen Bauern. Müde, glücklich unterwegs zu sein und mit der leckersten Pasta der Welt im Bauch schlafen wir ein.
 

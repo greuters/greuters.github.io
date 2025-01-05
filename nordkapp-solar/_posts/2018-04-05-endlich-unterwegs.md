@@ -15,14 +15,14 @@ image_metadata:
 
   - dirname: gallery
     images:
-      - {filename: "rad-ab.jpeg", caption: "Habt ihr 'n Rad ab?", alt: ""}
-      - {filename: "sonne-tanken.jpeg", caption: "Sonne tanken", alt: ""}
-      - {filename: "geschafft.jpeg", caption: "Geschafft! Auf der Wasserscheide Rhein-Donau", alt: ""}
-      - {filename: "beuron.jpeg", caption: "", alt: ""}
-      - {filename: "regenbogen.jpeg", caption: "Aprilwetter", alt: ""}
-      - {filename: "manoever.jpeg", caption: "Rita kann manövrieren (=)", alt: ""}
-      - {filename: "rastplatz.jpeg", caption: "Der beste Rastplatz - nach 20% Steigung", alt: ""}
-      - {filename: "evolution.jpeg", caption: "Evolution", alt: ""}
+      - {filename: "rad-ab.jpg", caption: "Habt ihr 'n Rad ab?", alt: ""}
+      - {filename: "sonne-tanken.jpg", caption: "Sonne tanken", alt: ""}
+      - {filename: "geschafft.jpg", caption: "Geschafft! Auf der Wasserscheide Rhein-Donau", alt: ""}
+      - {filename: "beuron.jpg", caption: "", alt: ""}
+      - {filename: "regenbogen.jpg", caption: "Aprilwetter", alt: ""}
+      - {filename: "manoever.jpg", caption: "Rita kann manövrieren (=)", alt: ""}
+      - {filename: "rastplatz.jpg", caption: "Der beste Rastplatz - nach 20% Steigung", alt: ""}
+      - {filename: "evolution.jpg", caption: "Evolution", alt: ""}
 ---
 Die Abende verbringen wir meist mit erstaunten Spazierjoggern (beste Sicht auf uns hat man offenbar im Krebsgang beim seitwärts Joggen) oder bei freundlichen Bauern. Waschen am Fluss, etwas gutes Kochen, ein wenig Gitarre spielen und Tagebuch schreiben und ab ins Bett. Am Tag geniessen wir im T-Shirt die warme Sonne, beobachten Vögel beim Zirkeln über der grünen Landschaft und folgen der gemächlichen Donau durch eindrückliche Kalkstein-Passagen.
 

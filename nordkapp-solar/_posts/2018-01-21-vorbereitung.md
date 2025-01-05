@@ -14,26 +14,26 @@ spread_direction: "SE"
 image_metadata:
   - dirname:
     images:
-      - {filename: "kettentreiber.jpeg", caption: "Vom Nabenmotor zum Kettentreiber", alt: ""}
-      - {filename: "leichtbau.jpeg", caption: "Die 12kg Holz-Nylon-'Leichtbau'-Hülle wäre heute aus Stahl wohl einiges leichter..", alt: ""}
-      - {filename: "solartest.jpeg", caption: "", alt: ""}
-      - {filename: "stapelbar.jpeg", caption: "", alt: ""}
-      - {filename: "vorzelt.jpeg", caption: "", alt: ""}
+      - {filename: "kettentreiber.jpg", caption: "Vom Nabenmotor zum Kettentreiber", alt: ""}
+      - {filename: "leichtbau.jpg", caption: "Die 12kg Holz-Nylon-'Leichtbau'-Hülle wäre heute aus Stahl wohl einiges leichter..", alt: ""}
+      - {filename: "solartest.jpg", caption: "", alt: ""}
+      - {filename: "stapelbar.jpg", caption: "", alt: ""}
+      - {filename: "vorzelt.jpg", caption: "", alt: ""}
       - {filename: "werkstatt.jpg", caption: "", alt: ""}
-      - {filename: "zeltbau.jpeg", caption: "", alt: ""}
+      - {filename: "zeltbau.jpg", caption: "", alt: ""}
 
   - dirname: gallery
     images:
-      - {filename: "passfahrt.jpeg", caption: "Im Sommer 2017 war mein Zimmer fast leer - mein Hab und Gut auf dem Weissenstein unterwegs (=", alt: ""}
-      - {filename: "probeliegen.jpeg", caption: "Schreibtisch mit gestapeltem Doppelbett (und Stoffkisten)", alt: ""}
-      - {filename: "bettspannung.jpeg", caption: "Doppelbett", alt: ""}
-      - {filename: "schaum-schneiden.jpeg", caption: "Leichtgewichtsmatratze", alt: ""}
-      - {filename: "einzelrad.jpeg", caption: "Anhänger ohne Schreibtisch", alt: ""}
-      - {filename: "nebenprojekt.jpeg", caption: "Ein interessantes Knicklenker-Rad, das nebenbei geboren wurde.. braucht leider noch etwas Übung für die grosse Tour, macht aber auf alle Fälle Spass", alt: ""}
+      - {filename: "passfahrt.jpg", caption: "Im Sommer 2017 war mein Zimmer fast leer - mein Hab und Gut auf dem Weissenstein unterwegs (=", alt: ""}
+      - {filename: "probeliegen.jpg", caption: "Schreibtisch mit gestapeltem Doppelbett (und Stoffkisten)", alt: ""}
+      - {filename: "bettspannung.jpg", caption: "Doppelbett", alt: ""}
+      - {filename: "schaum-schneiden.jpg", caption: "Leichtgewichtsmatratze", alt: ""}
+      - {filename: "einzelrad.jpg", caption: "Anhänger ohne Schreibtisch", alt: ""}
+      - {filename: "nebenprojekt.jpg", caption: "Ein interessantes Knicklenker-Rad, das nebenbei geboren wurde.. braucht leider noch etwas Übung für die grosse Tour, macht aber auf alle Fälle Spass", alt: ""}
 ---
 Angefangen hat 2013 alles mit der Idee, wetterfest auf Radtour zu gehen. Eine komplette Verkleidung zu bauen, halbwegs hügeltauglich und mit kleinem Studentenbudget. Ohne Werkstatt, dafür mit vielen Ideen entstand ein 35kg Rad auf Basis eines gebrauchten Kettwiesel, das ein Jahr später mit Nabenmotor zum echten Alltagsrad mutierte (auch 50km Arbeitsweg am Tag machbar). Schon damals war angedacht, den Motor in die Kette zu nehmen - Schaltung mitnutzen scheint eine clevere Idee, warum macht das eigentlich keiner?.. - heute wurde das auch Realität - und macht Spass (= 
 
-{% include image-divider.html ids="leichtbau.jpeg, kettentreiber.jpeg" %}
+{% include image-divider.html ids="leichtbau.jpg, kettentreiber.jpg" %}
 
 2016 musste ich umziehen. Auto mieten, Möbel schleppen, Riesenaufwand. Ginge das nicht auch leicht per Rad? Ein eigenes Bett bauen, eigener Schreibtisch, alles leicht aus Stahl und Alu (ich kann ja jetzt schweissen), vielleicht sogar irgendwie festivaltauglich als Luxuszelt?
 
@@ -54,6 +54,6 @@ Ein flexibler Anhängerbausatz. Ein passender Schreibtisch aus Stahl mit Rollen 
 
 Das Bett hat sich mittlerweile gut bewährt, ist weit gereist und wird immer bequemer. Der Schreibtisch hat eine provisorische Platte bekommen. Ein Zelt ist fertig und wartet auf den nächsten Regen zum ausprobieren - der Blachenprototyp hat im Sommer schon ganz gut Wind ausgehalten, das wird schon klappen. Der komplette Anhänger wiegt etwa 30 Kilo und bietet im Fahrbetrieb einen Quadratmeter ebene Oberfläche. Da könnte man ja auf Gedanken kommen..
 
-{% include image-divider.html ids="zeltbau.jpeg, stapelbar.jpeg, vorzelt.jpeg, solartest.jpeg" %}
+{% include image-divider.html ids="zeltbau.jpg, stapelbar.jpg, vorzelt.jpg, solartest.jpg" %}
 
 In den Norden mit einem Experimentalfahrzeug? Fahrradtour mit Solarunterstützung, Campinganhänger und 5-Rädrigem Genuss-Tandem? Zu verlockend um es nicht auszuprobieren! Stay tuned.. 

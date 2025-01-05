@@ -11,33 +11,33 @@ spread_direction: "NW"
 image_metadata:
   - dirname:
     images:
-      - {filename: "hilfe.jpeg", caption: "Wir helfen dir bei jeder Beschwerde. Online wenn es geht, im Behandlungszentrum wenn erforderlich.", alt: ""}
+      - {filename: "hilfe.jpg", caption: "Wir helfen dir bei jeder Beschwerde. Online wenn es geht, im Behandlungszentrum wenn erforderlich.", alt: ""}
       - {filename: "illusion.jpg", caption: "", alt: ""}
 
   - dirname: gallery
     images:
-      - {filename: "fruehling.jpeg", caption: "", alt: ""}
-      - {filename: "steiner.jpeg", caption: "", alt: ""}
-      - {filename: "stockholm.jpeg", caption: "", alt: ""}
-      - {filename: "altstadt.jpeg", caption: "Altstadt von Stockholm", alt: ""}
-      - {filename: "vaasa.jpeg", caption: "Vaasa-Museum", alt: ""}
-      - {filename: "flug.jpeg", caption: "", alt: ""}
-      - {filename: "cockpit.jpeg", caption: "Danke, Thomas!", alt: ""}
-      - {filename: "candy.jpeg", caption: "", alt: ""}
-      - {filename: "vilnius.jpeg", caption: "Vilnius", alt: ""}
-      - {filename: "ostkirche.jpeg", caption: "Viele Kirchen", alt: ""}
-      - {filename: "kuss.jpeg", caption: "", alt: ""}
-      - {filename: "kuenstler.jpeg", caption: "Künstler-Republik in Vilnius", alt: ""}
-      - {filename: "verfassung.jpeg", caption: "", alt: ""}
-      - {filename: "jesus.jpeg", caption: "", alt: ""}
-      - {filename: "streetart.jpeg", caption: "", alt: ""}
-      - {filename: "gedenken.jpeg", caption: "", alt: ""}
-      - {filename: "schloss.jpeg", caption: "Schloss Trakai", alt: ""}
-      - {filename: "wappen.jpeg", caption: "", alt: ""}
-      - {filename: "illusion.jpeg", caption: "", alt: ""}
+      - {filename: "fruehling.jpg", caption: "", alt: ""}
+      - {filename: "steiner.jpg", caption: "", alt: ""}
+      - {filename: "stockholm.jpg", caption: "", alt: ""}
+      - {filename: "altstadt.jpg", caption: "Altstadt von Stockholm", alt: ""}
+      - {filename: "vaasa.jpg", caption: "Vaasa-Museum", alt: ""}
+      - {filename: "flug.jpg", caption: "", alt: ""}
+      - {filename: "cockpit.jpg", caption: "Danke, Thomas!", alt: ""}
+      - {filename: "candy.jpg", caption: "", alt: ""}
+      - {filename: "vilnius.jpg", caption: "Vilnius", alt: ""}
+      - {filename: "ostkirche.jpg", caption: "Viele Kirchen", alt: ""}
+      - {filename: "kuss.jpg", caption: "", alt: ""}
+      - {filename: "kuenstler.jpg", caption: "Künstler-Republik in Vilnius", alt: ""}
+      - {filename: "verfassung.jpg", caption: "", alt: ""}
+      - {filename: "jesus.jpg", caption: "", alt: ""}
+      - {filename: "streetart.jpg", caption: "", alt: ""}
+      - {filename: "gedenken.jpg", caption: "", alt: ""}
+      - {filename: "schloss.jpg", caption: "Schloss Trakai", alt: ""}
+      - {filename: "wappen.jpg", caption: "", alt: ""}
+      - {filename: "illusion.jpg", caption: "", alt: ""}
 ---
 
-{% include image-divider.html ids="hilfe.jpeg" %}
+{% include image-divider.html ids="hilfe.jpg" %}
 
 Unnskyld, kann du hjelpe meg?
 

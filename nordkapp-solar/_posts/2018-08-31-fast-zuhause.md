@@ -11,33 +11,33 @@ spread_direction: "W"
 image_metadata:
   - dirname:
     images:
-      - {filename: "lastenrad.jpeg", caption: "", alt: ""}
+      - {filename: "lastenrad.jpg", caption: "", alt: ""}
       - {filename: "preview.jpg", caption: "", alt: ""}
-      - {filename: "schnitzerei.jpeg", caption: "", alt: ""}
+      - {filename: "schnitzerei.jpg", caption: "", alt: ""}
 
   - dirname: gallery
     images:
-      - {filename: "kanalkreuz.jpeg", caption: "", alt: ""}
-      - {filename: "luegenbaron.jpeg", caption: "", alt: ""}
-      - {filename: "fachwerk.jpeg", caption: "", alt: ""}
-      - {filename: "rathaus.jpeg", caption: "", alt: ""}
-      - {filename: "blumen.jpeg", caption: "", alt: ""}
-      - {filename: "abgerockt.jpeg", caption: "", alt: ""}
-      - {filename: "wasserturm.jpeg", caption: "", alt: ""}
-      - {filename: "radlersnack.jpeg", caption: "", alt: ""}
-      - {filename: "zwiebeln.jpeg", caption: "", alt: ""}
-      - {filename: "freunde.jpeg", caption: "", alt: ""}
-      - {filename: "pflaumen.jpeg", caption: "", alt: ""}
-      - {filename: "alte-bekannte.jpeg", caption: "", alt: ""}
-      - {filename: "probefahrt.jpeg", caption: "", alt: ""}
-      - {filename: "notreparatur.jpeg", caption: "", alt: ""}
-      - {filename: "regenschutz.jpeg", caption: "", alt: ""}
+      - {filename: "kanalkreuz.jpg", caption: "", alt: ""}
+      - {filename: "luegenbaron.jpg", caption: "", alt: ""}
+      - {filename: "fachwerk.jpg", caption: "", alt: ""}
+      - {filename: "rathaus.jpg", caption: "", alt: ""}
+      - {filename: "blumen.jpg", caption: "", alt: ""}
+      - {filename: "abgerockt.jpg", caption: "", alt: ""}
+      - {filename: "wasserturm.jpg", caption: "", alt: ""}
+      - {filename: "radlersnack.jpg", caption: "", alt: ""}
+      - {filename: "zwiebeln.jpg", caption: "", alt: ""}
+      - {filename: "freunde.jpg", caption: "", alt: ""}
+      - {filename: "pflaumen.jpg", caption: "", alt: ""}
+      - {filename: "alte-bekannte.jpg", caption: "", alt: ""}
+      - {filename: "probefahrt.jpg", caption: "", alt: ""}
+      - {filename: "notreparatur.jpg", caption: "", alt: ""}
+      - {filename: "regenschutz.jpg", caption: "", alt: ""}
 ---
 Von alten Plattenwegen werden wir durchgeschüttelt im Mühlenland, während sich Bussarde von ganz nah beobachten lassen: sie brechen aus dem Waldsaum, jagen tief über unsere Köpfe, um sich dann weit in die Höhe zu schwingen. Am Wasserkreuz vorbei führt die Fachwerkstrasse durch die Porta Westfalica ins Weser Bergland. In Minden bestaunen wir die restaurierte Schiffsmühle mit zahlreichen interessanten Details, fahren an moderneren alten (und auch vielen ganz modernen) Windmühlen vorbei, welche jene dank grösserer Leistungsfähigkeit bereits im Mittelalter verdrängten, und spüren auch selber endlich wieder mal die Unterstützung der Himmelskraft. 
 
 In den Fussstapfen des gestiefelten Katers geht der Weg durchs Grimmsche Märchenland: Von der Rattenfängerstadt Hameln über Bodenwerder, der Geburtsstadt des Lügenbarons von Münchhausen, nach Hannoversch Münden, Dr. Eisenbarts schönes Städtchen.
 
-{% include image-divider.html ids="schnitzerei.jpeg" %}
+{% include image-divider.html ids="schnitzerei.jpg" %}
   
 Vielleicht zum letzten mal stehen wir staunend unter einem erstaunlich klaren Sternenzelt, und finden wieder einmal einen bedeutsamen Film auf dieser Reise („The Help“, wie auch „Remember the Titans“ und „My sisters keeper“ eine Empfehlung wert). Begleitet von vertrauten Waldgerüchen, feucht-süssem Duft vom Drüsigen Springkraut und fruchtigen Brombeeraromen kommen wir langsam wieder in der Zivilisation an. Unzählige Wege, und noch mehr Menschen darauf unterwegs. Übernachten auf übervölkerten Campingplätzen mit Warmwasserduschen und Strom im Überfluss, aber auch Potenzial für schöne und spannende Begegnungen:
 
@@ -49,7 +49,7 @@ Auf den Spuren von Ritas Abschlussarbeit – mit Lorena zusammen radelte sie fas
 
 In Breisach schliesslich die letzte unerwartete Begegnung: Sid tauscht mit uns begeisterte Liegerad-Probefahrten und Erfahrungen, wir vergessen ganz unser Zelt rechtzeitig zu stellen.. 
 
-{% include image-divider.html ids="lastenrad.jpeg" %}
+{% include image-divider.html ids="lastenrad.jpg" %}
 
 Und dann ist sie plötzlich da, die Nacht in der uns „Big Jim“ wohl für eine längere Zeit das letzte Mal durch unsere Träume trägt. Noch ist es nicht vorstellbar, nachts wieder in einem geschlossenen Raum zu liegen, weder Blätter und Wasser noch wenigstens Autobahnen rauschen zu hören. Vorerst zum letzten Mal hilft uns „Little Jim“ durch die dürren Maisfelder zu gleiten, Rebberge zu erklimmen und pünktlich am Treffpunkt in Basel zu erscheinen.
 
