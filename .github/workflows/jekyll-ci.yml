@@ -16,7 +16,7 @@ jobs:
 
     - name: Install image libraries
       run: |
-        sudo apt install libvips libwebp-dev libjpeg-dev
+        sudo apt-get install libvips-tools libwebp-dev libjpeg-dev
 
     - name: Use Node.js
       uses: actions/setup-node@v4
