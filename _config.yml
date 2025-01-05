@@ -66,7 +66,7 @@ default_lang: "de"
 # and replaced with links to the original asset after build in package.json
 exclude_from_localization:
   ["assets/dist", "assets/download", "assets/js", "assets/generated"]
-parallel_localization: true
+parallel_localization: false
 
 # Settings for jekyll_picture_tag
 picture:
